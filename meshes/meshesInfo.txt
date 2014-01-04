@@ -1,0 +1,29 @@
+Files original locations:
+**************************
+
+fryingPan_1:
+http://sketchup.google.com/3dwarehouse/details?mid=682da23408715754c28e373bd2090ac&prevstart=0
+
+wineBouteille_1
+http://sketchup.google.com/3dwarehouse/details?mid=d297d1b0e4f0c244f61150ce90be197a&prevstart=0
+
+coffeeCup_1:
+http://sketchup.google.com/3dwarehouse/details?mid=7374ea7fee07f94c86032c4825f3450&prevstart=12
+
+milkJug_1:
+http://sketchup.google.com/3dwarehouse/details?mid=a9cad3a279928c1d8a6ec8c6f11e4804&prevstart=0
+
+cookingPot_1:
+http://sketchup.google.com/3dwarehouse/details?mid=154d29c6a51fbdf870a43c2d978e502e&prevstart=0
+
+teaKettle_1 (component 23)
+http://sketchup.google.com/3dwarehouse/details?mid=6ad88d3c96bfa2b6cd135a64ea2a2e41&prevstart=36
+
+hammer_1:
+http://sketchup.google.com/3dwarehouse/details?mid=31340e691294a750d30ee0b5a9888c0b&prevstart=0
+
+cordlessDrill_1:
+http://sketchup.google.com/3dwarehouse/details?mid=a542b23d38f419cbdda1d6a3005f72f2&prevstart=0
+
+brassWineglass_1:
+http://sketchup.google.com/3dwarehouse/details?mid=dba65b5d5c43ab75995e7ab497adca70&prevstart=12
