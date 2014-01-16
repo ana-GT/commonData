@@ -1,0 +1,31 @@
+<world name="clutch_world">
+
+  <include filename="clutch.urdf" model_name="clutch"/>
+  <include filename="clutch_container.urdf" model_name="container"/>
+  <include filename="tableDining.urdf" model_name="table"/>
+
+  <entity model="clutch" name="clutch_1">
+    <origin xyz="0 0.2 0.01" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="clutch" name="clutch_2">
+    <origin xyz="0 0.2 0.05" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="clutch" name="clutch_3">
+    <origin xyz="-0.2 0.2 1.0" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="clutch" name="clutch_4">
+    <origin xyz="-0.3 0.1 1.5" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="container" name="container">
+    <origin xyz="0 0.2 2.0" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="table" name="table">
+    <origin xyz="0 1.0 2.0" rpy="0 0 0"/>
+  </entity>
+
+</world>
