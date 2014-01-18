@@ -1,11 +1,11 @@
-<world name="clutch_world">
+<world name="doorHinge_world">
 
-  <include filename="../urdf/clutch.urdf" model_name="clutch"/>
+  <include filename="../urdf/doorHinge_inf.urdf" model_name="doorHinge"/>
   <include filename="../urdf/bjurstaTable.urdf" model_name="table"/>
   <include filename="../urdf/clutch_container.urdf" model_name="container"/>
   <include filename="../urdf/sdh.urdf" model_name="sdh"/>
 
-  <entity model="clutch" name="clutch_1">
+  <entity model="doorHinge" name="doorHinge_1">
     <origin xyz="0 0.2 0.86" rpy="0 0 0"/>
   </entity>
 

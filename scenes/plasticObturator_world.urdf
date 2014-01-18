@@ -1,11 +1,11 @@
-<world name="clutch_world">
+<world name="plasticObturator_world">
 
-  <include filename="../urdf/clutch.urdf" model_name="clutch"/>
+  <include filename="../urdf/Plastic_obturator.urdf" model_name="obturator"/>
   <include filename="../urdf/bjurstaTable.urdf" model_name="table"/>
   <include filename="../urdf/clutch_container.urdf" model_name="container"/>
   <include filename="../urdf/sdh.urdf" model_name="sdh"/>
 
-  <entity model="clutch" name="clutch_1">
+  <entity model="obturator" name="obturator_1">
     <origin xyz="0 0.2 0.86" rpy="0 0 0"/>
   </entity>
 
@@ -14,7 +14,7 @@
   </entity>
 
   <entity model="container" name="container_1">
-    <origin xyz="0.61 0.03 0.77" rpy="0 0 1.57"/>
+    <origin xyz="0.75 0.03 0.77" rpy="0 0 1.57"/>
   </entity>
 
   <entity model="sdh" name="sdh_1">

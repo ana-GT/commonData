@@ -1,21 +1,21 @@
 <robot
-  name="tableDining">
-  <link name="tableDining">
+  name="doorHinge_sup">
+  <link name="doorHinge">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-      <mass value="1.5"/>
+      <mass value="1.0"/>
       <inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1" />
     </inertial>
 
     <visual>
       <geometry>
-        <mesh filename="../geometry/objects/tableDining.dae" scale="0.01 0.01 0.01" />
+        <mesh filename="../meshes/PSA/doorHinge_sup.obj" scale="1 1 1" />
       </geometry>
      </visual>
 
     <collision>
       <geometry>
-        <mesh filename="../geometry/objects/tableDining.dae" scale="0.01 0.01 0.01" />
+        <mesh filename="../meshes/PSA/doorHinge_sup.obj" scale="1 1 1" />
       </geometry>
     </collision>
 

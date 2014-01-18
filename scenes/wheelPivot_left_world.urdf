@@ -1,12 +1,12 @@
-<world name="clutch_world">
+<world name="wheelPivot_left_world">
 
-  <include filename="../urdf/clutch.urdf" model_name="clutch"/>
+  <include filename="../urdf/wheelPivot_left.urdf" model_name="wheelPivot"/>
   <include filename="../urdf/bjurstaTable.urdf" model_name="table"/>
   <include filename="../urdf/clutch_container.urdf" model_name="container"/>
   <include filename="../urdf/sdh.urdf" model_name="sdh"/>
 
-  <entity model="clutch" name="clutch_1">
-    <origin xyz="0 0.2 0.86" rpy="0 0 0"/>
+  <entity model="wheelPivot" name="wheelPivot_1">
+    <origin xyz="0 0.2 0.82" rpy="1.57 0 0"/>
   </entity>
 
   <entity model="table" name="table_1">
