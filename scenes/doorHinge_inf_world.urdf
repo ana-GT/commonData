@@ -5,8 +5,8 @@
   <include filename="../urdf/clutch_container.urdf" model_name="container"/>
   <include filename="../urdf/sdh.urdf" model_name="sdh"/>
 
-  <entity model="doorHinge" name="doorHinge_1">
-    <origin xyz="0 0.2 0.86" rpy="0 0 0"/>
+  <entity model="doorHinge" name="doorHinge">
+    <origin xyz="0 0.2 0.80" rpy="0 1.57 0"/>
   </entity>
 
   <entity model="table" name="table_1">
@@ -17,7 +17,7 @@
     <origin xyz="0.61 0.03 0.77" rpy="0 0 1.57"/>
   </entity>
 
-  <entity model="sdh" name="sdh_1">
+  <entity model="sdh" name="sdh">
     <origin xyz="0.75 0.03 1.30" rpy="-3.1416 0 0"/>
   </entity>
 
