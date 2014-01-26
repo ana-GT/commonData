@@ -4,7 +4,7 @@
   <!-- Our stuff -->
   <link name="world" />
 
-  <joint name="sdh_palm_joint" type="fixed">
+  <joint name="sdh_palm_joint" type="floating"> <!-- Was fixed, but I don't like it  - Ana-->
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="world"/>
     <child link="sdh_palm_link"/>
