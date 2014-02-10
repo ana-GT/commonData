@@ -1,0 +1,14 @@
+<world name="wheelPivot_left_world">
+
+  <include filename="../urdf/wheelPivot_left.urdf" model_name="wheelPivot"/>
+  <include filename="../urdf/sdh.urdf" model_name="sdh"/>
+
+  <entity model="wheelPivot" name="wheelPivot">
+    <origin xyz="0 0.0 1.0" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="sdh">
+    <origin xyz="0 0.0 1.30" rpy="-3.1416 0 0"/>
+  </entity>
+
+</world>

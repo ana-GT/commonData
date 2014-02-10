@@ -1,0 +1,14 @@
+<world name="doorHinge_world">
+
+  <include filename="../urdf/doorHinge_inf.urdf" model_name="doorHinge"/>
+  <include filename="../urdf/sdh.urdf" model_name="sdh"/>
+
+  <entity model="doorHinge" name="doorHinge">
+    <origin xyz="0.0 0.0 1.0" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="sdh">
+    <origin xyz="0 0.0 1.5" rpy="-3.1416 0 0"/>
+  </entity>
+
+</world>
