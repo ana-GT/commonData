@@ -7,7 +7,7 @@
   <include filename="../urdf/bandejaChanfradaPalha.urdf" model_name="tray"/>
   <include filename="../urdf/conveyor1.urdf" model_name="conveyor"/>
 
-  <include filename="../urdf/sdh.urdf" model_name="sdh"/>
+  <include filename="../urdf/robots/sdh.urdf" model_name="sdh"/>
 
   <entity model="boldCube" name="boldCube_1">
     <origin xyz="0 -0.13 0.97" rpy="0 0 -0.76"/>

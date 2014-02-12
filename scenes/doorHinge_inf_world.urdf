@@ -3,7 +3,7 @@
   <include filename="../urdf/doorHinge_inf.urdf" model_name="doorHinge"/>
   <include filename="../urdf/bjurstaTable.urdf" model_name="table"/>
   <include filename="../urdf/clutch_container.urdf" model_name="container"/>
-  <include filename="../urdf/sdh.urdf" model_name="sdh"/>
+  <include filename="../urdf/robots/sdh.urdf" model_name="sdh"/>
 
   <entity model="doorHinge" name="doorHinge">
     <origin xyz="0 0.2 0.80" rpy="0 1.57 0"/>

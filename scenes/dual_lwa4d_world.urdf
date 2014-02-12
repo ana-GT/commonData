@@ -1,0 +1,18 @@
+<world name="lwa4d_sdh_world">
+
+  <include filename="../urdf/robots/lwa4d_sdh.urdf" model_name="lwa4d"/> 
+   <include filename="../urdf/dualBase.urdf" model_name="dualBase"/> 
+
+  <entity model="dualBase" name="dualBase">
+    <origin xyz="0.0 0.0 +0.51" rpy="+0 0 0"/>
+  </entity>
+
+  <entity model="lwa4d" name="leftArm">
+    <origin xyz="0.0 -0.1 +0.9" rpy="+1.57 0 0"/>
+  </entity>
+
+  <entity model="lwa4d" name="rightArm">
+    <origin xyz="0.0 +0.1 +0.9" rpy="-1.57 0 0"/>
+  </entity>
+
+</world>

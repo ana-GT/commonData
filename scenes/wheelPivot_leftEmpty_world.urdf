@@ -1,7 +1,7 @@
 <world name="wheelPivot_left_world">
 
   <include filename="../urdf/wheelPivot_left.urdf" model_name="wheelPivot"/>
-  <include filename="../urdf/sdh.urdf" model_name="sdh"/>
+  <include filename="../urdf/robots/sdh.urdf" model_name="sdh"/>
 
   <entity model="wheelPivot" name="wheelPivot">
     <origin xyz="0 0.0 1.0" rpy="0 0 0"/>

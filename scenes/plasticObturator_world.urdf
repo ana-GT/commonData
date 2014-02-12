@@ -3,7 +3,7 @@
   <include filename="../urdf/Plastic_obturator.urdf" model_name="obturator"/>
   <include filename="../urdf/bjurstaTable.urdf" model_name="table"/>
   <include filename="../urdf/clutch_container.urdf" model_name="container"/>
-  <include filename="../urdf/sdh.urdf" model_name="sdh"/>
+  <include filename="../urdf/robots/sdh.urdf" model_name="sdh"/>
 
   <entity model="obturator" name="obturator">
     <origin xyz="0 0.2 0.77" rpy="0 0 0"/>

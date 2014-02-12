@@ -3,7 +3,7 @@
   <include filename="../urdf/clutch.urdf" model_name="clutch"/>
   <include filename="../urdf/bjurstaTable.urdf" model_name="table"/>
   <include filename="../urdf/clutch_container.urdf" model_name="container"/>
-  <include filename="../urdf/sdh.urdf" model_name="sdh"/>
+  <include filename="../urdf/robots/sdh.urdf" model_name="sdh"/>
 
   <entity model="clutch" name="clutch">
     <origin xyz="0 0.2 0.86" rpy="0 0 0"/>
