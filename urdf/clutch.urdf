@@ -9,13 +9,13 @@
 
     <visual>
       <geometry>
-        <mesh filename="../meshes/PSA/clutchSensor.obj" scale="1 1 1" />
+        <mesh filename="../meshes/PSA/clutchSensor.dae" scale="1 1 1" />
       </geometry>
      </visual>
 
     <collision>
       <geometry>
-        <mesh filename="../meshes/PSA/clutchSensor.obj" scale="1 1 1" />
+        <mesh filename="../meshes/PSA/clutchSensor.dae" scale="1 1 1" />
       </geometry>
     </collision>
 

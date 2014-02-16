@@ -20,7 +20,8 @@
   </entity> -->
 
   <entity model="rod" name="rod">
-    <origin xyz="0.77 -0.25 1.10" rpy="+1.57 0 0"/>
+    <!--<origin xyz="0.77 -0.25 1.10" rpy="+1.57 0 0"/>-->
+    <origin xyz="0.45 0.11 1.24" rpy="+1.57 0 0"/>
   </entity>
 
   <entity model="support" name="support">
