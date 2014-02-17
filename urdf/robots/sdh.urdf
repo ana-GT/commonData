@@ -4,7 +4,7 @@
 <link name="world" />
 
 		<!-- joint between arm_7_link and sdh_palm_link -->
-		<joint name="palm_joint" type="floating" >
+		<joint name="palm_joint" type="fixed" >
 			<origin xyz="0 0 0" rpy="0 0 0"/>
 			<parent link="world" />
 			<child link="palm_link" />
@@ -20,7 +20,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/palm.stl" />
+					<mesh filename="../../meshes/sdh/palm.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey">
 					<color rgba="0.7 0.7 0.7 1.0"/>
@@ -30,7 +30,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/palm.stl"/>
+					<mesh filename="../../meshes/sdh/palm.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -74,7 +74,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/knuckle.stl" />
+					<mesh filename="../../meshes/sdh/knuckle.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -82,7 +82,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-				<mesh filename="../../meshes/sdh/knuckle.stl"/>
+				<mesh filename="../../meshes/sdh/knuckle.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -107,7 +107,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger.stl" />
+					<mesh filename="../../meshes/sdh/finger.dae" />
 				</geometry>
 			<material name="Schunk_LightGrey" />
 			</visual>
@@ -115,7 +115,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger.stl"/>
+					<mesh filename="../../meshes/sdh/finger.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -141,7 +141,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger_tip.stl" />
+					<mesh filename="../../meshes/sdh/finger_tip.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -149,7 +149,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger_tip.stl"/>
+					<mesh filename="../../meshes/sdh/finger_tip.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -176,7 +176,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/knuckle.stl" />
+					<mesh filename="../../meshes/sdh/knuckle.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -184,7 +184,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/knuckle.stl"/>
+					<mesh filename="../../meshes/sdh/knuckle.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -209,7 +209,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger.stl" />
+					<mesh filename="../../meshes/sdh/finger.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -217,7 +217,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger.stl"/>
+					<mesh filename="../../meshes/sdh/finger.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -242,7 +242,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger_tip.stl" />
+					<mesh filename="../../meshes/sdh/finger_tip.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -250,7 +250,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger_tip.stl"/>
+					<mesh filename="../../meshes/sdh/finger_tip.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -273,7 +273,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/knuckle.stl" />
+					<mesh filename="../../meshes/sdh/knuckle.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -281,7 +281,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/knuckle.stl"/>
+					<mesh filename="../../meshes/sdh/knuckle.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -306,7 +306,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger.stl" />
+					<mesh filename="../../meshes/sdh/finger.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -314,7 +314,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger.stl"/>
+					<mesh filename="../../meshes/sdh/finger.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -339,7 +339,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger_tip.stl" />
+					<mesh filename="../../meshes/sdh/finger_tip.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -347,7 +347,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../../meshes/sdh/finger_tip.stl"/>
+					<mesh filename="../../meshes/sdh/finger_tip.dae"/>
 				</geometry>
 			</collision>
 		</link>

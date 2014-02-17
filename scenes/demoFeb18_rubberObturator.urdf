@@ -1,0 +1,20 @@
+<world name="rubberObturator_world">
+
+  <include filename="../urdf/Rubber_obturator.urdf" model_name="rubberObturator"/>
+  <include filename="../urdf/steelTable1.urdf" model_name="table"/>
+  <include filename="../urdf/clutch_container.urdf" model_name="container"/>
+  <include filename="../urdf/sdh.urdf" model_name="sdh"/>
+
+  <entity model="rubberObturator" name="rubberObturator">
+    <origin xyz="0 0.0 0.913" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="table" name="table_1">
+    <origin xyz="0 0 0.9" rpy="0 0 1.57"/>
+  </entity>
+
+  <entity model="sdh" name="sdh">
+    <origin xyz="0 0 1.2" rpy="3.1416 0 0"/>
+  </entity>
+
+</world>
