@@ -4,7 +4,7 @@
 <link name="world" />
 
 		<!-- joint between arm_7_link and sdh_palm_link -->
-		<joint name="palm_joint" type="fixed" >
+		<joint name="palm_joint" type="floating" >
 			<origin xyz="0 0 0" rpy="0 0 0"/>
 			<parent link="world" />
 			<child link="palm_link" />

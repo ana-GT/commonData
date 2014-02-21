@@ -7,6 +7,8 @@
   <include filename="../urdf/rodSupport.urdf" model_name="support"/>
   <include filename="../urdf/rodPad.urdf" model_name="pad"/>
   <include filename="../urdf/blueCup.urdf" model_name="blueCup"/>
+  <include filename="../urdf/vigaHorizontal.urdf" model_name="vigaH"/>
+  <include filename="../urdf/vigaVertical.urdf" model_name="vigaV"/>
 
   <entity model="dualBase" name="dualBase">
     <origin xyz="0.0 0.0 +0.61" rpy="+0 0 0"/>
@@ -20,18 +22,29 @@
     <origin xyz="0.0 +0.1 +1.2" rpy="-1.57 0 0"/>
   </entity> -->
 
+  <entity model="vigaH" name="vigaH">
+    <origin xyz="0.5 -0.5 +1.96" rpy="0 0 0"/>
+  </entity> 
+
+  <entity model="vigaV" name="vigaV1">
+    <origin xyz="0.5 -0.8 +1.42" rpy="0 +1.57 0"/>
+  </entity> 
+
+  <entity model="vigaV" name="vigaV2">
+    <origin xyz="0.5 +0.8 +1.42" rpy="0 +1.57 0"/>
+  </entity> 
+
   <entity model="rod" name="rod">
     <!--<origin xyz="0.72 -0.60 1.03" rpy="+0 0 0"/> -->
-    <origin xyz="0.72 -0.25 1.10" rpy="+1.57 0 0"/>
+    <origin xyz="0.60 -0.25 1.10" rpy="0 +1.57 0"/>
   </entity>
 
   <entity model="blueCup" name="blueCup">
-<!--    <origin xyz="0.40 -0.20 1.0" rpy="+0 0 -1.57"/> -->
-    <origin xyz="0.40 -0.40 1.03" rpy="-3.1416 0 +1.57"/>
+    <origin xyz="0.60 -0.45 1.03" rpy="-3.1416 0 -1.57"/>
   </entity>
 
   <entity model="support" name="support">
-    <origin xyz="0.72 -0.25 0.92" rpy="+0 0 +1.57"/>
+    <origin xyz="0.60 -0.25 0.92" rpy="+0 0 +0"/>
   </entity>
 
   <entity model="pad" name="pad">
