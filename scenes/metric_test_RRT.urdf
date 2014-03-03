@@ -36,15 +36,15 @@
 
   <entity model="rod" name="rod">
     <!--<origin xyz="0.72 -0.60 1.03" rpy="+0 0 0"/> -->
-    <origin xyz="0.60 -0.25 1.10" rpy="0 +1.57 0"/>
+    <origin xyz="0.60 0.5 1.10" rpy="0 +1.57 0"/>
   </entity>
 
   <entity model="blueCup" name="blueCup">
-    <origin xyz="0.60 -0.45 1.03" rpy="-3.1416 0 -1.57"/>
+    <origin xyz="0.60 -0.35 1.03" rpy="-3.1416 0 -1.57"/>
   </entity>
 
   <entity model="support" name="support">
-    <origin xyz="0.60 -0.25 0.92" rpy="+0 0 +0"/>
+    <origin xyz="0.60 0.5 0.92" rpy="+0 0 +0"/>
   </entity>
 
   <entity model="pad" name="pad">
