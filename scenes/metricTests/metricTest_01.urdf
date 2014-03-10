@@ -1,0 +1,26 @@
+<world name="metricTest_01_world">
+
+ <include filename="../../urdf/robots/lwa4d_sdh.urdf" model_name="lwa4d"/> 
+   <include filename="../../urdf/dualBase.urdf" model_name="dualBase"/> 
+  <include filename="../../urdf/wineBottle_1.urdf" model_name="wineBottle"/>
+ <include filename="../../urdf/cabinet_01.urdf" model_name="cabinet"/>
+
+  <entity model="dualBase" name="dualBase">
+    <origin xyz="0.0 0.0 +0.61" rpy="+0 0 0"/>
+  </entity>
+
+  <entity model="lwa4d" name="leftArm">
+    <origin xyz="0.0 -0.1 +1.2" rpy="+1.57 0 0"/>
+  </entity>
+
+  <entity model="wineBottle" name="wineBottle">
+    <origin xyz="0.60 -0.30 1.34" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="cabinet" name="cabinet">
+    <origin xyz="0.6 -0.2 0.0" rpy="+0 0 -1.57"/>
+  </entity>
+
+
+
+</world>
