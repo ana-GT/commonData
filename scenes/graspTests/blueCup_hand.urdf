@@ -1,0 +1,42 @@
+<world name="blueCup_world">
+
+  <include filename="../../urdf/blueCup.urdf" model_name="blueCup"/>
+  <include filename="../../urdf/kitchenTable1.urdf" model_name="table"/>
+  <include filename="../../urdf/clutch_container.urdf" model_name="container"/>
+
+  <include filename="../../urdf/dualBase.urdf" model_name="dualBase"/> 
+  <include filename="../../urdf/robots/lwa4d_sdh.urdf" model_name="lwa4d"/> 
+
+  <include filename="../../urdf/wineBottle_1.urdf" model_name="wineBottle"/>
+  <include filename="../../urdf/cookingPot_1.urdf" model_name="cookingPot"/>
+  <include filename="../../urdf/cabinet_01.urdf" model_name="cabinet"/>
+
+  <entity model="dualBase" name="dualBase">
+    <origin xyz="0.0 0.0 +0.61" rpy="+0 0 0"/>
+  </entity>
+
+  <entity model="lwa4d" name="leftArm">
+    <origin xyz="0.0 -0.1 +1.2" rpy="+1.57 0 0"/>
+  </entity>
+
+  <entity model="table" name="table">
+    <origin xyz="0.3 1.0 0.01" rpy="1.57 0 -1.57"/>
+  </entity>
+
+  <entity model="wineBottle" name="wineBottle">
+    <origin xyz="0.50 0.10 0.86" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="blueCup" name="blueCup">
+    <origin xyz="0.60 -0.10 0.89" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="cookingPot" name="cookingPot1">
+    <origin xyz="0.50 0.30 0.92" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="cookingPot" name="cookingPot2">
+    <origin xyz="0.80 0.10 0.92" rpy="+0 0 +0"/>
+  </entity>
+
+</world>
