@@ -1,0 +1,42 @@
+<world name="blueCup_world">
+
+  <include filename="../../urdf/dualBase.urdf" model_name="dualBase"/> 
+  <include filename="../../urdf/robots/lwa4d.urdf" model_name="lwa4d"/> 
+  <include filename="../../urdf/robots/sdh.urdf" model_name="sdh"/> 
+
+  <include filename="../../urdf/kitchenTable1.urdf" model_name="table"/>
+
+  <include filename="../../urdf/wineBottle_1.urdf" model_name="wineBottle"/>
+
+  <include filename="../../urdf/graspTests/glass.urdf" model_name="glass"/>
+  <include filename="../../urdf/graspTests/penguin.urdf" model_name="penguin"/>
+
+  <entity model="dualBase" name="dualBase">
+    <origin xyz="0.0 0.0 +0.61" rpy="+0 0 0"/>
+  </entity>
+
+  <entity model="lwa4d" name="leftArm">
+    <origin xyz="0.0 -0.1 +1.2" rpy="+1.57 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="leftHand">
+    <origin xyz="0.6 0.8 +1.2" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="table" name="table">
+    <origin xyz="0.3 1.0 0.01" rpy="1.57 0 -1.57"/>
+  </entity>
+
+  <entity model="wineBottle" name="wineBottle">
+    <origin xyz="0.50 0.10 1.01" rpy="0 0 -1.57"/>
+  </entity>
+
+<!--  <entity model="glass" name="glass">
+    <origin xyz="0.60 -0.10 0.89" rpy="0 0 -1.57"/>
+  </entity> -->
+
+  <entity model="penguin" name="penguin">
+    <origin xyz="0.60 0.10 0.89" rpy="0 0 -1.57"/>
+  </entity>
+
+</world>
