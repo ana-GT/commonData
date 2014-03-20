@@ -8,8 +8,12 @@
 
   <include filename="../../urdf/wineBottle_1.urdf" model_name="wineBottle"/>
 
-  <include filename="../../urdf/graspTests/glass.urdf" model_name="glass"/>
-  <include filename="../../urdf/graspTests/penguin.urdf" model_name="penguin"/>
+  <include filename="../../urdf/graspTests/mouse.urdf" model_name="mouse"/>
+  <include filename="../../urdf/graspTests/book.urdf" model_name="book"/>
+  <include filename="../../urdf/graspTests/tetrapak.urdf" model_name="tetrapak"/> 
+  <include filename="../../urdf/graspTests/coffeeCup.urdf" model_name="coffeeCup"/>
+  <include filename="../../urdf/graspTests/apple.urdf" model_name="apple"/> 
+  <include filename="../../urdf/graspTests/rubik.urdf" model_name="rubik"/>
 
   <entity model="dualBase" name="dualBase">
     <origin xyz="0.0 0.0 +0.61" rpy="+0 0 0"/>
@@ -31,12 +35,31 @@
     <origin xyz="0.50 0.10 1.01" rpy="0 0 -1.57"/>
   </entity>
 
-<!--  <entity model="glass" name="glass">
-    <origin xyz="0.60 -0.10 0.89" rpy="0 0 -1.57"/>
-  </entity> -->
 
-  <entity model="penguin" name="penguin">
-    <origin xyz="0.60 0.10 0.89" rpy="0 0 -1.57"/>
+  <entity model="mouse" name="mouse">
+    <origin xyz="0.60 -0.20 0.84" rpy="1.57 0 0"/>
   </entity>
+
+  <entity model="book" name="book">
+    <origin xyz="0.75 0.10 0.94" rpy="0 0 0"/>
+  </entity>
+
+
+  <entity model="tetrapak" name="tetrapak">
+    <origin xyz="0.85 -0.40 0.97" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="coffeeCup" name="coffeeCup">
+    <origin xyz="1.0 -0.40 0.92" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="apple" name="apple">
+    <origin xyz="0.50 -0.20 0.87" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="rubik" name="rubik">
+    <origin xyz="1.0 -0.30 0.87" rpy="0 0 0"/>
+  </entity>
+
 
 </world>
