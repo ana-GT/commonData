@@ -50,7 +50,7 @@
   </entity>
 
   <entity model="coffeeCup" name="coffeeCup">
-    <origin xyz="1.0 -0.40 0.92" rpy="1.57 0 0"/>
+    <origin xyz="0.80 -0.67 0.92" rpy="1.57 0 0"/>
   </entity>
 
   <entity model="apple" name="apple">
@@ -58,7 +58,7 @@
   </entity>
 
   <entity model="rubik" name="rubik">
-    <origin xyz="1.0 -0.30 0.87" rpy="0 0 0"/>
+    <origin xyz="0.5 -0.40 0.87" rpy="0 0 0"/>
   </entity>
 
 
