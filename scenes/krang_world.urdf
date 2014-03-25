@@ -1,0 +1,10 @@
+<world name="krang_world">
+
+  <include filename="../urdf/robots/Krang.urdf" model_name="krang"/>
+
+  <entity model="krang" name="krang">
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  </entity>
+
+
+</world>

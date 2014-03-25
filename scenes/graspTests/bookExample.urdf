@@ -1,0 +1,44 @@
+<world name="book_world">
+
+  <include filename="../../urdf/dualBase.urdf" model_name="dualBase"/> 
+  <include filename="../../urdf/robots/lwa4d.urdf" model_name="lwa4d"/> 
+  <include filename="../../urdf/robots/sdh.urdf" model_name="sdh"/> 
+
+
+  <include filename="../../urdf/graspTests/escritorio4.urdf" model_name="desk"/>
+  <include filename="../../urdf/graspTests/mouse.urdf" model_name="mouse"/>
+  <include filename="../../urdf/graspTests/book.urdf" model_name="book"/>
+  <include filename="../../urdf/graspTests/coffeeCup.urdf" model_name="coffeeCup"/>
+
+  <entity model="dualBase" name="dualBase">
+    <origin xyz="0.0 0.0 +0.61" rpy="+0 0 0"/>
+  </entity>
+
+  <entity model="lwa4d" name="leftArm">
+    <origin xyz="0.0 -0.1 +1.2" rpy="+1.57 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="leftHand">
+    <origin xyz="0.6 0.8 +1.2" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="desk" name="desk">
+    <origin xyz="0.5 0.5 0.50" rpy="-1.57 0 3.1416"/>
+  </entity> 
+
+
+  <entity model="mouse" name="mouse">
+    <origin xyz="0.60 -0.20 1.03" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="book" name="book">
+    <origin xyz="0.75 -0.60 1.40" rpy="0 0 0"/>
+  </entity>
+
+
+  <entity model="coffeeCup" name="coffeeCup">
+    <origin xyz="0.80 -0.67 1.10" rpy="1.57 0 0"/>
+  </entity>
+
+
+</world>
