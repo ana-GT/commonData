@@ -1,6 +1,6 @@
 <robot
-  name="escritorio4">
-  <link name="escritorio4">
+  name="simpleDesk">
+  <link name="simpleDesk">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <mass value="0.5"/>
@@ -9,13 +9,13 @@
 
     <visual>
       <geometry>
-        <mesh filename="../../meshes/3ds/escritorio4.3ds" scale="1 1 1" />
+        <mesh filename="../../meshes/dae/graspTests/simpleDesk.dae" scale="1 1 1" />
       </geometry>
      </visual>
 
     <collision>
       <geometry>
-        <mesh filename="../../meshes/3ds/escritorio4.3ds" scale="1 1 1" />
+        <mesh filename="../../meshes/dae/graspTests/simpleDesk.dae" scale="1 1 1" />
       </geometry>
     </collision>
 

@@ -4,8 +4,8 @@
   <include filename="../../urdf/robots/lwa4d.urdf" model_name="lwa4d"/> 
   <include filename="../../urdf/robots/sdh.urdf" model_name="sdh"/> 
 
-
-  <include filename="../../urdf/graspTests/escritorio4.urdf" model_name="desk"/>
+  <include filename="../../urdf/cabinet_01.urdf" model_name="cabinet"/>
+  <include filename="../../urdf/graspTests/simpleDesk.urdf" model_name="desk"/>
   <include filename="../../urdf/graspTests/mouse.urdf" model_name="mouse"/>
   <include filename="../../urdf/graspTests/book.urdf" model_name="book"/>
   <include filename="../../urdf/graspTests/coffeeCup.urdf" model_name="coffeeCup"/>
@@ -20,6 +20,10 @@
 
   <entity model="sdh" name="leftHand">
     <origin xyz="0.6 0.8 +1.2" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="cabinet" name="cabinet">
+    <origin xyz="0.70 -0.2 0.0" rpy="+0 0 -1.57"/>
   </entity>
 
   <entity model="desk" name="desk">
