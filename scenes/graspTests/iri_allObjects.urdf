@@ -1,0 +1,61 @@
+<world name="blueCup_world">
+
+  <include filename="../../urdf/robots/iri_wam.urdf" model_name="wam"/> 
+  <include filename="../../urdf/robots/bhand.urdf" model_name="bhand"/>
+
+  <include filename="../../urdf/kitchenTable1.urdf" model_name="table"/>
+
+  <include filename="../../urdf/wineBottle_1.urdf" model_name="wineBottle"/>
+
+  <include filename="../../urdf/graspTests/mouse.urdf" model_name="mouse"/>
+  <include filename="../../urdf/graspTests/book.urdf" model_name="book"/>
+  <include filename="../../urdf/graspTests/tetrapak.urdf" model_name="tetrapak"/> 
+  <include filename="../../urdf/graspTests/coffeeCup.urdf" model_name="coffeeCup"/>
+  <include filename="../../urdf/graspTests/apple.urdf" model_name="apple"/> 
+  <include filename="../../urdf/graspTests/rubik.urdf" model_name="rubik"/>
+
+
+  <entity model="wam" name="wam">
+    <origin xyz="0.0 -0.1 +1.2" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="bhand" name="bhand">
+    <origin xyz="0.22 0.04 +2.46" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="table" name="table">
+    <origin xyz="0.3 1.0 0.01" rpy="1.57 0 -1.57"/>
+  </entity>
+
+  <entity model="wineBottle" name="wineBottle">
+    <origin xyz="0.50 0.10 1.01" rpy="0 0 -1.57"/>
+  </entity>
+
+
+  <entity model="mouse" name="mouse">
+    <origin xyz="0.60 -0.20 0.84" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="book" name="book">
+    <origin xyz="0.75 0.10 0.94" rpy="0 0 0"/>
+  </entity>
+
+
+  <entity model="tetrapak" name="tetrapak">
+    <origin xyz="0.85 -0.40 0.97" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="coffeeCup" name="coffeeCup">
+    <origin xyz="0.80 -0.67 0.92" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="apple" name="apple">
+    <origin xyz="0.50 -0.20 0.87" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="rubik" name="rubik">
+    <origin xyz="0.5 -0.40 0.87" rpy="0 0 0"/>
+  </entity>
+
+
+</world>
