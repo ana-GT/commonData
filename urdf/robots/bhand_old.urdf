@@ -40,7 +40,6 @@
       </geometry>
     </collision>
   </link>
-
   <link
     name="finger_1_prox_link">
     <inertial>
@@ -81,14 +80,18 @@
       </geometry>
     </collision>
   </link>
-
   <joint
     name="finger_1_prox_joint"
     type="revolute">
-    <origin xyz="0.025 0 0.0415" rpy="0 2.7051E-17 -1.5708" />
-    <parent link="base_link" />
-    <child link="finger_1_prox_link" />
-    <axis xyz="0 0 1" />
+    <origin
+      xyz="0.025 0 0.0415"
+      rpy="0 2.7051E-17 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="finger_1_prox_link" />
+    <axis
+      xyz="0 0 1" />
     <limit
       lower="-3.141"
       upper="0"
@@ -135,18 +138,21 @@
       </geometry>
     </collision>
   </link>
-  <joint name="finger_1_med_joint" type="revolute">
+  <joint
+    name="finger_1_med_joint"
+    type="revolute">
     <origin
       xyz="-0.05 0 0.0339"
       rpy="1.5708 -8.8281E-17 0" />
     <parent
       link="finger_1_prox_link" />
-    <child link="finger_1_med_link" />
-    <axis 
-      xyz="0 0 -1" />
+    <child
+      link="finger_1_med_link" />
+    <axis
+      xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="2.44"
+      lower="-2.44"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>
@@ -190,7 +196,9 @@
       </geometry>
     </collision>
   </link>
-  <joint name="finger_1_dist_joint" type="revolute">
+  <joint
+    name="finger_1_dist_joint"
+    type="revolute">
     <origin
       xyz="-0.069936 0.003 0"
       rpy="1.6787E-18 -3.6382E-15 -6.1073E-33" />
@@ -199,10 +207,10 @@
     <child
       link="finger_1_dist_link" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0.785"
+      lower="-0.785"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>
@@ -246,7 +254,9 @@
       </geometry>
     </collision>
   </link>
-  <joint name="finger_2_prox_joint" type="revolute">
+  <joint
+    name="finger_2_prox_joint"
+    type="revolute">
     <origin
       xyz="-0.025 0 0.0415"
       rpy="0 2.7051E-17 -1.5708" />
@@ -302,9 +312,9 @@
       </geometry>
     </collision>
   </link>
- 
-  <!-- "Proximal" J2. Set positive closing -->
-  <joint name="finger_2_med_joint" type="revolute">
+  <joint
+    name="finger_2_med_joint"
+    type="revolute">
     <origin
       xyz="-0.05 0 0.0339"
       rpy="1.5708 -8.8281E-17 0" />
@@ -313,14 +323,13 @@
     <child
       link="finger_2_med_link" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="2.44"
+      lower="-2.44"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>
-
   <link
     name="finger_2_dist_link">
     <inertial>
@@ -361,9 +370,9 @@
       </geometry>
     </collision>
   </link>
-
-  <!-- "Distal" J2. Set positive closing -->
-  <joint name="finger_2_dist_joint" type="revolute">
+  <joint
+    name="finger_2_dist_joint"
+    type="revolute">
     <origin
       xyz="-0.069917 0.0034087 0"
       rpy="-3.1382E-17 -2.3229E-16 0" />
@@ -372,14 +381,13 @@
     <child
       link="finger_2_dist_link" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0.785"
+      lower="-0.785"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>
-
   <link
     name="finger_3_med_link">
     <inertial>
@@ -420,9 +428,9 @@
       </geometry>
     </collision>
   </link>
-
-  <!-- "Proximal" J3. Set positive closing -->
-  <joint name="finger_3_med_joint" type="revolute">
+  <joint
+    name="finger_3_med_joint"
+    type="revolute">
     <origin
       xyz="0 -0.05 0.0754"
       rpy="1.5708 6.123E-17 1.5708" />
@@ -431,14 +439,13 @@
     <child
       link="finger_3_med_link" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="2.44"
+      lower="-2.44"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>
-
   <link
     name="finger_3_dist_link">
     <inertial>
@@ -479,9 +486,9 @@
       </geometry>
     </collision>
   </link>
-
-  <!-- "Distal" J3. Set positive closing -->
-  <joint name="finger_3_dist_joint" type="revolute">
+  <joint
+    name="finger_3_dist_joint"
+    type="revolute">
     <origin
       xyz="-0.069936 0.003 0"
       rpy="6.0427E-17 -6.7283E-18 -4.0657E-34" />
@@ -490,10 +497,10 @@
     <child
       link="finger_3_dist_link" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0.785"
+      lower="-0.785"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>

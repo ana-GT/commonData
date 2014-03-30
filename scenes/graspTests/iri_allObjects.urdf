@@ -14,9 +14,14 @@
   <include filename="../../urdf/graspTests/apple.urdf" model_name="apple"/> 
   <include filename="../../urdf/graspTests/rubik.urdf" model_name="rubik"/>
 
+  <include filename="../../urdf/redBall.urdf" model_name="redBall"/>
+
+  <entity model="redBall" name="redBall">
+    <origin xyz="0.0 0.0 +2.6" rpy="0 0 0"/>
+  </entity>
 
   <entity model="wam" name="wam">
-    <origin xyz="0.0 -0.1 +1.2" rpy="0 0 0"/>
+    <origin xyz="0.0 -0.1 +0.60" rpy="0 0 0"/>
   </entity>
 
   <entity model="bhand" name="bhand">
@@ -28,7 +33,7 @@
   </entity>
 
   <entity model="wineBottle" name="wineBottle">
-    <origin xyz="0.50 0.10 1.01" rpy="0 0 -1.57"/>
+    <origin xyz="0.50 0.0 1.01" rpy="0 0 -1.57"/>
   </entity>
 
 
@@ -46,7 +51,7 @@
   </entity>
 
   <entity model="coffeeCup" name="coffeeCup">
-    <origin xyz="0.80 -0.67 0.92" rpy="1.57 0 0"/>
+    <origin xyz="0.60 -0.67 0.92" rpy="1.57 0 0"/>
   </entity>
 
   <entity model="apple" name="apple">
