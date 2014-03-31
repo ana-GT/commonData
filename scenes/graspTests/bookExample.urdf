@@ -27,21 +27,21 @@
   </entity>
 
   <entity model="desk" name="desk">
-    <origin xyz="0.5 0.5 0.50" rpy="-1.57 0 3.1416"/>
+    <origin xyz="0.45 -0.50 0.02" rpy="0 0 3.1416"/>
   </entity> 
 
 
   <entity model="mouse" name="mouse">
-    <origin xyz="0.60 -0.20 1.03" rpy="1.57 0 0"/>
+    <origin xyz="-0.30 -0.80 0.78" rpy="1.57 0 0"/>
   </entity>
 
   <entity model="book" name="book">
-    <origin xyz="0.75 -0.60 1.40" rpy="0 0 0"/>
+    <origin xyz="0.75 -0.60 1.47" rpy="0 0 0"/>
   </entity>
 
 
   <entity model="coffeeCup" name="coffeeCup">
-    <origin xyz="0.80 -0.67 1.10" rpy="1.57 0 0"/>
+    <origin xyz="0.20 -0.80 0.85" rpy="1.57 0 0"/>
   </entity>
 
 
