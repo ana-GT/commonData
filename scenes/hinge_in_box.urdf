@@ -1,0 +1,40 @@
+<world name="doorHinge_world">
+
+  <include filename="../urdf/robots/lwa4d_sdh.urdf" model_name="lwa4d"/> 
+  <include filename="../urdf/LWA4_verticalSupport.urdf" model_name="base"/>
+  <include filename="../urdf/LWA4_middleSupport.urdf" model_name="mid"/> 
+
+  <include filename="../urdf/doorHinge_inf.urdf" model_name="doorHinge"/>
+  <include filename="../urdf/LWA4_table.urdf" model_name="table"/>
+  <include filename="../urdf/simpleBox_50_50_25.urdf" model_name="box"/>
+
+  <entity model="base" name="base">
+    <origin xyz="-0.45 -0.45 0" rpy="+0 0 0"/>
+  </entity>
+
+  <entity model="mid" name="mid">
+    <origin xyz="0.01 0.01 0.94" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="lwa4d" name="leftArm">
+    <origin xyz="0.0 -0.0375 +1.2" rpy="+1.57 0 0"/>
+  </entity>
+
+  <entity model="lwa4d" name="rightArm">
+    <origin xyz="0.0 +0.0375 +1.2" rpy="-1.57 0 0"/>
+  </entity> 
+
+  <entity model="doorHinge" name="doorHinge">
+    <origin xyz="0.50 -0.40 0.74" rpy="0 1.57 0"/>
+  </entity>
+
+  <entity model="table" name="table_1">
+    <origin xyz="0.20 -0.91 0.02" rpy="0 0 0"/>-89.95
+  </entity>
+
+
+  <entity model="box" name="box">
+    <origin xyz="0.75 -0.2 0.70" rpy="0 0 1.57"/>
+  </entity> 
+
+</world>

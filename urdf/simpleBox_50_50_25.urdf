@@ -1,0 +1,23 @@
+<robot
+  name="simpleBox_50_50_25">
+  <link name="simpleBox_50_50_25">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1" />
+    </inertial>
+
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/dae/simpleBox_50_50_25.dae" scale="1 1 1" />
+      </geometry>
+     </visual>
+
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/dae/simpleBox_50_50_25.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+
+  </link>
+</robot>
