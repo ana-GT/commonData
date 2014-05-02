@@ -8,7 +8,7 @@
 
   <include filename="../../urdf/LWA4_table.urdf" model_name="table"/>
 
-  <include filename="../../urdf/wineBottle_1.urdf" model_name="wineBottle"/>
+  <include filename="../../urdf/graspTests/wineBottle_1.urdf" model_name="wineBottle"/>
   <include filename="../../urdf/graspTests/mouse.urdf" model_name="mouse"/>
   <include filename="../../urdf/graspTests/book.urdf" model_name="book"/>
   <include filename="../../urdf/graspTests/tetrapak.urdf" model_name="tetrapak"/> 
