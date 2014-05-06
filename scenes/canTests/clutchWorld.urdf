@@ -1,0 +1,18 @@
+<world name="clutch_world">
+
+  <include filename="../../urdf/robots/sdh.urdf" model_name="sdh"/> 
+
+
+  <include filename="../../urdf/LWA4_table.urdf" model_name="table"/>
+  <include filename="../../urdf/clutch.urdf" model_name="clutch"/>
+
+  <entity model="sdh" name="leftHand">
+    <origin xyz="0.6 -0.6625 +1.23" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="clutch" name="clutch">
+    <origin xyz="0.70 -0.40 0.73" rpy="0 0 0"/>
+  </entity>
+
+
+</world>

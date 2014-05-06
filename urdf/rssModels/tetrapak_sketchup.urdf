@@ -1,21 +1,21 @@
 <robot
-  name="wineBouteille_1">
-  <link name="wineBouteille_1">
+  name="tetrapak">
+  <link name="tetrapak">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-      <mass value="1.0"/>
+      <mass value="0.5"/>
       <inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1" />
     </inertial>
 
     <visual>
       <geometry>
-        <mesh filename="../../meshes/dae/graspTests/wineBouteille_centeredSubdivided.dae" scale="1 1 1" />
+        <mesh filename="../../meshes/rssModels/tetrapak_sketchup.dae" scale="1 1 1" />
       </geometry>
      </visual>
 
     <collision>
       <geometry>
-        <mesh filename="../../meshes/dae/graspTests/wineBouteille_centeredSubdivided.dae" scale="1 1 1" />
+        <mesh filename="../../meshes/rssModels/tetrapak_sketchup.dae" scale="1 1 1" />
       </geometry>
     </collision>
 
