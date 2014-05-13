@@ -1,0 +1,69 @@
+<world name="bimanual_world">
+
+  <include filename="../../urdf/robots/lwa4d.urdf" model_name="lwa4d"/> 
+  <include filename="../../urdf/robots/sdh.urdf" model_name="sdh"/> 
+
+  <include filename="../../urdf/LWA4_verticalSupport.urdf" model_name="base"/>
+  <include filename="../../urdf/LWA4_middleSupport.urdf" model_name="mid"/> 
+
+  <include filename="../../urdf/LWA4_table.urdf" model_name="table"/>
+
+  <include filename="../../urdf/graspTests/wineBottle_1.urdf" model_name="wineBottle"/>
+  <include filename="../../urdf/graspTests/tetrapak.urdf" model_name="tetrapak"/> 
+  <include filename="../../urdf/graspTests/coffeeCup.urdf" model_name="coffeeCup"/>
+  <include filename="../../urdf/rssModels/utilityCart.urdf" model_name="cart"/> 
+
+  <entity model="base" name="base">
+    <origin xyz="-0.45 -0.45 0.01" rpy="+0 0 0"/>
+  </entity>
+
+  <entity model="mid" name="mid">
+    <origin xyz="0.01 0.01 0.95" rpy="0 0 0"/>
+  </entity>
+
+
+  <entity model="lwa4d" name="leftArm">
+    <origin xyz="0.0 -0.0375 +1.23" rpy="+1.57 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="leftHand">
+    <origin xyz="0.6 -0.6625 +1.23" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="lwa4d" name="rightArm">
+    <origin xyz="0.0 0.0375 +1.23" rpy="-1.57 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="rightHand">
+    <origin xyz="0.6 0.6625 +1.23" rpy="0 0 0"/>
+  </entity>
+
+
+  <entity model="table" name="table_1">
+    <origin xyz="0.20 -0.91 0.02" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="wineBottle" name="wineBottle">
+    <origin xyz="0.50 -0.20 0.85" rpy="0 0 -1.57"/>
+  </entity>
+
+
+  <entity model="tetrapak" name="tetrapak">
+    <origin xyz="0.35 -0.80 0.82" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="coffeeCup" name="coffeeCup">
+    <origin xyz="0.50 -0.67 0.78" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="cart" name="cartRight">
+    <origin xyz="-0.80 0.48 0.01" rpy="0 0 0"/>
+  </entity>
+
+
+  <entity model="cart" name="cartLeft">
+    <origin xyz="-0.80 -1.05 0.01" rpy="0 0 0"/>
+  </entity>
+
+
+</world>
