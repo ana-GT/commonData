@@ -44,7 +44,7 @@
   </entity>
 
   <entity model="wineBottle" name="wineBottle">
-    <origin xyz="0.50 -0.20 0.85" rpy="0 0 -1.57"/>
+    <origin xyz="0.50 -0.20 0.88" rpy="0 0 -1.57"/>
   </entity>
 
 

@@ -9,13 +9,13 @@
 
     <visual>
       <geometry>
-        <mesh filename="../../meshes/dae/graspTests/wineBouteille_centeredSubdivided.dae" scale="1 1 1" />
+        <mesh filename="../../meshes/dae/graspTests/wineBouteille_centeredSubdivided2.dae" scale="1 1 1" />
       </geometry>
      </visual>
 
     <collision>
       <geometry>
-        <mesh filename="../../meshes/dae/graspTests/wineBouteille_centeredSubdivided.dae" scale="1 1 1" />
+        <mesh filename="../../meshes/dae/graspTests/wineBouteille_centeredSubdivided2.dae" scale="1 1 1" />
       </geometry>
     </collision>
 
