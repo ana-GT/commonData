@@ -1,0 +1,21 @@
+<world name="wine_world">
+
+  <include filename="../../urdf/robots/sdh.urdf" model_name="sdh"/> 
+
+
+  <include filename="../../urdf/LWA4_table.urdf" model_name="table"/>
+  <include filename="../../urdf/graspTests/wineBottle_1.urdf" model_name="wine"/>
+
+  <entity model="sdh" name="leftHand">
+    <origin xyz="0.6 -0.6625 +1.23" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="wine" name="wine">
+    <origin xyz="0.70 -0.40 0.73" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="table" name="table_1">
+    <origin xyz="0.20 -0.91 0.02" rpy="0 0 0"/>-89.95
+  </entity>
+
+</world>
