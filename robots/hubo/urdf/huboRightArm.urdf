@@ -1,0 +1,213 @@
+<robot name="huboRightArm">
+
+   <!-- -->			
+   <link name="world" />
+
+	<!-- J0 -->
+	<joint name="L0_joint" type="fixed" >
+   		<origin  rpy="0 0 0" xyz="0 0 0" />
+		<parent link="world" />
+		<child link="rightArm_dummy" />
+	</joint>
+
+	<!-- Right Arm dummy -->
+	<link name="rightArm_dummy">
+	  <inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <mass value="1.0"/>
+	    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+	 </inertial>
+       </link>
+
+
+   <link name="Body_RSP">
+        <inertial>
+            <origin rpy="-0 0 -0" xyz="0.0125095477277756 -0.068256718764233101 -0.00010129669295980101" />
+            <mass value="0.512814669817052" />
+            <inertia ixx="0.00105971934903801" ixy="-1.5967462303431400e-04" ixz="-8.62192186714616E-07" iyy="0.00101602821932241" iyz="-6.2966884306784996e-06" izz="0.00161449029531154" />
+        </inertial>
+        <visual>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_RSP_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_RSP_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Body_RSR">
+        <inertial>
+            <origin rpy="-0 0 -0" xyz="-0.035398962551355898 0.00044245995196773302 -0.017762633299856102" />
+            <mass value="0.478101234588499" />
+            <inertia ixx="0.000470991608414918" ixy="9.0901553039532995e-08" ixz="-1.21957572289795E-05" iyy="0.00056865982747998" iyz="-7.9419793532124904e-06" izz="0.000377112142444654" />
+        </inertial>
+        <visual>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_RSR_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_RSR_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Body_RSY">
+        <inertial>
+            <origin rpy="-0 0 -0" xyz="0.0059630710867142498 0.0022316583599030801 -0.16200994741111999" />
+            <mass value="1.35206539449553" />
+            <inertia ixx="0.0134777313253687" ixy="2.5138451425789699e-05" ixz="-0.000850780329961022" iyy="0.0134238053664017" iyz="-2.7096457354038099e-04" izz="0.00109460289061941" />
+        </inertial>
+        <visual>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_RSY_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_RSY_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Body_REP">
+        <inertial>
+            <origin rpy="-0 0 -0" xyz="-0.02571445335908 -0.00080617852028866399 -0.041785358716466603" />
+            <mass value="0.267758871202315" />
+            <inertia ixx="0.000341774590608957" ixy="8.9470476429373695e-07" ixz="5.48147249702E-05" iyy="0.000322402837807457" iyz="-2.9300672847597200e-06" izz="0.000239480055722266" />
+        </inertial>
+        <visual>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_REP_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_REP_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Body_RWY">
+        <inertial>
+            <origin rpy="-0 0 -0" xyz="3.99379011692602E-05 -0.0577379856357585 -0.15171876502304399" />
+            <mass value="1.37072161761866" />
+            <inertia ixx="0.0138917492745533" ixy="3.5425177800418901e-06" ixz="7.9309444806889E-06" iyy="0.0118173705529259" iyz="3.9427324662846402e-03" izz="0.00267824831844074" />
+        </inertial>
+        <visual>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_RWY_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_RWY_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Body_RWP">
+        <inertial>
+            <origin rpy="-0 0 -0" xyz="-0.00037873907121759699 -0.010888243491304499 0.017009370610731701" />
+            <mass value="0.294902574333316" />
+            <inertia ixx="0.000715165417977553" ixy="1.5154396924067100e-06" ixz="-4.37551165446012E-06" iyy="0.000574579884042658" iyz="5.5583549065965003e-05" izz="0.000301632100473859" />
+        </inertial>
+        <visual>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_RWP_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="-0 0 -0" xyz="0 -0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_RWP_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Body_RWR">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <mass value=".1" />
+            <inertia ixx="0.0001" ixy="-0.0000000000000000e+00" ixz="0" iyy="0.0001" iyz="-0.0000000000000000e+00" izz="0.0001" />
+        </inertial>
+    </link>
+
+    <joint name="RSP" type="revolute">
+        <origin rpy="-0 0 -0" xyz="0.0010 -0.1305 0.2061" />
+        <parent link="rightArm_dummy" />
+        <child link="Body_RSP" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0" lower="-3.14" upper="3.14" velocity="10.0" />
+    </joint>
+    <joint name="RSR" type="revolute">
+        <origin rpy="-0 0 -0" xyz="0.0330 -0.0990 0" />
+        <parent link="Body_RSP" />
+        <child link="Body_RSR" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0" lower="-3.14" upper="0.262" velocity="10.0" />
+    </joint>
+    <joint name="RSY" type="revolute">
+        <origin rpy="-0 0 -0" xyz="-0.0330 -0 -0.0270" />
+        <parent link="Body_RSR" />
+        <child link="Body_RSY" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0" lower="-3.14" upper="2.0" velocity="10.0" />
+    </joint>
+    <joint name="REP" type="revolute">
+        <origin rpy="-0 0 -0" xyz="0.0300 0 -0.2730" />
+        <parent link="Body_RSY" />
+        <child link="Body_REP" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0" lower="-2.65" upper=".2" velocity="10.0" />
+    </joint>
+    <joint name="RWY" type="revolute">
+        <origin rpy="-0 0 0" xyz="-0.0300 0 -0.0520" />
+        <parent link="Body_REP" />
+        <child link="Body_RWY" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0" lower="-3.14" upper="3.14" velocity="10.0" />
+    </joint>
+    <joint name="RWP" type="revolute">
+        <origin rpy="-0 0 -0" xyz="0 -0 -0.2618" />
+        <parent link="Body_RWY" />
+        <child link="Body_RWP" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0" lower="-1.571" upper="1.571" velocity="10.0" />
+    </joint>
+    <joint name="RWR" type="revolute">
+        <origin rpy="-0 0 -1.57079632679" xyz="0 -0 -0.0275" />
+        <parent link="Body_RWP" />
+        <child link="Body_RWR" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0" lower="-2.6" upper="3.14" velocity="10.0" />
+    </joint>
+
+</robot>

@@ -1,0 +1,10 @@
+<world name="hubo_world">
+
+  <include filename="../../robots/hubo/urdf/drchubo_v2_pathFixed.urdf" model_name="hubo"/> 
+
+  <entity model="hubo" name="hubo">
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  </entity>
+
+
+</world>

@@ -1,0 +1,212 @@
+<robot name="leftArm">
+
+    <link name="world"/>
+
+    <!-- Left Arm -->
+	<!-- J0 -->
+	<joint name="L0_joint" type="fixed" >
+   		<origin  rpy="0 0 0" xyz="0 0 0" />
+		<parent link="world" />
+		<child link="leftArm_dummy" />
+	</joint>
+
+	<!-- Left Arm dummy -->
+	<link name="leftArm_dummy">
+	  <inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0"/>
+	    <mass value="1.0"/>
+	    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+	 </inertial>
+       </link>
+
+
+    <link name="Body_LSP">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0125095477277756 0.0682567187642331 -0.000101296692959801" />
+            <mass value="0.512814669817052" />
+            <inertia ixx="0.00105971934903801" ixy="0.000159674623034314" ixz="-8.62192186714616E-07" iyy="0.00101602821932241" iyz="6.2966884306785E-06" izz="0.00161449029531154" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LSP_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LSP_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="LSP" type="revolute">
+        <origin rpy="-0 0 -0" xyz="0.0010 0.1305 0.2061" />
+        <parent link="leftArm_dummy" />
+        <child link="Body_LSP" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0" lower="-3.14" upper="3.14" velocity="10.0" />
+    </joint>
+    <link name="Body_LSR">
+        <inertial>
+            <origin rpy="0 0 0" xyz="-0.0353989625513559 -0.000442459951967733 -0.0177626332998561" />
+            <mass value="0.478101234588499" />
+            <inertia ixx="0.000470991608414918" ixy="-9.0901553039533E-08" ixz="-1.21957572289795E-05" iyy="0.00056865982747998" iyz="7.94197935321249E-06" izz="0.000377112142444654" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LSR_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LSR_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="LSR" type="revolute">
+        <origin rpy="0 0 0" xyz="0.033 0.099 0" />
+        <parent link="Body_LSP" />
+        <child link="Body_LSR" />
+        <axis xyz="1 0 0" />
+        <limit effort="100.0" lower="-.262" upper="3.14" velocity="10.0" />
+    </joint>
+    <link name="Body_LSY">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.00596307108671425 -0.00223165835990308 -0.16200994741112" />
+            <mass value="1.35206539449553" />
+            <inertia ixx="0.0134777313253687" ixy="-2.51384514257897E-05" ixz="-0.000850780329961022" iyy="0.0134238053664017" iyz="0.000270964573540381" izz="0.00109460289061941" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LSY_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LSY_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="LSY" type="revolute">
+        <origin rpy="0 0 0" xyz="-0.0330 0 -0.0270" />
+        <parent link="Body_LSR" />
+        <child link="Body_LSY" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0" lower="-2" upper="3.14" velocity="10.0" />
+    </joint>
+    <link name="Body_LEP">
+        <inertial>
+            <origin rpy="0 0 0" xyz="-0.02571445335908 0.000806178520288664 -0.0417853587164666" />
+            <mass value="0.267758871202315" />
+            <inertia ixx="0.000341774590608957" ixy="-8.94704764293737E-07" ixz="5.48147249702E-05" iyy="0.000322402837807457" iyz="2.93006728475972E-06" izz="0.000239480055722266" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LEP_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LEP_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="LEP" type="revolute">
+        <origin rpy="0 0 0" xyz="0.0300 0.000 -0.2730" />
+        <parent link="Body_LSY" />
+        <child link="Body_LEP" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0" lower="-2.65" upper=".2" velocity="10.0" />
+    </joint>
+    <link name="Body_LWY">
+        <inertial>
+            <origin rpy="0 0 0" xyz="3.99379011692602E-05 0.0577379856357585 -0.151718765023044" />
+            <mass value="1.37072161761866" />
+            <inertia ixx="0.0138917492745533" ixy="-3.54251778004189E-06" ixz="7.9309444806889E-06" iyy="0.0118173705529259" iyz="-0.00394273246628464" izz="0.00267824831844074" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LWY_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LWY_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="LWY" type="revolute">
+        <origin rpy="0 0 0" xyz="-0.0300 0 -0.0520" />
+        <parent link="Body_LEP" />
+        <child link="Body_LWY" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0" lower="-3.14" upper="3.14" velocity="10.0" />
+    </joint>
+    <link name="Body_LWP">
+        <inertial>
+            <origin rpy="0 0 0" xyz="-0.000378739071217597 0.0108882434913045 0.0170093706107317" />
+            <mass value="0.294902574333316" />
+            <inertia ixx="0.000715165417977553" ixy="-1.51543969240671E-06" ixz="-4.37551165446012E-06" iyy="0.000574579884042658" iyz="-5.5583549065965E-05" izz="0.000301632100473859" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LWP_merged.stl" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/convhull_LWP_merged.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="LWP" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 -0.2618" />
+        <parent link="Body_LWY" />
+        <child link="Body_LWP" />
+        <axis xyz="0 1 0" />
+        <limit effort="100.0" lower="-1.571" upper="1.571" velocity="10.0" />
+    </joint>
+    <link name="Body_LWR">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <mass value=".1" />
+            <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001" />
+        </inertial>
+    </link>
+    <joint name="LWR" type="revolute">
+        <origin rpy="0 0 1.57079632679" xyz="0 0 -0.0275" />
+        <parent link="Body_LWP" />
+        <child link="Body_LWR" />
+        <axis xyz="0 0 1" />
+        <limit effort="100.0" lower="-3.14" upper="2.6" velocity="10.0" />
+    </joint>
+ 
+</robot>

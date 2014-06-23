@@ -1,0 +1,23 @@
+<robot
+  name="boldCube_01">
+  <link name="boldCube_01">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.000166667" ixy="0.0" ixz="0.0" iyy="0.000166667" iyz="0.0" izz="0.000166667" />
+    </inertial>
+
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/boldCube_01.blend" scale="1 1 1" />
+      </geometry>
+     </visual>
+
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/boldCube_01.blend" scale="1 1 1" />
+      </geometry>
+    </collision>
+
+  </link>
+</robot>
