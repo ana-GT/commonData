@@ -1,0 +1,23 @@
+<robot
+  name="ball_01">
+  <link name="ball_01">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1" />
+    </inertial>
+
+    <visual>
+      <geometry>
+	<cylinder length="0.05" radius="0.025" />
+      </geometry>
+     </visual>
+
+    <collision>
+      <geometry>
+	<cylinder length="0.05" radius="0.025" />
+      </geometry>
+    </collision>
+
+  </link>
+</robot>

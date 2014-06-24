@@ -4,7 +4,7 @@
 
     <!-- Left Arm -->
 	<!-- J0 -->
-	<joint name="L0_joint" type="fixed" >
+	<joint name="L0_joint" type="floating" >
    		<origin  rpy="0 0 0" xyz="0 0 0" />
 		<parent link="world" />
 		<child link="leftArm_dummy" />
