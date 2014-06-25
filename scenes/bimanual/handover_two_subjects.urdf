@@ -3,6 +3,7 @@
   <!-- Crichton -->
   <include filename="../../robots/lwa4d/urdf/lwa4d_left.urdf" model_name="lwa4d_left"/> 
   <include filename="../../robots/lwa4d/urdf/lwa4d_right.urdf" model_name="lwa4d_right"/> 
+  <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
 
   <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>
   <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport.urdf" model_name="mid"/> 
@@ -11,6 +12,10 @@
   <include filename="../../robots/hubo/urdf/huboWithNoArms.urdf" model_name="huboBody"/> 
   <include filename="../../robots/hubo/urdf/huboLeftArm.urdf" model_name="huboLeftArm"/> 
   <include filename="../../robots/hubo/urdf/huboRightArm.urdf" model_name="huboRightArm"/> 
+
+  <include filename="../../robots/hubo/urdf/huboLeftHand.urdf" model_name="huboLeftHand"/> 
+  <include filename="../../robots/hubo/urdf/huboRightHand.urdf" model_name="huboRightHand"/> 
+
 
   <!-- Table -->
   <include filename="../../objects/LWA4_table/urdf/LWA4_table.urdf" model_name="table"/>
@@ -34,6 +39,15 @@
     <origin xyz="1.18 -0.90 0.984" rpy="0 0 2.6"/>
   </entity>
 
+  <entity model="huboLeftHand" name="huboLeftHand">
+    <origin xyz="1.18 0.90 0.3" rpy="0 0 2.6"/>
+  </entity>
+
+  <entity model="huboRightHand" name="huboRightHand">
+    <origin xyz="1.18 -0.90 0.3" rpy="0 0 2.6"/>
+  </entity>
+
+
 
   <!-- Crichton -->
   <entity model="base" name="base">
@@ -45,13 +59,22 @@
   </entity>
 
 
-  <entity model="lwa4d_left" name="leftArm">
+  <entity model="lwa4d_left" name="crichtonLeftArm">
     <origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/>
   </entity>
 
-  <entity model="lwa4d_right" name="rightArm">
+  <entity model="lwa4d_right" name="crichtonRightArm">
     <origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/>
   </entity>
+
+  <entity model="sdh" name="crichtonLeftHand">
+    <origin xyz="0.6 0.6625 +0.5" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="crichtonRightHand">
+    <origin xyz="0.6 -0.6625 +0.5" rpy="0 0 0"/>
+  </entity>
+
 
   <!-- Table -->
  <entity model="table" name="table_1">
