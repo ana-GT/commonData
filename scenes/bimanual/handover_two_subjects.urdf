@@ -6,7 +6,7 @@
   <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
 
   <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>
-  <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport.urdf" model_name="mid"/> 
+  <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/> 
 
   <!-- Hubo -->
   <include filename="../../robots/hubo/urdf/huboWithNoArms.urdf" model_name="huboBody"/> 
@@ -55,7 +55,7 @@
   </entity>
 
   <entity model="mid" name="mid">
-    <origin xyz="0.01 0.01 0.95" rpy="0 0 0"/>
+    <origin xyz="0.01 0.01 1.23" rpy="0 0 0"/>
   </entity>
 
 
