@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<robot  name="leftArm">
+
+	<link name="world" />
+
+	<!-- Root -->
+	<joint name="root_joint" type="floating" >
+   		<origin  rpy="0 0 0" xyz="0 0 0" />
+		<parent link="world" />
+		<child link="leftArm_dummy" />
+	</joint>
+
+
+	<!-- LSP -->
+		<joint name="LSP" type="revolute">
+			<origin xyz="0 0.2072 0.4608" rpy="0 0 0"/>
+			<parent link="leftArm_dummy"/>
+			<child link="Body_LSP"/>
+			<axis xyz="0 1 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-3.1416" upper="0.8"/>
+		</joint>
+
+	<!-- LSR -->
+		<joint name="LSR" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="Body_LSP"/>
+			<child link="Body_LSR"/>
+			<axis xyz="1 0 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="0.0" upper="3.1416"/>
+		</joint>
+
+	<!-- LSY -->
+		<joint name="LSY" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="Body_LSR"/>
+			<child link="Body_LSY"/>
+			<axis xyz="0 0 1"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-0.5" upper="0.5"/>
+		</joint>
+
+
+	<!-- LEP -->
+		<joint name="LEP" type="revolute">
+			<origin xyz="0 0 -0.3008" rpy="0 0 0"/>
+			<parent link="Body_LSY"/>
+			<child link="Body_LEP"/>
+			<axis xyz="0 1 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-2.35" upper="0.0"/>
+		</joint>
+
+
+	<!-- LWP -->
+		<joint name="LWP" type="revolute">
+			<origin xyz="0 0 -0.232" rpy="0 0 0"/>
+			<parent link="Body_LEP"/>
+			<child link="Body_LWP"/>
+			<axis xyz="0 1 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-0.5" upper="0.5"/>
+		</joint>
+
+	<!-- LWR -->
+		<joint name="LWR" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="Body_LWP"/>
+			<child link="Body_LWR"/>
+			<axis xyz="1 0 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-1.57" upper="1.57"/>
+		</joint>
+
+	<!-- LWY -->
+		<joint name="LWY" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="Body_LWR"/>
+			<child link="Body_LWY"/>
+			<axis xyz="0 0 1"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-0.5" upper="0.5"/>
+		</joint>
+
+
+	<!-- leftArm dummy -->
+	<link name="leftArm_dummy">
+		<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<mass value="0.1"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+
+		</link>
+
+
+	<!-- Body_LSP -->
+	<link name="Body_LSP">
+		<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<mass value="0.1"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+
+		</link>
+
+
+	<!-- Body_LSR -->
+	<link name="Body_LSR">
+		<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<mass value="0.1"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+
+		</link>
+
+
+	<!-- Body_LSY Link -->
+		<link name="Body_LSY">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/upperArm.dae" />
+				</geometry>
+				<material name="upperArm">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/upperArm.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+	<!-- Body_LEP Link -->
+		<link name="Body_LEP">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/lowerArm.dae" />
+				</geometry>
+				<material name="upperArm">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/lowerArm.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+
+
+	<!-- Body_LWP Link -->
+	<link name="Body_LWP">
+		<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<mass value="0.1"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+
+		</link>
+
+
+	<!-- Body_LWR Link -->
+	<link name="Body_LWR">
+		<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<mass value="0.1"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+
+		</link>
+
+	<!-- Body_LWY Link -->
+		<link name="Body_LWY">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 3.1416" />
+				<geometry>
+					<mesh filename="../meshes/wristLeft.dae" />
+				</geometry>
+				<material name="upperArm">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 3.1416" />
+				<geometry>
+					<mesh filename="../meshes/wristLeft.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+</robot>

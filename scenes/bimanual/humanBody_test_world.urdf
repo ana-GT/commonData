@@ -1,0 +1,35 @@
+<world name="humanBody_test_world">
+
+  <include filename="../../robots/human/urdf/humanBody.urdf" model_name="humanBody"/> 
+  <include filename="../../robots/human/urdf/humanRightArm.urdf" model_name="humanRightArm"/> 
+  <include filename="../../robots/human/urdf/humanLeftArm.urdf" model_name="humanLeftArm"/> 
+  <include filename="../../robots/human/urdf/humanLeftHand.urdf" model_name="humanLeftHand"/> 
+  <include filename="../../robots/human/urdf/humanRightHand.urdf" model_name="humanRightHand"/> 
+  <include filename="../../objects/basicShapes/urdf/ball_01.urdf" model_name="ball" />
+
+  <entity model="humanBody" name="humanBody">
+    <origin xyz="0.0 0.0 0.9" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="humanRightArm" name="humanRightArm">
+    <origin xyz="0.0 0.0 0.9" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="humanLeftArm" name="humanLeftArm">
+    <origin xyz="0.0 0.0 0.9" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="humanLeftHand" name="humanLeftHand">
+    <origin xyz="0.0 0.5 0.5" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="humanRightHand" name="humanRightHand">
+    <origin xyz="0.0 -0.5 0.5" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="ball" name="marker">
+    <origin xyz="0.0 0.0 1.2" rpy="0 0 0"/>
+  </entity>
+
+
+</world>

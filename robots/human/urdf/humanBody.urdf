@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<robot  name="humanBody">
+
+	<link name="world" />
+
+	<!-- TSY Link -->
+	<link name="TSY_link">
+		<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<mass value="1.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/tsy.dae" />
+				</geometry>
+				<material name="tsy">
+					<color rgba="0.0 0.1 0.9 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/tsy.dae" />
+				</geometry>
+			</collision>
+
+
+		</link>
+
+
+	<!-- Torso Link -->
+		<link name="Torso_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/torso.dae" />
+				</geometry>
+				<material name="torso">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/torso.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+	<!-- RHY Link -->
+		<link name="RHY_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>			
+		</link>
+
+	<!-- RHR Link -->
+		<link name="RHR_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>			
+		</link>
+
+
+	<!-- RHP Link -->
+		<link name="RHP_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/upperLeg.dae" />
+				</geometry>
+				<material name="torso">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/upperLeg.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+	<!-- RKP Link -->
+		<link name="RKP_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/lowerLeg.dae" />
+				</geometry>
+				<material name="torso">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/lowerLeg.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+	<!-- RAP Link -->
+		<link name="RAP_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+		</link>
+
+
+	<!-- RAR Link -->
+		<link name="RAR_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/foot.dae" />
+				</geometry>
+				<material name="torso">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/foot.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+
+
+	<!-- LHY Link -->
+		<link name="LHY_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>			
+		</link>
+
+	<!-- LHR Link -->
+		<link name="LHR_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>			
+		</link>
+
+
+	<!-- LHP Link -->
+		<link name="LHP_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/upperLeg.dae" />
+				</geometry>
+				<material name="torso">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/upperLeg.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+	<!-- LKP Link -->
+		<link name="LKP_link">
+			<inertial>
+				<origin xyz="0 0 -0.32" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/lowerLeg.dae" />
+				</geometry>
+				<material name="torso">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/lowerLeg.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+	<!-- LAP Link -->
+		<link name="LAP_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+		</link>
+
+
+	<!-- LAR Link -->
+		<link name="LAR_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/foot.dae" />
+				</geometry>
+				<material name="torso">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/foot.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+
+	<!-- Head Link -->
+		<link name="Head_link">
+			<inertial>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<mass value="2.0"/>
+				<inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+			</inertial>
+			
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/head.dae" />
+				</geometry>
+				<material name="head">
+					<color rgba="0.7 0.7 0.7 1.0"/>
+				</material>
+			</visual>
+			
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0" />
+				<geometry>
+					<mesh filename="../meshes/head.dae" />
+				</geometry>
+			</collision>
+		</link>
+
+	<!-- Root -->
+	<joint name="root_joint" type="floating" >
+   		<origin  rpy="0 0 0" xyz="0 0 0" />
+		<parent link="world" />
+		<child link="TSY_link" />
+	</joint>
+
+	<!-- TSY Joint -->
+		<joint name="TSY_joint" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="TSY_link"/>
+			<child link="Torso_link"/>
+			<axis xyz="0 0 1"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-0.8" upper="0.8"/>
+		</joint>
+
+
+	<!-- Head Joint -->
+		<joint name="Head_joint" type="revolute">
+			<origin xyz="0 0 0.4608" rpy="0 0 0"/>
+			<parent link="Torso_link"/>
+			<child link="Head_link"/>
+			<axis xyz="0 0 1"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-1.57" upper="1.57"/>
+		</joint>
+
+
+	<!-- RHY Joint -->
+		<joint name="RHY_joint" type="revolute">
+			<origin xyz="0 -0.1128 -0.072" rpy="0 0 0"/>
+			<parent link="TSY_link"/>
+			<child link="RHY_link"/>
+			<axis xyz="0 0 1"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-0.8" upper="0.8"/>
+		</joint>
+
+	<!-- RHR Joint -->
+		<joint name="RHR_joint" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="RHY_link"/>
+			<child link="RHR_link"/>
+			<axis xyz="1 0 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-0.8" upper="0.8"/>
+		</joint>
+
+	<!-- RHP Joint -->
+		<joint name="RHP_joint" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="RHR_link"/>
+			<child link="RHP_link"/>
+			<axis xyz="0 1 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-1.57" upper="1.57"/>
+		</joint>
+
+	<!-- RKP Joint -->
+		<joint name="RKP_joint" type="revolute">
+			<origin xyz="0 0 -0.32" rpy="0 0 0"/>
+			<parent link="RHP_link"/>
+			<child link="RKP_link"/>
+			<axis xyz="0 1 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="0" upper="2.3"/>
+		</joint>
+
+	<!-- RAP Joint -->
+		<joint name="RAP_joint" type="revolute">
+			<origin xyz="0 0 -0.3936" rpy="0 0 0"/>
+			<parent link="RKP_link"/>
+			<child link="RAP_link"/>
+			<axis xyz="0 1 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="0" upper="2.3"/>
+		</joint>
+
+	<!-- RAR Joint -->
+		<joint name="RAR_joint" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="RAP_link"/>
+			<child link="RAR_link"/>
+			<axis xyz="1 0 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="0" upper="2.3"/>
+		</joint>
+
+	<!-- LHY Joint -->
+		<joint name="LHY_joint" type="revolute">
+			<origin xyz="0 0.1128 -0.072" rpy="0 0 0"/>
+			<parent link="TSY_link"/>
+			<child link="LHY_link"/>
+			<axis xyz="0 0 1"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-0.8" upper="0.8"/>
+		</joint>
+
+	<!-- LHR Joint -->
+		<joint name="LHR_joint" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="LHY_link"/>
+			<child link="LHR_link"/>
+			<axis xyz="1 0 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-0.8" upper="0.8"/>
+		</joint>
+
+	<!-- LHP Joint -->
+		<joint name="LHP_joint" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="LHR_link"/>
+			<child link="LHP_link"/>
+			<axis xyz="0 1 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="-1.57" upper="1.57"/>
+		</joint>
+
+	<!-- LKP Joint -->
+		<joint name="LKP_joint" type="revolute">
+			<origin xyz="0 0 -0.32" rpy="0 0 0"/>
+			<parent link="LHP_link"/>
+			<child link="LKP_link"/>
+			<axis xyz="0 1 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="0" upper="2.3"/>
+		</joint>
+
+	<!-- LAP Joint -->
+		<joint name="LAP_joint" type="revolute">
+			<origin xyz="0 0 -0.3936" rpy="0 0 0"/>
+			<parent link="LKP_link"/>
+			<child link="LAP_link"/>
+			<axis xyz="0 1 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="0" upper="2.3"/>
+		</joint>
+
+	<!-- LAR Joint -->
+		<joint name="LAR_joint" type="revolute">
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<parent link="LAP_link"/>
+			<child link="LAR_link"/>
+			<axis xyz="1 0 0"/>
+			<dynamics damping="10" />
+			<limit effort="370" velocity="2.0" lower="0" upper="2.3"/>
+		</joint>
+
+</robot>

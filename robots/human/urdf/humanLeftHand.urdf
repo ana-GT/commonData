@@ -1,0 +1,647 @@
+<robot name="leftHand">
+
+    <link name="world"/>
+
+    <!-- Left Palm -->
+    <link name="leftPalm">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.00526734472242982 -0.00165481505247564 -0.0476967183846567" />
+            <mass value="0.474006924726537" />
+            <inertia ixx="0.000397832341494148" ixy="2.62847439473878E-06" ixz="-1.84132721696329E-05" iyy="0.000310585574870465" iyz="-5.74611340451118E-06" izz="0.000251799615334244" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/palm.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/palm.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Left Index -->
+    <link name="Body_LF11_dummy">
+        <inertial>
+            <origin rpy="0 0 0" xyz="4.08082421144568E-06 -0.0103654579068141 -0.0223572146583746" />
+            <mass value="0.0209635645691505" />
+            <inertia ixx="5.79877083007342E-06" ixy="-3.61896654972963E-09" ixz="2.45166522675331E-07" iyy="6.02432212425641E-06" iyz="1.21167394757334E-09" izz="1.78245355770108E-06" />
+        </inertial>
+    </link>
+
+    <!-- Left Index -->
+    <link name="Body_LF11">
+        <inertial>
+            <origin rpy="0 0 0" xyz="4.08082421144568E-06 -0.0103654579068141 -0.0223572146583746" />
+            <mass value="0.0209635645691505" />
+            <inertia ixx="5.79877083007342E-06" ixy="-3.61896654972963E-09" ixz="2.45166522675331E-07" iyy="6.02432212425641E-06" iyz="1.21167394757334E-09" izz="1.78245355770108E-06" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+        </collision>
+    </link>
+ 
+    <!-- Left Index, link 2 -->
+    <link name="Body_LF12">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000130946971760824 0.000226771833385403 -0.0135375370531412" />
+            <mass value="0.0121177256078384" />
+            <inertia ixx="2.50372945957958E-06" ixy="-2.32805891508231E-09" ixz="5.14105106916585E-08" iyy="2.26813369660349E-06" iyz="-4.92964124837522E-09" izz="1.22101156825522E-06" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index2.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index2.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Left Index, link 3 -->
+    <link name="Body_LF13">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000169386130301579 0.000356898419659246 -0.0163165219752076" />
+            <mass value="0.0163435127658012" />
+            <inertia ixx="2.35338373719888E-06" ixy="-4.4210418009567E-09" ixz="1.38024261681812E-07" iyy="2.40973096927305E-06" iyz="-2.82215020077362E-08" izz="9.69758896639509E-07" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index3.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index3.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Left Middle dummy link 0 -->
+    <link name="Body_LF21_dummy">
+        <inertial>
+            <origin rpy="0 0 0" xyz="4.08082421144568E-06 -0.0103654579068141 -0.0223572146583746" />
+            <mass value="0.0209635645691505" />
+            <inertia ixx="5.79877083007342E-06" ixy="-3.61896654972963E-09" ixz="2.45166522675331E-07" iyy="6.02432212425641E-06" iyz="1.21167394757334E-09" izz="1.78245355770108E-06" />
+        </inertial>
+    </link>
+
+    <!-- Left Middle link 1 -->
+    <link name="Body_LF21">
+        <inertial>
+            <origin rpy="0 0 0" xyz="4.08082421144568E-06 -0.0103654579068141 -0.0223572146583746" />
+            <mass value="0.0209635645691505" />
+            <inertia ixx="5.79877083007342E-06" ixy="-3.61896654972963E-09" ixz="2.45166522675331E-07" iyy="6.02432212425641E-06" iyz="1.21167394757334E-09" izz="1.78245355770108E-06" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+        </collision>
+    </link>
+ 
+    <!-- Left Middle, link 2 -->
+    <link name="Body_LF22">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000130946971760824 0.000226771833385403 -0.0135375370531412" />
+            <mass value="0.0121177256078384" />
+            <inertia ixx="2.50372945957958E-06" ixy="-2.32805891508231E-09" ixz="5.14105106916585E-08" iyy="2.26813369660349E-06" iyz="-4.92964124837522E-09" izz="1.22101156825522E-06" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index2.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Left Middle, link 3 -->
+    <link name="Body_LF23">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000169386130301579 0.000356898419659246 -0.0163165219752076" />
+            <mass value="0.0163435127658012" />
+            <inertia ixx="2.35338373719888E-06" ixy="-4.4210418009567E-09" ixz="1.38024261681812E-07" iyy="2.40973096927305E-06" iyz="-2.82215020077362E-08" izz="9.69758896639509E-07" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index3.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index3.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Left Ring, link dummy 0 -->
+    <link name="Body_LF31_dummy">
+        <inertial>
+            <origin rpy="0 0 0" xyz="4.08082421144568E-06 -0.0103654579068141 -0.0223572146583746" />
+            <mass value="0.0209635645691505" />
+            <inertia ixx="5.79877083007342E-06" ixy="-3.61896654972963E-09" ixz="2.45166522675331E-07" iyy="6.02432212425641E-06" iyz="1.21167394757334E-09" izz="1.78245355770108E-06" />
+        </inertial>
+    </link>
+
+    <!-- Left Ring, link 1 -->
+    <link name="Body_LF31">
+        <inertial>
+            <origin rpy="0 0 0" xyz="4.08082421144568E-06 -0.0103654579068141 -0.0223572146583746" />
+            <mass value="0.0209635645691505" />
+            <inertia ixx="5.79877083007342E-06" ixy="-3.61896654972963E-09" ixz="2.45166522675331E-07" iyy="6.02432212425641E-06" iyz="1.21167394757334E-09" izz="1.78245355770108E-06" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+        </collision>
+    </link>
+ 
+    <!-- Left Ring, link 2 -->
+    <link name="Body_LF32">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000130946971760824 0.000226771833385403 -0.0135375370531412" />
+            <mass value="0.0121177256078384" />
+            <inertia ixx="2.50372945957958E-06" ixy="-2.32805891508231E-09" ixz="5.14105106916585E-08" iyy="2.26813369660349E-06" iyz="-4.92964124837522E-09" izz="1.22101156825522E-06" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index2.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index2.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Left Ring, link 3 -->
+    <link name="Body_LF33">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000169386130301579 0.000356898419659246 -0.0163165219752076" />
+            <mass value="0.0163435127658012" />
+            <inertia ixx="2.35338373719888E-06" ixy="-4.4210418009567E-09" ixz="1.38024261681812E-07" iyy="2.40973096927305E-06" iyz="-2.82215020077362E-08" izz="9.69758896639509E-07" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index3.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index3.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Left Pinky, link dummy 0 -->
+    <link name="Body_LF41_dummy">
+        <inertial>
+            <origin rpy="0 0 0" xyz="4.08082421144568E-06 -0.0103654579068141 -0.0223572146583746" />
+            <mass value="0.0209635645691505" />
+            <inertia ixx="5.79877083007342E-06" ixy="-3.61896654972963E-09" ixz="2.45166522675331E-07" iyy="6.02432212425641E-06" iyz="1.21167394757334E-09" izz="1.78245355770108E-06" />
+        </inertial>
+    </link>
+
+    <!-- Left Pinky, link 1 -->
+    <link name="Body_LF41">
+        <inertial>
+            <origin rpy="0 0 0" xyz="4.08082421144568E-06 -0.0103654579068141 -0.0223572146583746" />
+            <mass value="0.0209635645691505" />
+            <inertia ixx="5.79877083007342E-06" ixy="-3.61896654972963E-09" ixz="2.45166522675331E-07" iyy="6.02432212425641E-06" iyz="1.21167394757334E-09" izz="1.78245355770108E-06" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index3.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index3.dae" />
+            </geometry>
+        </collision>
+    </link>
+ 
+    <!-- Left Pinky, link 2 -->
+    <link name="Body_LF42">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000130946971760824 0.000226771833385403 -0.0135375370531412" />
+            <mass value="0.0121177256078384" />
+            <inertia ixx="2.50372945957958E-06" ixy="-2.32805891508231E-09" ixz="5.14105106916585E-08" iyy="2.26813369660349E-06" iyz="-4.92964124837522E-09" izz="1.22101156825522E-06" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/pinky2.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/pinky2.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Left Pinky, link 3 -->
+    <link name="Body_LF43">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000169386130301579 0.000356898419659246 -0.0163165219752076" />
+            <mass value="0.0163435127658012" />
+            <inertia ixx="2.35338373719888E-06" ixy="-4.4210418009567E-09" ixz="1.38024261681812E-07" iyy="2.40973096927305E-06" iyz="-2.82215020077362E-08" izz="9.69758896639509E-07" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index3.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index3.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+
+    <!-- Left Thumb, link dummy 0 -->
+    <link name="Body_LT1_dummy">
+        <inertial>
+            <origin rpy="0 0 0" xyz="4.08082421144568E-06 -0.0103654579068141 -0.0223572146583746" />
+            <mass value="0.0209635645691505" />
+            <inertia ixx="5.79877083007342E-06" ixy="-3.61896654972963E-09" ixz="2.45166522675331E-07" iyy="6.02432212425641E-06" iyz="1.21167394757334E-09" izz="1.78245355770108E-06" />
+        </inertial>
+    </link>
+
+    <!-- Left Thumb, link 1 -->
+    <link name="Body_LT1">
+        <inertial>
+            <origin rpy="0 0 0" xyz="4.08082421144568E-06 -0.0103654579068141 -0.0223572146583746" />
+            <mass value="0.0209635645691505" />
+            <inertia ixx="5.79877083007342E-06" ixy="-3.61896654972963E-09" ixz="2.45166522675331E-07" iyy="6.02432212425641E-06" iyz="1.21167394757334E-09" izz="1.78245355770108E-06" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/thumb1.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/thumb1.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Left Thumb, link 2 dummy -->
+    <link name="Body_LT2_dummy">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000130946971760824 0.000226771833385403 -0.0135375370531412" />
+            <mass value="0.0121177256078384" />
+            <inertia ixx="2.50372945957958E-06" ixy="-2.32805891508231E-09" ixz="5.14105106916585E-08" iyy="2.26813369660349E-06" iyz="-4.92964124837522E-09" izz="1.22101156825522E-06" />
+        </inertial>
+    </link>
+ 
+    <!-- Left Thumb, link 2 -->
+    <link name="Body_LT2">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000130946971760824 0.000226771833385403 -0.0135375370531412" />
+            <mass value="0.0121177256078384" />
+            <inertia ixx="2.50372945957958E-06" ixy="-2.32805891508231E-09" ixz="5.14105106916585E-08" iyy="2.26813369660349E-06" iyz="-4.92964124837522E-09" izz="1.22101156825522E-06" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Left Thumb, link 3 -->
+    <link name="Body_LT3">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.000169386130301579 0.000356898419659246 -0.0163165219752076" />
+            <mass value="0.0163435127658012" />
+            <inertia ixx="2.35338373719888E-06" ixy="-4.4210418009567E-09" ixz="1.38024261681812E-07" iyy="2.40973096927305E-06" iyz="-2.82215020077362E-08" izz="9.69758896639509E-07" />
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <mesh filename="../meshes/index1.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Left Palm Joint -->
+    <joint name="LWR_dummy" type="floating">
+        <origin rpy="0 0 0" xyz="0 0 0" />
+        <parent link="world" />
+        <child link="leftPalm" />
+    </joint>
+
+    <!-- Index Roll 1 -->
+    <joint name="LF11d" type="revolute">
+        <origin rpy="0 0 0" xyz="0 -0.02738 0.09525" />
+        <parent link="leftPalm" />
+        <child link="Body_LF11_dummy" />
+        <axis xyz="1 0 0" />
+        <limit effort="10.0" lower="-0.8" upper="0.8" velocity="2.0" />
+    </joint>
+
+    <!-- Index Pitch 1 -->
+    <joint name="LF11" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0" />
+        <parent link="Body_LF11_dummy" />
+        <child link="Body_LF11" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+    <!-- Index Pitch 2 -->
+    <joint name="LF12" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0.0254" />
+        <parent link="Body_LF11" />
+        <child link="Body_LF12" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+    <!-- Index Pitch 3 -->
+    <joint name="LF13" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0.022225" />
+        <parent link="Body_LF12" />
+        <child link="Body_LF13" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+
+    <!-- Middle Roll 1 -->
+    <joint name="LF21d" type="revolute">
+        <origin rpy="0 0 0" xyz="0 -0.009128 0.09525" />
+        <parent link="leftPalm" />
+        <child link="Body_LF21_dummy" />
+        <axis xyz="1 0 0" />
+        <limit effort="10.0" lower="-0.8" upper="0.8" velocity="2.0" />
+    </joint>
+
+    <!-- Middle Pitch 1 -->
+    <joint name="LF21" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0" />
+        <parent link="Body_LF21_dummy" />
+        <child link="Body_LF21" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+    <!-- Middle Pitch 2 -->
+    <joint name="LF22" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0.0254" />
+        <parent link="Body_LF21" />
+        <child link="Body_LF22" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+    <!-- Middle Pitch 3 -->
+    <joint name="LF23" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0.0254" />
+        <parent link="Body_LF22" />
+        <child link="Body_LF23" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+    <!-- Ring Roll 1 -->
+    <joint name="LF31d" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0.009128 0.09525" />
+        <parent link="leftPalm" />
+        <child link="Body_LF31_dummy" />
+        <axis xyz="1 0 0" />
+        <limit effort="10.0" lower="-0.8" upper="0.8" velocity="2.0" />
+    </joint>
+
+    <!-- Ring Pitch 1 -->
+    <joint name="LF31" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0" />
+        <parent link="Body_LF31_dummy" />
+        <child link="Body_LF31" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+    <!-- Ring Pitch 2 -->
+    <joint name="LF32" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0.0254" />
+        <parent link="Body_LF31" />
+        <child link="Body_LF32" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+    <!-- Ring Pitch 3 -->
+    <joint name="LF33" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0.022225" />
+        <parent link="Body_LF32" />
+        <child link="Body_LF33" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+
+    <!-- Pinky Roll 1 -->
+    <joint name="LF41d" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0.02738 0.09525" />
+        <parent link="leftPalm" />
+        <child link="Body_LF41_dummy" />
+        <axis xyz="1 0 0" />
+        <limit effort="10.0" lower="-0.8" upper="0.8" velocity="2.0" />
+    </joint>
+
+    <!-- Pinky Pitch 1 -->
+    <joint name="LF41" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0" />
+        <parent link="Body_LF41_dummy" />
+        <child link="Body_LF41" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+    <!-- Pinky Pitch 2 -->
+    <joint name="LF42" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0.01905" />
+        <parent link="Body_LF41" />
+        <child link="Body_LF42" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+    <!-- Pinky Pitch 3 -->
+    <joint name="LF43" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0.015875" />
+        <parent link="Body_LF42" />
+        <child link="Body_LF43" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+
+    <!-- Thumb Roll 1 -->
+    <joint name="LT1d" type="revolute">
+        <origin rpy="0 0 0" xyz="0 -0.02738 0.0254" />
+        <parent link="leftPalm" />
+        <child link="Body_LT1_dummy" />
+        <axis xyz="1 0 0" />
+        <limit effort="10.0" lower="-1.57" upper="1.57" velocity="2.0" />
+    </joint>
+
+    <!-- Thumb Yaw 1 -->
+    <joint name="LT1" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0" />
+        <parent link="Body_LT1_dummy" />
+        <child link="Body_LT1" />
+        <axis xyz="0 0 1" />
+        <limit effort="10.0" lower="-0.2" upper="2.618" velocity="2.0" />
+    </joint>
+
+    <!-- Thumb Roll 2 -->
+    <joint name="LT2d" type="revolute">
+        <origin rpy="0.7853925 0 0" xyz="0 -0.026940768 0.026940768" />
+        <parent link="Body_LT1" />
+        <child link="Body_LT2_dummy" />
+        <axis xyz="1 0 0" />
+        <limit effort="10.0" lower="-0.8" upper="0.8" velocity="2.0" />
+    </joint>
+
+
+    <!-- Thumb Pitch 2 -->
+    <joint name="LT2" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0" />
+        <parent link="Body_LT2_dummy" />
+        <child link="Body_LT2" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+    <!-- Thumb Pitch 3 -->
+    <joint name="LT3" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0.0254" />
+        <parent link="Body_LT2" />
+        <child link="Body_LT3" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.2" upper="1.5708" velocity="2.0" />
+    </joint>
+
+
+
+</robot>
