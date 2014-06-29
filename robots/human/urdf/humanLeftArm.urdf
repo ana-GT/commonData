@@ -201,7 +201,7 @@
 			</inertial>
 			
 			<visual>
-				<origin xyz="0 0 0" rpy="0 0 3.1416" />
+				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
 					<mesh filename="../meshes/wristLeft.dae" />
 				</geometry>
@@ -211,7 +211,7 @@
 			</visual>
 			
 			<collision>
-				<origin xyz="0 0 0" rpy="0 0 3.1416" />
+				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
 					<mesh filename="../meshes/wristLeft.dae" />
 				</geometry>

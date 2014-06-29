@@ -1,0 +1,20 @@
+<world name="humanBody_test_world">
+
+  <include filename="../../robots/human/urdf/humanBody.urdf" model_name="humanBody"/> 
+  <include filename="../../robots/human/urdf/humanRightArm.urdf" model_name="humanRightArm"/> 
+  <include filename="../../robots/human/urdf/humanLeftArm.urdf" model_name="humanLeftArm"/> 
+
+  <entity model="humanBody" name="humanBody">
+    <origin xyz="0.0 0.0 0.9" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="humanRightArm" name="humanRightArm">
+    <origin xyz="0.0 0.0 0.9" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="humanLeftArm" name="humanLeftArm">
+    <origin xyz="0.0 0.0 0.9" rpy="0 0 0"/>
+  </entity>
+
+
+</world>

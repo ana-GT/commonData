@@ -1,0 +1,106 @@
+<world name="handover_crichton_human_world">
+
+  <!-- Crichton -->
+  <include filename="../../robots/lwa4d/urdf/lwa4d_left.urdf" model_name="lwa4d_left"/> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_right.urdf" model_name="lwa4d_right"/> 
+  <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
+
+  <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>
+  <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/> 
+
+  <!-- Human -->
+  <include filename="../../robots/human/urdf/humanBody.urdf" model_name="humanBody"/> 
+  <include filename="../../robots/human/urdf/humanRightArm.urdf" model_name="humanRightArm"/> 
+  <include filename="../../robots/human/urdf/humanLeftArm.urdf" model_name="humanLeftArm"/> 
+  <include filename="../../robots/human/urdf/humanLeftHand.urdf" model_name="humanLeftHand"/> 
+  <include filename="../../robots/human/urdf/humanRightHand.urdf" model_name="humanRightHand"/> 
+
+
+  <!-- Table -->
+  <include filename="../../objects/LWA4_table/urdf/LWA4_table.urdf" model_name="table"/>
+
+  <include filename="../../objects/wineBottle_1/urdf/wineBottle_1.urdf" model_name="wineBottle"/>
+  <include filename="../../objects/tetrapak/urdf/tetrapak.urdf" model_name="tetrapak"/> 
+  <include filename="../../objects/cups/urdf/coffeeCup.urdf" model_name="coffeeCup"/> 
+  <include filename="../../objects/utilityCart/urdf/utilityCart.urdf" model_name="cart"/> 
+
+
+  <!-- Human in world -->
+  <entity model="humanBody" name="humanBody">
+    <origin xyz="1.18 -0.90 0.98" rpy="0 0 2.6"/>
+  </entity>
+
+  <entity model="humanLeftArm" name="humanLeftArm">
+    <origin xyz="1.18 -0.90 0.984" rpy="0 0 2.6"/>
+  </entity>
+
+  <entity model="humanRightArm" name="humanRightArm">
+    <origin xyz="1.18 -0.90 0.984" rpy="0 0 2.6"/>
+  </entity>
+
+  <entity model="humanLeftHand" name="humanLeftHand">
+    <origin xyz="1.18 0.90 0.3" rpy="0 0 2.6"/>
+  </entity>
+
+  <entity model="humanRightHand" name="humanRightHand">
+    <origin xyz="1.18 -0.90 0.3" rpy="0 0 2.6"/>
+  </entity>
+
+
+
+  <!-- Crichton -->
+  <entity model="base" name="base">
+    <origin xyz="-0.45 -0.45 0.01" rpy="+0 0 0"/>
+  </entity>
+
+  <entity model="mid" name="mid">
+    <origin xyz="0.01 0.01 1.23" rpy="0 0 0"/>
+  </entity>
+
+
+  <entity model="lwa4d_left" name="crichtonLeftArm">
+    <origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="lwa4d_right" name="crichtonRightArm">
+    <origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="crichtonLeftHand">
+    <origin xyz="0.6 0.6625 +0.5" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="crichtonRightHand">
+    <origin xyz="0.6 -0.6625 +0.5" rpy="0 0 0"/>
+  </entity>
+
+
+  <!-- Table -->
+ <entity model="table" name="table_1">
+    <origin xyz="0.20 -0.91 0.02" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="wineBottle" name="wineBottle">
+    <origin xyz="0.50 -0.20 0.88" rpy="0 0 -1.57"/>
+  </entity>
+
+
+  <entity model="tetrapak" name="tetrapak">
+    <origin xyz="0.35 -0.80 0.82" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="coffeeCup" name="coffeeCup">
+    <origin xyz="0.50 -0.67 0.78" rpy="1.57 0 0"/>
+  </entity>
+
+  <entity model="cart" name="cartRight">
+    <origin xyz="-0.80 0.48 0.01" rpy="0 0 0"/>
+  </entity>
+
+
+  <entity model="cart" name="cartLeft">
+    <origin xyz="-0.80 -1.05 0.01" rpy="0 0 0"/>
+  </entity>
+
+
+</world>
