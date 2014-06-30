@@ -1,0 +1,37 @@
+<world name="crichton_grasPrim_test_world">
+
+  <!-- Crichton -->
+  <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
+
+  <!-- Table and objects on top -->
+  <include filename="../../objects/LWA4_table/urdf/LWA4_table.urdf" model_name="table"/>
+
+  <include filename="../../objects/book/urdf/book.urdf" model_name="book"/>
+  <include filename="../../objects/tetrapak/urdf/tetrapak.urdf" model_name="tetrapak"/>
+  <include filename="../../objects/wineBottle_1/urdf/wineBottle_1.urdf" model_name="bottle"/>
+
+  <!-- Crichton -->
+  <entity model="sdh" name="sdh">
+    <origin xyz="1.18 0.0 +1.20" rpy="0 0 0"/>
+  </entity>
+
+  <!-- Table -->
+ <entity model="table" name="table_1">
+    <origin xyz="0.20 -0.91 0.02" rpy="0 0 0"/>
+  </entity>
+
+  <!-- Objects -->
+ <entity model="book" name="book">
+    <origin xyz="0.20 -0.50 1.25" rpy="0 0 0"/>
+  </entity>
+
+ <entity model="tetrapak" name="tetrapak">
+    <origin xyz="0.20 0.0 1.25" rpy="0 0 0"/>
+  </entity>
+
+ <entity model="bottle" name="bottle">
+    <origin xyz="0.20 0.50 1.25" rpy="0 0 0"/>
+  </entity>
+
+
+</world>
