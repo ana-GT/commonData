@@ -89,7 +89,7 @@
         <parent link="Body_LF11" />
         <child link="Body_LF12" />
         <axis xyz="0 1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <limit effort="10.0" lower="0.1" upper="1.5" velocity="2.0" />
     </joint>
     <link name="Body_LF13">
         <inertial>
@@ -118,7 +118,7 @@
         <parent link="Body_LF12" />
         <child link="Body_LF13" />
         <axis xyz="0 1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <limit effort="10.0" lower="0.1" upper="1.5" velocity="2.0" />
     </joint>
 
 
@@ -178,7 +178,7 @@
         <parent link="Body_LF21" />
         <child link="Body_LF22" />
         <axis xyz="0 1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <limit effort="10.0" lower="0.1" upper="1.5" velocity="2.0" />
     </joint>
     <link name="Body_LF23">
         <inertial>
@@ -207,7 +207,7 @@
         <parent link="Body_LF22" />
         <child link="Body_LF23" />
         <axis xyz="0 1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <limit effort="10.0" lower="0.1" upper="1.5" velocity="2.0" />
     </joint>
 
 
@@ -237,7 +237,7 @@
         <origin rpy="0 0 3.141592653589" xyz="-0.0230 -0.0105 -0.0755" />
         <parent link="leftPalm" />
         <child link="Body_LF31" />
-        <axis xyz="0 -1 0" />
+        <axis xyz="0 1 0" />
         <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
     </joint>
     <link name="Body_LF32">
@@ -266,7 +266,8 @@
         <origin rpy="0 0 0" xyz="-0.0020 -0.0105 -0.0420" />
         <parent link="Body_LF31" />
         <child link="Body_LF32" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.1" upper="1.5" velocity="2.0" />
     </joint>
     <link name="Body_LF33">
         <inertial>
@@ -294,8 +295,8 @@
         <origin rpy="0 0 0" xyz="-0.0014 0 -0.0300" />
         <parent link="Body_LF32" />
         <child link="Body_LF33" />
-        <axis xyz="0 -1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.1" upper="1.5" velocity="2.0" />
     </joint>
  
 </robot>
