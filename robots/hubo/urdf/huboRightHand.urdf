@@ -312,14 +312,14 @@
         <parent link="Body_RF11" />
         <child link="Body_RF12" />
         <axis xyz="0 1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <limit effort="10.0" lower="0.1" upper="1.5" velocity="2.0" />
     </joint>
     <joint name="RF13" type="revolute">
         <origin rpy="-0 0 -0" xyz="-0.0014 -0 -0.0300" />
         <parent link="Body_RF12" />
         <child link="Body_RF13" />
         <axis xyz="0 1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <limit effort="10.0" lower="0.1" upper="1.5" velocity="2.0" />
     </joint>
  
     <joint name="RF21" type="revolute">
@@ -334,56 +334,56 @@
         <parent link="Body_RF21" />
         <child link="Body_RF22" />
         <axis xyz="0 1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <limit effort="10.0" lower="0.1" upper="1.5" velocity="2.0" />
     </joint>
     <joint name="RF23" type="revolute">
         <origin rpy="-0 0 -0" xyz="-0.0014 -0 -0.0300" />
         <parent link="Body_RF22" />
         <child link="Body_RF23" />
         <axis xyz="0 1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <limit effort="10.0" lower="0.1" upper="1.5" velocity="2.0" />
     </joint>
 
     <joint name="RF31" type="revolute">
         <origin rpy="-0 0 -3.141592653589" xyz="-0.023 0.0105 -0.0755" />
         <parent link="rightPalm" />
         <child link="Body_RF31" />
-        <axis xyz="0 -1 0" />
+        <axis xyz="0 1 0" />
         <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
     </joint>
     <joint name="RF32" type="revolute">
         <origin rpy="0 0 0" xyz="-0.0020 0.0105 -0.0420" />
         <parent link="Body_RF31" />
         <child link="Body_RF32" />
-        <axis xyz="0 -1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.1" upper="1.5" velocity="2.0" />
     </joint>
     <joint name="RF33" type="revolute">
         <origin rpy="-0 0 -0" xyz="-0.0014 -0 -0.0300" />
         <parent link="Body_RF32" />
         <child link="Body_RF33" />
-        <axis xyz="0 -1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.1" upper="1.5" velocity="2.0" />
     </joint>
     <joint name="RF41" type="revolute">
         <origin rpy="-0 0 -3.141592653589" xyz="-0.0230 0.0555 -0.0755" />
         <parent link="rightPalm" />
         <child link="Body_RF41" />
-        <axis xyz="0 -1 0" />
+        <axis xyz="0 1 0" />
         <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
     </joint>
     <joint name="RF42" type="revolute">
         <origin rpy="-0 0 -0" xyz="-0.002 0.0105 -0.0420" />
         <parent link="Body_RF41" />
         <child link="Body_RF42" />
-        <axis xyz="0 -1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.1" upper="1.5" velocity="2.0" />
     </joint>
     <joint name="RF43" type="revolute">
         <origin rpy="-0 0 -0" xyz="-0.0014 -0 -0.0300" />
         <parent link="Body_RF42" />
         <child link="Body_RF43" />
-        <axis xyz="0 -1 0" />
-        <limit effort="10.0" lower="-1.5" upper=".1" velocity="2.0" />
+        <axis xyz="0 1 0" />
+        <limit effort="10.0" lower="-0.1" upper="1.5" velocity="2.0" />
     </joint>
 </robot>
