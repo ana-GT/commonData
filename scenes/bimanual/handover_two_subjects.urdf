@@ -16,6 +16,9 @@
   <include filename="../../robots/hubo/urdf/huboLeftHand.urdf" model_name="huboLeftHand"/> 
   <include filename="../../robots/hubo/urdf/huboRightHand.urdf" model_name="huboRightHand"/> 
 
+  <!-- Marker -->
+  <include filename="../../objects/basicShapes/urdf/ball_01.urdf" model_name="marker"/>
+
 
   <!-- Table -->
   <include filename="../../objects/LWA4_table/urdf/LWA4_table.urdf" model_name="table"/>
@@ -24,6 +27,14 @@
   <include filename="../../objects/tetrapak/urdf/tetrapak.urdf" model_name="tetrapak"/> 
   <include filename="../../objects/cups/urdf/coffeeCup.urdf" model_name="coffeeCup"/> 
   <include filename="../../objects/utilityCart/urdf/utilityCart.urdf" model_name="cart"/> 
+
+  <!-- Butler -->
+  <include filename="../../objects/kitchenUtensils/urdf/basic_tray.urdf" model_name="tray"/>
+
+  <entity model="marker" name="marker">
+    <origin xyz="0.50 0.50 1.05" rpy="0 0 0"/>
+  </entity>
+
 
 
   <!-- Hubo in world -->
@@ -47,6 +58,9 @@
     <origin xyz="1.18 -0.90 0.3" rpy="0 0 2.6"/>
   </entity>
 
+  <entity model="tray" name="tray">
+    <origin xyz="1.18 -0.90 0.3" rpy="0 0 0"/>
+  </entity>
 
 
   <!-- Crichton -->
