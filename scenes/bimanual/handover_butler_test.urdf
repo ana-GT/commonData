@@ -16,10 +16,6 @@
   <include filename="../../robots/hubo/urdf/huboLeftHand.urdf" model_name="huboLeftHand"/> 
   <include filename="../../robots/hubo/urdf/huboRightHand.urdf" model_name="huboRightHand"/> 
 
-  <!-- Marker -->
-  <include filename="../../objects/basicShapes/urdf/ball_01.urdf" model_name="marker"/>
-
-
   <!-- Table -->
   <include filename="../../objects/LWA4_table/urdf/LWA4_table.urdf" model_name="table"/>
 
@@ -30,11 +26,6 @@
 
   <!-- Butler -->
   <include filename="../../objects/kitchenUtensils/urdf/basic_tray.urdf" model_name="tray"/>
-
-  <entity model="marker" name="marker">
-    <origin xyz="0.50 0.50 1.05" rpy="0 0 0"/>
-  </entity>
-
 
 
   <!-- Hubo in world -->
