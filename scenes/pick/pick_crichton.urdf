@@ -52,7 +52,7 @@
   </entity>
 
   <entity model="cup" name="cup">
-    <origin xyz="0.50 0 0.88" rpy="3.14157 0 0"/>
+    <origin xyz="0.50 0 0.77" rpy="3.14157 0 0"/>
   </entity>
 
 
