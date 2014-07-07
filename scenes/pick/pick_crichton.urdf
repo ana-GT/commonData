@@ -1,8 +1,8 @@
 <world name="crichton_pick_test">
 
   <!-- Crichton -->
-  <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys_fixed.urdf" model_name="lwa4d_left"/> 
-  <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys_fixed.urdf" model_name="lwa4d_right"/> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys.urdf" model_name="lwa4d_left"/> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys.urdf" model_name="lwa4d_right"/> 
   <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
 
   <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>

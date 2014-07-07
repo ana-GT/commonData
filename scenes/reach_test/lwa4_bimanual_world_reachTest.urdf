@@ -1,12 +1,13 @@
 <world name="bimanual_world">
 
-  <include filename="../../robots/lwa4d/urdf/lwa4d_left.urdf" model_name="lwa4d_left"/> 
-  <include filename="../../robots/lwa4d/urdf/lwa4d_right.urdf" model_name="lwa4d_right"/> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys.urdf" model_name="lwa4d_left"/> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys.urdf" model_name="lwa4d_right"/> 
+  <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
 
-  
   <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>
   <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/> 
 
+  <!-- Crichton -->
   <entity model="base" name="base">
     <origin xyz="-0.45 -0.45 0.01" rpy="+0 0 0"/>
   </entity>
@@ -21,7 +22,15 @@
   </entity>
 
   <entity model="lwa4d_right" name="crichtonRightArm">
-    <origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 +1.23" rpy="0 0 3.14157"/>
+  </entity>
+
+  <entity model="sdh" name="crichtonLeftHand">
+    <origin xyz="0.6 0.6625 +4.5" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="crichtonRightHand">
+    <origin xyz="0.6 -0.6625 +4.5" rpy="0 0 0"/>
   </entity>
 
 </world>
