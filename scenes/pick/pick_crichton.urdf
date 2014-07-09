@@ -10,12 +10,12 @@
 
 
   <!-- Table -->
-  <include filename="../../objects/LWA4_table/urdf/LWA4_table.urdf" model_name="table"/>
+  <include filename="../../objects/LWA4_table/urdf/LWA4_table_wall_MARKER.urdf" model_name="table"/>
 
   <include filename="../../objects/kitchenUtensils/urdf/green_cup.urdf" model_name="cup"/>
   <include filename="../../objects/tetrapak/urdf/tetrapak.urdf" model_name="tetrapak"/> 
   <include filename="../../objects/cups/urdf/coffeeCup.urdf" model_name="coffeeCup"/> 
-  <include filename="../../objects/utilityCart/urdf/utilityCart.urdf" model_name="cart"/> 
+<!--  <include filename="../../objects/utilityCart/urdf/utilityCart.urdf" model_name="cart"/> -->
 
 
 
@@ -47,8 +47,8 @@
 
 
   <!-- Table -->
- <entity model="table" name="table_1">
-    <origin xyz="0.20 -0.91 0.02" rpy="0 0 0"/>
+ <entity model="table" name="table">
+    <origin xyz="0.80 0.0 0.68" rpy="0 0 0"/>
   </entity>
 
   <entity model="cup" name="cup">
@@ -57,13 +57,14 @@
 
 
   <entity model="tetrapak" name="tetrapak">
-    <origin xyz="0.35 -0.80 0.82" rpy="1.57 0 0"/>
+    <origin xyz="0.35 -0.2 0.82" rpy="0 0 0"/>
   </entity>
 
   <entity model="coffeeCup" name="coffeeCup">
     <origin xyz="0.50 -0.67 0.78" rpy="1.57 0 0"/>
   </entity>
 
+<!--
   <entity model="cart" name="cartRight">
     <origin xyz="-0.80 0.48 0.01" rpy="0 0 0"/>
   </entity>
@@ -72,6 +73,6 @@
   <entity model="cart" name="cartLeft">
     <origin xyz="-0.80 -1.05 0.01" rpy="0 0 0"/>
   </entity>
-
+-->
 
 </world>
