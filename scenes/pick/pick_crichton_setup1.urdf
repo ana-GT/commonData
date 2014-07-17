@@ -1,0 +1,62 @@
+<world name="crichton_pick_test">
+
+  <!-- Crichton -->
+  <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys.urdf" model_name="lwa4d_left"/> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys.urdf" model_name="lwa4d_right"/> 
+  <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
+
+  <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>
+  <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/> 
+
+
+  <!-- Table -->
+  <include filename="../../objects/LWA4_table/urdf/LWA4_table_wall_MARKER.urdf" model_name="table"/>
+
+  <include filename="../../objects/kitchenUtensils/urdf/quakerOats.urdf" model_name="quakerOats"/>
+  <include filename="../../objects/kitchenUtensils/urdf/wheatThins.urdf" model_name="wheatThins"/>
+
+
+  <!-- Crichton -->
+  <entity model="base" name="base">
+    <origin xyz="-0.45 -0.45 0.01" rpy="+0 0 0"/>
+  </entity>
+
+  <entity model="mid" name="mid">
+    <origin xyz="0.01 0.01 1.23" rpy="0 0 0"/>
+  </entity>
+
+
+  <entity model="lwa4d_left" name="crichtonLeftArm">
+    <origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="lwa4d_right" name="crichtonRightArm">
+    <origin xyz="0.0 0.0 +1.23" rpy="0 0 3.14157"/>
+  </entity>
+
+  <entity model="sdh" name="crichtonLeftHand">
+    <origin xyz="0.6 0.6625 +3.0" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="sdh" name="crichtonRightHand">
+    <origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/>
+  </entity>
+
+
+  <!-- Table -->
+ <entity model="table" name="table">
+    <origin xyz="0.80 0.0 0.68" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="wheatThins" name="wheatThins">
+    <origin xyz="0.50 0 0.77" rpy="3.14157 0 0"/>
+  </entity>
+
+
+  <entity model="quakerOats" name="quakerOats">
+    <origin xyz="0.35 -0.2 0.82" rpy="0 0 0"/>
+  </entity>
+
+
+
+</world>
