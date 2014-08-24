@@ -1,0 +1,19 @@
+<world name="alita_world">
+
+  <include filename="../../robots/alita/urdf/alita_left.urdf" model_name="alita_left"/> 
+  <include filename="../../robots/alita/urdf/alita_right.urdf" model_name="alita_right"/> 
+  <include filename="../../objects/furniture/urdf/ladder_stepstool.urdf" model_name="table"/> 
+
+  <entity model="alita_left" name="leftArm">
+    <origin xyz="0.0 0.135 0.5" rpy="1.5708 0 1.5708"/>
+  </entity>
+
+  <entity model="alita_right" name="rightArm">
+    <origin xyz="0.0 -0.135 0.5" rpy="1.5708 0 -1.5708"/>
+  </entity>
+
+  <entity model="table" name="table">
+    <origin xyz="0.8 0.0 0.0" rpy="0 0 0"/>
+  </entity>
+
+</world>
