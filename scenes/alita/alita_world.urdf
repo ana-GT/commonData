@@ -2,18 +2,37 @@
 
   <include filename="../../robots/alita/urdf/alita_left.urdf" model_name="alita_left"/> 
   <include filename="../../robots/alita/urdf/alita_right.urdf" model_name="alita_right"/> 
-  <include filename="../../objects/furniture/urdf/ladder_stepstool.urdf" model_name="table"/> 
+  <include filename="../../objects/furniture/urdf/IKEA_cornerTable.urdf" model_name="table"/> 
+  <include filename="../../robots/alita/urdf/pedestal.urdf" model_name="pedestal"/> 
+  <include filename="../../objects/utils/urdf/wall_alongY.urdf" model_name="wall_back"/> 
+  <include filename="../../objects/utils/urdf/wall_alongX.urdf" model_name="wall_side"/> 
 
   <entity model="alita_left" name="leftArm">
-    <origin xyz="0.0 0.135 0.5" rpy="1.5708 0 1.5708"/>
+    <origin xyz="0.0 0.135 0.77" rpy="1.5708 0 1.5708"/>
   </entity>
 
   <entity model="alita_right" name="rightArm">
-    <origin xyz="0.0 -0.135 0.5" rpy="1.5708 0 -1.5708"/>
+    <origin xyz="0.0 -0.135 0.77" rpy="1.5708 0 -1.5708"/>
+  </entity>
+
+  <entity model="pedestal" name="pedestal">
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
   </entity>
 
   <entity model="table" name="table">
-    <origin xyz="0.8 0.0 0.0" rpy="0 0 0"/>
+    <origin xyz="0.8 0.0 0.46" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="wall_back" name="wall_Back">
+    <origin xyz="-0.45 0 0" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="wall_side" name="wall_Left">
+    <origin xyz="0.10 0.95 0" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="wall_side" name="wall_Right">
+    <origin xyz="0.10 -0.95 0" rpy="0 0 0"/>
   </entity>
 
 </world>
