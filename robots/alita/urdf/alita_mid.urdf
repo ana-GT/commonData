@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<robot name="alita_mid">
+
+	<!-- Links -->
+	<link name = "rootLink"> 
+		<inertial>
+			<mass value="1"/>
+			<inertia ixx="0.102" ixy="2.45e-05" ixz="0.00713" iyy="0.0832" iyz="-0.00131" izz="0.0864"/>
+			<origin xyz="0.006575 -0.160104 0"/>
+		</inertial>
+		<visual> 
+			<geometry> 	<cylinder length="0.05" radius="0.025" /> </geometry> 
+		</visual> 
+		<collision>
+			<geometry> 	<cylinder length="0.05" radius="0.025" /> </geometry> 
+		</collision> 
+	</link>
+
+
+
+</robot>

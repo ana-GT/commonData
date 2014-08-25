@@ -2,6 +2,7 @@
 
   <include filename="../../robots/alita/urdf/alita_left.urdf" model_name="alita_left"/> 
   <include filename="../../robots/alita/urdf/alita_right.urdf" model_name="alita_right"/>
+  <include filename="../../robots/alita/urdf/alita_mid.urdf" model_name="alita_mid"/>
 
   <include filename="../../robots/alita/urdf/alita_hand.urdf" model_name="alita_hand"/> 
  
@@ -10,19 +11,25 @@
   <include filename="../../objects/utils/urdf/wall_alongY.urdf" model_name="wall_back"/> 
   <include filename="../../objects/utils/urdf/wall_alongX.urdf" model_name="wall_side"/> 
 
-  <entity model="alita_left" name="leftArm">
+  <include filename="../../objects/kitchenUtensils/urdf/wheatThins.urdf" model_name="wheatThins"/> 
+
+  <entity model="alita_left" name="alitaLeftArm">
     <origin xyz="0.0 0.135 0.77" rpy="1.5708 0 1.5708"/>
   </entity>
 
-  <entity model="alita_right" name="rightArm">
+  <entity model="alita_right" name="alitaRightArm">
     <origin xyz="0.0 -0.135 0.77" rpy="1.5708 0 -1.5708"/>
   </entity>
 
-  <entity model="alita_hand" name="leftHand">
-    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <entity model="alita_mid" name="alita_mid">
+    <origin xyz="0.0 0.0 0.77" rpy="0 0 0"/>
   </entity>
 
-  <entity model="alita_hand" name="rightHand">
+  <entity model="alita_hand" name="alitaLeftHand">
+    <origin xyz="0.0 1.15 0.77" rpy="-1.57 0 -1.57"/>
+  </entity>
+
+  <entity model="alita_hand" name="alitaRightHand">
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </entity>
 
@@ -32,16 +39,20 @@
   </entity>
 
   <entity model="table" name="table">
-    <origin xyz="0.8 0.0 0.46" rpy="0 0 0"/>
+    <origin xyz="0.6 0.0 0.46" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="wheatThins" name="wheatThins">
+    <origin xyz="0.5 0.0 0.7" rpy="0 0 0"/>
   </entity>
 
   <entity model="wall_back" name="wall_Back">
     <origin xyz="-0.45 0 0" rpy="0 0 0"/>
   </entity>
 
-  <entity model="wall_side" name="wall_Left">
+<!--  <entity model="wall_side" name="wall_Left">
     <origin xyz="0.10 0.95 0" rpy="0 0 0"/>
-  </entity>
+  </entity> -->
 
   <entity model="wall_side" name="wall_Right">
     <origin xyz="0.10 -0.95 0" rpy="0 0 0"/>

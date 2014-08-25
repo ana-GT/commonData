@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
 
-<robot name="alita_left">
+<robot name="alita_hand">
 
 	<!-- Links -->
 	<link name = "world"/> 
 
-	<link name = "gripper"> 
+	<link name = "alita_palm"> 
 		<inertial>
 			<mass value="2.3"/>
 			<inertia ixx="0.102" ixy="2.45e-05" ixz="0.00713" iyy="0.0832" iyz="-0.00131" izz="0.0864"/>
@@ -75,19 +75,19 @@
 	<!-- For some reason, I had to negate the axis to make sure the motor turns like the others -->
 	<joint name="LJFT" type="floating"> 
 		<parent link="world" /> 
-		<child link="gripper" />
+		<child link="alita_palm" />
 		<origin xyz="0 0 0" rpy="0 0 0" />
 	</joint>
 
 	<joint name="LJFA" type="prismatic"> 
-		<parent link="gripper" /> 
+		<parent link="alita_palm" /> 
 		<child link="fingerA" />
 		<origin xyz="-0.05 0.00 0.127" rpy="3.1416 0.0 0.0" />
 		<axis xyz="1 0 0" /> <limit effort="1000" lower="0.0" upper="0.030" velocity="0.1" />
 	</joint>
 
 	<joint name="LJFB" type="prismatic"> 
-		<parent link="gripper" /> 
+		<parent link="alita_palm" /> 
 		<child link="fingerB" />
 		<origin xyz="0.050 -0.00 0.127" rpy="0 3.1416 0.0" />
 		<axis xyz="1 0 0" /> <limit effort="1000" lower="0.0" upper="0.030" velocity="0.1" />
