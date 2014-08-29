@@ -122,38 +122,38 @@
 		<parent link="R0" /> 
 		<child link="R1" />
 		<origin xyz = "0.18 0.000 0" rpy="0 3.141592 -1.570796" />
-		<axis xyz="0 -1 0" /> <limit effort="1000" lower="-4.7124" upper="4.7124" velocity="0.1" />
+		<axis xyz="0 -1 0" /> <limit effort="1000" lower="-3.14157" upper="3.14157" velocity="0.1" />
 	</joint>
 
 
 	<joint name="RJ2" type="revolute"> <parent link="R1" /> <child link="R2" />
 		<origin xyz="0 0.0 0" rpy="3.141592 3.141592 0" />
-		<axis xyz="-1 0 0" /> <limit effort="1000" lower="-2.094" upper="2.094" velocity="0.1" />
+		<axis xyz="-1 0 0" /> <limit effort="1000" lower="-1.5708" upper="1.5708" velocity="0.1" />
 	</joint>
 
 	<joint name="RJ3" type="revolute"> <parent link="R2" /> <child link="R3" />
 		<origin xyz="0 -0.328 0" rpy="-3.141592 -3.141592 0" />
-		<axis xyz="0 -1 0" /> <limit effort="1000" lower="-4.7124" upper="4.7124" velocity="0.1" />
+		<axis xyz="0 -1 0" /> <limit effort="1000" lower="-3.14157" upper="3.14157" velocity="0.1" />
 	</joint>
 
 	<joint name="RJ4" type="revolute"> <parent link="R3" /> <child link="R4" />
 		<origin xyz="0 0 0" rpy="3.141592 3.141592 0" />
-		<axis xyz="-1 0 0" /> <limit effort="1000" lower="-2.094" upper="2.094" velocity="0.1" />
+		<axis xyz="-1 0 0" /> <limit effort="1000" lower="-1.919" upper="1.919" velocity="0.1" />
 	</joint>
 
 	<joint name="RJ5" type="revolute"> <parent link="R4" /> <child link="R5" />
 		<origin xyz="0 -0.2765 0" rpy="3.141592 3.141592 0" />
-		<axis xyz="0 -1 0" /> <limit effort="1000" lower="-4.7124" upper="4.7124" velocity="0.1" />
+		<axis xyz="0 -1 0" /> <limit effort="1000" lower="-3.14157" upper="3.14157" velocity="0.1" />
 	</joint>
 
 	<joint name="RJ6" type="revolute"> <parent link="R5" /> <child link="R6" />
 		<origin xyz="0 0.0 0" rpy="3.141592 3.141592 0" />
-		<axis xyz="-1 0 0" /> <limit effort="1000" lower="-2.094" upper="2.094" velocity="0.1" />
+		<axis xyz="-1 0 0" /> <limit effort="1000" lower="-1.745" upper="1.745" velocity="0.1" />
 	</joint>
 
 	<joint name="RJFT" type="revolute"> <parent link="R6" /> <child link="R7" />
 		<origin xyz="0 -0.200 0" rpy="1.570796 3.141592 0" />
-		<axis xyz="0 0 -1" /> <limit effort="1000" lower="-4.7124" upper="4.7124" velocity="0.1" />
+		<axis xyz="0 0 -1" /> <limit effort="1000" lower="-3.14157" upper="3.14157" velocity="0.1" />
 	</joint>
 
 </robot>
