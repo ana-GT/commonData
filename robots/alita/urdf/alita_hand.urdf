@@ -29,16 +29,7 @@
 			<geometry> <mesh filename="../meshes/Schunk/SchunkGripper/gripperPlate.dae"/> </geometry> 
 		</visual> 
 		<collision>
-			<origin xyz="-0.032 -0.0035 -0.01185" rpy="0.0 0.0 1.5708"/> 
-			<geometry> <box size="0.07 0.10 0.07"/> </geometry> 
-		</collision> 
-		<collision>
-			<origin xyz="-0.072 -0.0035 0.002" rpy="1.05 0.0 1.5708"/> 
-			<geometry> <box size="0.07 0.10 0.07"/> </geometry> 
-		</collision> 
-		<collision>
-			<origin xyz="-0.0815 -0.0035 0.048" rpy="0.0 0.0 1.5708"/> 
-			<geometry> <box size="0.07 0.10 0.07"/> </geometry> 
+			<geometry> <mesh filename="../meshes/Schunk/SchunkGripper/gripperPlate.dae"/> </geometry> 
 		</collision> 
 	</link> 	
 
@@ -51,20 +42,9 @@
 			<geometry> <mesh filename="../meshes/Schunk/SchunkGripper/gripperPlate.dae"/> </geometry> 
 		</visual> 
 		<collision>
-			<origin xyz="-0.032 -0.0035 -0.01185" rpy="0.0 0.0 1.5708"/> 
-			<!-- <geometry> <box size="0.035 0.07 0.0366"/> </geometry> -->
-			<geometry> <box size="0.07 0.10 0.07"/> </geometry> 
+			<geometry> <mesh filename="../meshes/Schunk/SchunkGripper/gripperPlate.dae"/> </geometry> 
 		</collision> 
-		<collision>
-			<origin xyz="-0.072 -0.0035 0.002" rpy="1.05 0.0 1.5708"/> 
-			<!-- <geometry> <box size="0.035 0.07 0.0366"/> </geometry> -->
-			<geometry> <box size="0.07 0.10 0.07"/> </geometry> 
-		</collision> 
-		<collision>
-			<origin xyz="-0.0815 -0.0035 0.048" rpy="0.0 0.0 1.5708"/> 
-			<!-- <geometry> <box size="0.035 0.07 0.0366"/> </geometry> -->
-			<geometry> <box size="0.07 0.10 0.07"/> </geometry> 
-		</collision> 
+
 	</link> 	
 
 	<!-- *********************-->
