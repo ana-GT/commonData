@@ -1,6 +1,7 @@
 <world name="bimanual_world">
 
-  <include filename="../../robots/lwa4d/urdf/lwa4d.urdf" model_name="lwa4d"/> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys.urdf" model_name="lwa4d_left"/>
+   <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys.urdf" model_name="lwa4d_right"/>
   <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
 
   <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>
@@ -22,16 +23,16 @@
   </entity>
 
 
-  <entity model="lwa4d" name="leftArm">
-    <origin xyz="0.0 -0.0375 +1.23" rpy="+1.57 0 0"/>
+  <entity model="lwa4d_left" name="leftArm">
+    <origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/>
   </entity>
 
   <entity model="sdh" name="leftHand">
     <origin xyz="0.6 -0.6625 +1.23" rpy="0 0 0"/>
   </entity>
 
-  <entity model="lwa4d" name="rightArm">
-    <origin xyz="0.0 0.0375 +1.23" rpy="-1.57 0 0"/>
+  <entity model="lwa4d_right" name="rightArm">
+    <origin xyz="0.0 0.0 +1.23" rpy="0 0 3.14157"/>
   </entity>
 
   <entity model="sdh" name="rightHand">
