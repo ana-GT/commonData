@@ -1,10 +1,19 @@
 <world name="krang_world">
 
-  <include filename="../urdf/robots/Krang.urdf" model_name="krang"/>
+  <include filename="../../robots/Krang/urdf/Krang.urdf" model_name="krang"/>
+  <include filename="../../objects/wineBottle_1/urdf/wineBottle_1.urdf" model_name="wineBottle"/>
+  <include filename="../../objects/furniture/urdf/IKEA_cornerTable.urdf" model_name="table"/> 
 
-  <entity model="krang" name="krang">
-    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <entity model="krang" name="Krang">
+    <origin xyz="0.6 -0.5 0.3" rpy="-2.88 0 0"/>
   </entity>
 
+  <entity model="table" name="table">
+    <origin xyz="0.6 0.0 0.46" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="wineBottle" name="wineBottle">
+    <origin xyz="0.4 0.0 0.68" rpy="0 0 0"/>
+  </entity>
 
 </world>

@@ -492,7 +492,7 @@
 
 	<joint name="JWaist" type="revolute"> <parent link="Base" /> <child link="Spine" />
 		<origin xyz = "0.026 0.499 -0.091" rpy="0 0 0" />
-		<axis xyz="-1 0 0" /> <limit effort="1000" lower="0" upper="2.7" velocity="0.1" />
+		<axis xyz="-1 0 0" /> <limit effort="1000" lower="0" upper="2.88" velocity="0.1" />
 	</joint>
 
 	<joint name="JTorso" type="revolute"> <parent link="Spine" /> <child link="Bracket" />
