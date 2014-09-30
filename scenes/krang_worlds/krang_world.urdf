@@ -1,19 +1,40 @@
 <world name="krang_world">
 
   <include filename="../../robots/Krang/urdf/Krang.urdf" model_name="krang"/>
-  <include filename="../../objects/wineBottle_1/urdf/wineBottle_1.urdf" model_name="wineBottle"/>
-  <include filename="../../objects/furniture/urdf/IKEA_cornerTable.urdf" model_name="table"/> 
+  <include filename="../../objects/wineBottle_1/urdf/wineBottle_nocollision.urdf" model_name="wineBottle"/>
+  <include filename="../../objects/cups/urdf/blueCup.urdf" model_name="wineBottle2"/>
+  <include filename="../../objects/furniture/urdf/IKEA_cornerTable_grey.urdf" model_name="table"/> 
+  <include filename="../../objects/book/urdf/book.urdf" model_name="book"/>
 
   <entity model="krang" name="Krang">
     <origin xyz="0.6 -0.5 0.3" rpy="-2.88 0 0"/>
   </entity>
 
   <entity model="table" name="table">
-    <origin xyz="0.6 0.0 0.46" rpy="0 0 0"/>
+    <origin xyz="0.32 0.05 0.46" rpy="0 0 0"/>
   </entity>
 
   <entity model="wineBottle" name="wineBottle">
-    <origin xyz="0.4 0.0 0.68" rpy="0 0 0"/>
+    <origin xyz="0.4 0.15 0.68" rpy="0 0 0"/>
   </entity>
 
+  <entity model="wineBottle2" name="wineBottle2">
+    <origin xyz="0.3 -0.1 0.68" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="wineBottle2" name="wineBottle2">
+    <origin xyz="0.15 -0.15 0.55" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="book" name="book1">
+    <origin xyz="0.35 -0.14 0.605" rpy="1.57 0 1.87"/>
+  </entity>
+
+  <entity model="book" name="book2">
+    <origin xyz="0.35 -0.15 0.56" rpy="1.57 0 -2.2"/>
+  </entity>
+
+  <entity model="book" name="book3">
+    <origin xyz="0.38 -0.15 0.515" rpy="1.57 0 1.57"/>
+  </entity>
 </world>
