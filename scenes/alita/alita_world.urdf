@@ -56,11 +56,19 @@
   </entity>
 
   <entity model="wall_side" name="wall_Left">
+<<<<<<< HEAD
     <origin xyz="0.12 1.20 0" rpy="0 0 0"/>
   </entity> 
 
   <entity model="wall_side" name="wall_Right">
     <origin xyz="0.12 -1.20 0" rpy="0 0 0"/>
+=======
+    <origin xyz="0.12 1.0 0" rpy="0 0 0"/>
+  </entity> 
+
+  <entity model="wall_side" name="wall_Right">
+    <origin xyz="0.12 -2.0 0" rpy="0 0 0"/>
+>>>>>>> e81e0306ad566a5b9b896c0a9438dd7acd65395f
   </entity>
 
 </world>

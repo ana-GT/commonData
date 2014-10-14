@@ -11,6 +11,8 @@
   <include filename="../../objects/book/urdf/book.urdf" model_name="book"/>
   <include filename="../../objects/tetrapak/urdf/tetrapak.urdf" model_name="tetrapak"/>
   <include filename="../../objects/kitchenUtensils/urdf/green_cup.urdf" model_name="cup"/>
+  <include filename="../../objects/tools/urdf/Hammer.urdf" model_name="hammer"/>
+  <include filename="../../objects/kitchenUtensils/urdf/dogJar.urdf" model_name="jar"/>
   <!-- <include filename="../../objects/wineBottle_1/urdf/wineBottle_1.urdf" model_name="bottle"/> -->
 
   <!-- Hubo hands in world -->
@@ -42,5 +44,12 @@
     <origin xyz="0.20 0.50 1.25" rpy="0 0 0"/>
   </entity>
 
+ <entity model="hammer" name="hammer">
+    <origin xyz="0.80 0.50 1.25" rpy="0 0 0"/>
+  </entity>
+
+ <entity model="jar" name="jar">
+    <origin xyz="0.80 0.0 1.25" rpy="0 0 0"/>
+  </entity>
 
 </world>
