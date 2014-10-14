@@ -9,15 +9,18 @@
 
     <visual>
       <geometry>
-	<cylinder length="0.05" radius="0.025" />
+	<sphere radius="0.01" />
       </geometry>
+      <material name="red">
+        <color rgba="1 0 0 1" />
+      </material>
      </visual>
 
-    <collision>
+<!--    <collision>
       <geometry>
-	<cylinder length="0.05" radius="0.025" />
+	<sphere radius="0.01" />
       </geometry>
-    </collision>
+    </collision> -->
 
   </link>
 </robot>

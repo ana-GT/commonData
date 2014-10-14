@@ -11,8 +11,9 @@
   <include filename="../../objects/utils/urdf/wall_alongY.urdf" model_name="wall_back"/> 
   <include filename="../../objects/utils/urdf/wall_alongX.urdf" model_name="wall_side"/> 
 
-  <include filename="../../objects/whiteRoll/urdf/whiteRoll.urdf" model_name="whiteRoll"/> 
-  <include filename="../../objects/kitchenUtensils/urdf/wheatThins.urdf" model_name="wheatThins"/> 
+  <include filename="../../objects/basicShapes/urdf/ball_01.urdf" model_name="marker"/> 
+
+
 
   <entity model="alita_left" name="alitaLeftArm">
     <origin xyz="0.0 0.135 0.77" rpy="1.5708 0 1.5708"/>
@@ -43,12 +44,8 @@
     <origin xyz="0.6 0.0 0.46" rpy="0 0 0"/>
   </entity>
 
-  <entity model="whiteRoll" name="whiteRoll">
-    <origin xyz="0.5 -0.25 0.65" rpy="0 0 0"/>
-  </entity>
-
-  <entity model="wheatThins" name="wheatThins">
-    <origin xyz="0.5 0.25 0.65" rpy="0 0 0"/>
+  <entity model="marker" name="marker">
+    <origin xyz="0.50 0.15 0.60" rpy="0 0 0"/>
   </entity>
 
   <entity model="wall_back" name="wall_Back">
@@ -64,3 +61,4 @@
   </entity>
 
 </world>
+
