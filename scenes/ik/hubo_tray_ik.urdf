@@ -1,0 +1,41 @@
+<world name="hubo_ik_test">
+
+  <!-- Hubo -->
+  <include filename="../../robots/hubo/urdf/huboWithNoArms.urdf" model_name="huboBody"/> 
+  <include filename="../../robots/hubo/urdf/huboLeftArm.urdf" model_name="huboLeftArm"/> 
+  <include filename="../../robots/hubo/urdf/huboRightArm.urdf" model_name="huboRightArm"/> 
+
+  <include filename="../../robots/hubo/urdf/huboLeftHand.urdf" model_name="huboLeftHand"/> 
+  <include filename="../../robots/hubo/urdf/huboRightHand.urdf" model_name="huboRightHand"/> 
+
+
+  <!-- Butler -->
+  <include filename="../../objects/kitchenUtensils/urdf/basic_tray.urdf" model_name="tray"/>
+
+
+  <!-- Hubo in world -->
+  <entity model="huboBody" name="huboBody">
+    <origin xyz="1.18 -0.90 0.98" rpy="0 0 2.6"/>
+  </entity>
+
+  <entity model="huboLeftArm" name="huboLeftArm">
+    <origin xyz="1.18 -0.90 0.984" rpy="0 0 2.6"/>
+  </entity>
+
+  <entity model="huboRightArm" name="huboRightArm">
+    <origin xyz="1.18 -0.90 0.984" rpy="0 0 2.6"/>
+  </entity>
+
+  <entity model="huboLeftHand" name="huboLeftHand">
+    <origin xyz="1.18 0.90 0.3" rpy="0 0 2.6"/>
+  </entity>
+
+  <entity model="huboRightHand" name="huboRightHand">
+    <origin xyz="1.18 -0.90 0.3" rpy="0 0 2.6"/>
+  </entity>
+
+  <entity model="tray" name="tray">
+    <origin xyz="1.18 -0.90 0.3" rpy="0 0 0"/>
+  </entity>
+
+</world>
