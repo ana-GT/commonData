@@ -1,4 +1,4 @@
-<world name="crichton_pick_test">
+<world name="crichton_pick_pringles">
 
   <!-- Crichton -->
   <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys.urdf" model_name="lwa4d_left"/> 
@@ -12,12 +12,7 @@
   <!-- Table -->
   <include filename="../../objects/LWA4_table/urdf/LWA4_table_wall_MARKER.urdf" model_name="table"/>
 
-  <include filename="../../objects/kitchenUtensils/urdf/green_cup.urdf" model_name="cup"/>
-  <include filename="../../objects/tetrapak/urdf/tetrapak.urdf" model_name="tetrapak"/> 
-  <include filename="../../objects/cups/urdf/coffeeCup.urdf" model_name="coffeeCup"/> 
-<!--  <include filename="../../objects/utilityCart/urdf/utilityCart.urdf" model_name="cart"/> -->
-
-
+  <include filename="../../objects/pringles/urdf/pringles.urdf" model_name="pringles"/> 
 
   <!-- Crichton -->
   <entity model="base" name="base">
@@ -51,28 +46,9 @@
     <origin xyz="0.71 0.11 0.66" rpy="0 0 0"/>
   </entity>
 
-  <entity model="cup" name="cup">
-    <origin xyz="0.50 0 0.77" rpy="3.14157 0 0"/>
+  <entity model="pringles" name="pringles">
+    <origin xyz="0.41 0.0 0.80" rpy="0 0 0"/>
   </entity>
 
-
-  <entity model="tetrapak" name="tetrapak">
-    <origin xyz="0.35 -0.2 0.82" rpy="0 0 0"/>
-  </entity>
-
-  <entity model="coffeeCup" name="coffeeCup">
-    <origin xyz="0.50 -0.53 0.78" rpy="1.57 0 0"/>
-  </entity>
-
-<!--
-  <entity model="cart" name="cartRight">
-    <origin xyz="-0.80 0.48 0.01" rpy="0 0 0"/>
-  </entity>
-
-
-  <entity model="cart" name="cartLeft">
-    <origin xyz="-0.80 -1.05 0.01" rpy="0 0 0"/>
-  </entity>
--->
 
 </world>
