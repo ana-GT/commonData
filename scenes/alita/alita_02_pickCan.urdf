@@ -11,9 +11,6 @@
   <include filename="../../objects/utils/urdf/wall_alongY.urdf" model_name="wall_back"/> 
   <include filename="../../objects/utils/urdf/wall_alongX.urdf" model_name="wall_side"/> 
 
-  <include filename="../../objects/kitchenUtensils/urdf/wheatThins.urdf" model_name="wheatThins"/> 
-  <include filename="../../objects/wineBottle_1/urdf/wineBottle_1.urdf" model_name="wineBottle"/>
-
   <entity model="alita_left" name="alitaLeftArm">
     <origin xyz="0.0 0.135 0.77" rpy="1.5708 0 1.5708"/>
   </entity>
@@ -43,32 +40,18 @@
     <origin xyz="0.6 0.0 0.46" rpy="0 0 0"/>
   </entity>
 
-  <entity model="wheatThins" name="wheatThins">
-    <origin xyz="0.45 0.15 0.62" rpy="0 0 0"/>
-  </entity>
-
-  <entity model="wineBottle" name="wineBottle">
-    <origin xyz="0.7 0.15 0.68" rpy="0 0 0"/>
-  </entity>
 
   <entity model="wall_back" name="wall_Back">
     <origin xyz="-0.40 0 0" rpy="0 0 0"/>
   </entity>
 
   <entity model="wall_side" name="wall_Left">
-<<<<<<< HEAD
     <origin xyz="0.12 1.20 0" rpy="0 0 0"/>
   </entity> 
 
   <entity model="wall_side" name="wall_Right">
     <origin xyz="0.12 -1.20 0" rpy="0 0 0"/>
-=======
-    <origin xyz="0.12 1.0 0" rpy="0 0 0"/>
-  </entity> 
-
-  <entity model="wall_side" name="wall_Right">
-    <origin xyz="0.12 -2.0 0" rpy="0 0 0"/>
->>>>>>> e81e0306ad566a5b9b896c0a9438dd7acd65395f
   </entity>
 
 </world>
+

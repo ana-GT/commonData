@@ -26,10 +26,10 @@
 			<inertia ixx="1e-4" ixy="1e-4" ixz="1e-4" iyy="1e-4" iyz="1e-4" izz="1e-4"/>
 		</inertial>
 		<visual> 
-			<geometry> <mesh filename="../meshes/Schunk/SchunkGripper/gripperPlate.dae"/> </geometry> 
+			<geometry> <mesh filename="../meshes/alita-finger.dae"/> </geometry> 
 		</visual> 
 		<collision>
-			<geometry> <mesh filename="../meshes/Schunk/SchunkGripper/gripperPlate.dae"/> </geometry> 
+			<geometry> <mesh filename="../meshes/alita-finger.dae"/> </geometry> 
 		</collision> 
 	</link> 	
 
@@ -39,10 +39,10 @@
 			<inertia ixx="1e-4" ixy="1e-4" ixz="1e-4" iyy="1e-4" iyz="1e-4" izz="1e-4"/>
 		</inertial>
 		<visual> 
-			<geometry> <mesh filename="../meshes/Schunk/SchunkGripper/gripperPlate.dae"/> </geometry> 
+			<geometry> <mesh filename="../meshes/alita-finger.dae"/> </geometry> 
 		</visual> 
 		<collision>
-			<geometry> <mesh filename="../meshes/Schunk/SchunkGripper/gripperPlate.dae"/> </geometry> 
+			<geometry> <mesh filename="../meshes/alita-finger.dae"/> </geometry> 
 		</collision> 
 
 	</link> 	
