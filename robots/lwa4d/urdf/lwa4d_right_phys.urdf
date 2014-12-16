@@ -8,6 +8,11 @@
 
 <!-- To simulate with left guy, rotate w.r.t. world 180 w.r.t. Z axis -->
 
+<!-- F/T changes -->
+<!-- December 16th, 2014 -->
+<!-- Changed distance from J6 to Jt from 0.075 to 0.1672 (including the F/T + tool changer) -->
+<!-- Distances from Schunk datasheet -->
+
 	<link name="world" />
 
 
@@ -187,7 +192,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_7_link.dae" />
+					<mesh filename="../meshes/arm_7_FT_tool_changers_link.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -195,7 +200,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_7_link.dae"/>
+					<mesh filename="../meshes/arm_7_FT_tool_changers_link.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -276,7 +281,7 @@
 		<!-- J7-->
 
 		<joint name="L7_joint" type="revolute">
-			<origin xyz="0 -0.075 0" rpy="-1.57 0 0" />
+			<origin xyz="0 -0.1672 0" rpy="-1.57 0 0" />
 			<parent link="L6_link"/>
 			<child link="L7_link"/>
 			<axis xyz="0 0 -1" />
