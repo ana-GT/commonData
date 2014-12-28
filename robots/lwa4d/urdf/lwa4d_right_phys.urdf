@@ -220,7 +220,7 @@
 			<child link="L1_link"/>
 			<axis xyz="0 0 1"/>
 			<dynamics damping="10" />
-			<limit effort="370" velocity="2.0" lower="-6.2831853" upper="6.2831853"/>
+			<limit effort="370" velocity="2.0" lower="-3.14157" upper="3.14157"/>
 		</joint>
 
 
@@ -242,7 +242,7 @@
 			<child link="L3_link"/>
 			<axis xyz="0 0 1"/>
 			<dynamics damping="5" />
-			<limit effort="176" velocity="2.0" lower="-6.2831853" upper="6.2831853"/>
+			<limit effort="176" velocity="2.0" lower="-3.14157" upper="3.14157"/>
 		</joint>
 
 
@@ -264,7 +264,7 @@
 			<child link="L5_link"/>
 			<axis xyz="0 0 1" />
 			<dynamics damping="5" />
-			<limit effort="41.6" velocity="2.0" lower="-6.2831853" upper="6.2831853" />
+			<limit effort="41.6" velocity="2.0" lower="-3.14157" upper="3.14157" />
 		</joint>
 
 
@@ -275,7 +275,7 @@
 			<child link="L6_link"/>
 			<axis xyz="0 0 -1" />
 			<dynamics damping="5" />
-			<limit effort="20.1" velocity="2.0" lower="-1.8" upper="1.8" />
+			<limit effort="20.1" velocity="2.0" lower="-1.8" upper="1.8" /> <!-- Data sheet says +/-170. Why did we set lower values? -->
 		</joint>
 
 		<!-- J7-->
@@ -286,7 +286,7 @@
 			<child link="L7_link"/>
 			<axis xyz="0 0 -1" />
 			<dynamics damping="5" />
-			<limit effort="9.6" velocity="2.0" lower="-6.2831853" upper="6.2831853" />
+			<limit effort="9.6" velocity="2.0" lower="-3.14157" upper="3.14157" />
 		</joint>
 
 </robot>
