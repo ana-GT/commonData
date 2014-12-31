@@ -1,0 +1,25 @@
+<robot
+  name="kiva_pod">
+  <link name="kiva_pod">
+    <inertial>
+      <origin xyz="0.0 0.0 1.2045" rpy="0 0 0"/>
+      <mass value="76.26"/>
+      <inertia ixx="47" ixy="-0.003456" ixz="0.001474" iyy="47" iyz="-0.014439" izz="13.075" />
+    </inertial>
+
+    <visual>
+      <pose>0 0 0 1.5707 0 0 </pose>
+      <geometry>
+        <mesh filename="../meshes/pod_lowres.dae" scale="1 1 1" />
+      </geometry>
+     </visual>
+
+    <collision>
+      <pose>0 0 0 1.5707 0 0 </pose>
+      <geometry>
+        <mesh filename="../meshes/pod_lowres.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+
+  </link>
+</robot>
