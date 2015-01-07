@@ -1,0 +1,29 @@
+<robot
+  name="bimanual_wall">
+  <link name="bimanual_wall">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1" />
+    </inertial>
+<!--
+    <visual>
+      <geometry>
+        <mesh filename="../meshes/wall_100_1_80.dae" scale="1 1 1" />
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1" />
+      </material>
+     </visual>
+-->
+    <collision>
+      <geometry>
+        <mesh filename="../meshes/wall_100_1_80.dae" scale="1 1 1" />
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1" />
+      </material>
+    </collision> 
+
+  </link>
+</robot>
