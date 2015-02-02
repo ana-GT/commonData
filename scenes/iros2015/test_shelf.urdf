@@ -1,6 +1,10 @@
-<world name="crichton_pick_test">
+<!-- test_shelf -->
+<!-- Grasp a cup -->
+<!-- author: A. Huaman Quispe -->
+<!-- date: 2015/02/02 -->
+<world name="test_shelf">
 
-  <!-- Crichton -->
+  <!-- Crichton urdf -->
   <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys.urdf" model_name="lwa4d_left"/> 
   <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys.urdf" model_name="lwa4d_right"/> 
   <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
@@ -9,11 +13,14 @@
   <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/> 
 
 
-  <!-- Table -->
-  <include filename="../../objects/LWA4_table/urdf/LWA4_table_wall_MARKER.urdf" model_name="table"/>
+  <!-- Shelf urdf -->
+  <include filename="../../objects/shelves/urdf/shelf_unit1.urdf" model_name="shelf"/>
 
-  <include filename="../../objects/kitchenUtensils/urdf/quakerOats.urdf" model_name="quakerOats"/>
-  <include filename="../../objects/kitchenUtensils/urdf/wheatThins.urdf" model_name="wheatThins"/>
+  <!-- Target bin urdf -->
+  <include filename="../../objects/basicShapes/urdf/cylinder_1_5.urdf" model_name="bin"/>
+
+  <!-- Target object urdf -->
+  <include filename="../../objects/bicolorRod/urdf/bicolorRod.urdf" model_name="target"/>
 
 
   <!-- Crichton -->
@@ -42,21 +49,20 @@
     <origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/>
   </entity>
 
-
-  <!-- Table -->
- <entity model="table" name="table">
-    <origin xyz="0.80 0.0 0.68" rpy="0 0 0"/>
-  </entity>
-
-  <entity model="wheatThins" name="wheatThins">
-    <origin xyz="0.50 0 0.81" rpy="3.14157 0 0"/>
+  <!-- Target Rod -->
+  <entity model="target" name="target">
+    <origin xyz="0.65 0.0 1.09" rpy="0 0 0"/>
   </entity>
 
 
-  <entity model="quakerOats" name="quakerOats">
-    <origin xyz="0.35 -0.2 0.82" rpy="0 0 0"/>
+  <!-- Target Bin -->
+  <entity model="bin" name="bin">
+    <origin xyz="0.0 0.77 0.01" rpy="0 0 0"/>
   </entity>
 
-
+  <!-- Shelf -->
+  <entity model="shelf" name="shelf">
+    <origin xyz="0.50 0.60 0.05" rpy="0 0 -1.57"/>
+  </entity>
 
 </world>
