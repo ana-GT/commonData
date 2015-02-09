@@ -1,30 +1,23 @@
-<!-- test_shelf -->
-<!-- Grasp a cup -->
+<!-- empty_scenario -->
+<!-- Point a marker -->
 <!-- author: A. Huaman Quispe -->
 <!-- date: 2015/02/02 -->
-<world name="test_shelf">
+<world name="point_marker">
 
   <!-- Crichton urdf -->
-  <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys_quick.urdf" model_name="lwa4d_left"/> 
-  <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys_quick.urdf" model_name="lwa4d_right"/> 
-  <include filename="../../robots/sdh/urdf/sdh_quick.urdf" model_name="sdh"/> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys.urdf" model_name="lwa4d_left"/> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys.urdf" model_name="lwa4d_right"/> 
+  <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
 
   <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>
   <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/> 
 
+  <!-- Marker urdf -->
+  <include filename="marker.urdf" model_name="marker"/>
+
   <!-- Table -->
   <include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/> 
 
-  <!-- Shelf urdf -->
-  <include filename="../../objects/shelves/urdf/shelf_unit1.urdf" model_name="shelf"/>
-
-  <!-- Target object urdf -->
-  <include filename="rod.urdf" model_name="target"/>
-
-
-  <!-- Goal /Start urdf -->
-  <include filename="goal.urdf" model_name="goal"/>
-  <include filename="start.urdf" model_name="start"/>
 
   <!-- Crichton -->
   <entity model="base" name="base">
@@ -53,30 +46,13 @@
   </entity>
 
   <!-- Target Rod -->
-  <entity model="target" name="target">
-    <origin xyz="0.65 0.0 1.09" rpy="0 0 0"/>
-  </entity>
-
-
-  <!-- Goal -->
-  <entity model="goal" name="goal">
-    <origin xyz="0.5 0.5 0.77" rpy="0 0 0"/>
-  </entity>
-
-  <!-- Start -->
-  <entity model="start" name="start">
-    <origin xyz="0.5 -0.5 0.77" rpy="0 0 0"/>
-  </entity>
-
-
-  <!-- Shelf -->
-  <entity model="shelf" name="shelf">
-    <origin xyz="0.75 0.60 0.05" rpy="0 0 -1.57"/>
+  <entity model="marker" name="marker">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
   </entity>
 
   <!-- Table -->
   <entity model="table" name="table">
-    <origin xyz="0.40 0.0 0.01" rpy="0 0 0"/>
+    <origin xyz="0.7874 0.1016 0.66" rpy="0 0 0"/>
   </entity>
 
 
