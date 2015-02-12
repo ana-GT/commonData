@@ -19,7 +19,7 @@
   <include filename="../../objects/shelves/urdf/shelf_unit1.urdf" model_name="shelf"/>
 
   <!-- Target object urdf -->
-  <include filename="rod.urdf" model_name="target"/>
+  <!--<include filename="rod.urdf" model_name="target"/>-->
 
 
   <!-- Goal /Start urdf -->
@@ -53,9 +53,9 @@
   </entity>
 
   <!-- Target Rod -->
-  <entity model="target" name="target">
+<!--  <entity model="target" name="target">
     <origin xyz="0.65 0.0 1.09" rpy="0 0 0"/>
-  </entity>
+  </entity>-->
 
 
   <!-- Goal -->
