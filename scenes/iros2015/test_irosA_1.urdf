@@ -9,6 +9,10 @@
 <include filename="../../robots/sdh/urdf/sdh_quick.urdf" model_name="sdh"/>
 <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>
 <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/>
+
+<!-- Kinect -->
+<include filename="../../objects/kinect/urdf/kinect.urdf" model_name="kinect"/>
+
 <!-- Table -->
 <include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/>
 
@@ -33,6 +37,10 @@
 </entity>
 <entity model="sdh" name="crichtonRightHand">
 <origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/>
+</entity>
+
+<entity model="kinect" name="kinect">
+<origin xyz="0.01 0.00 1.33" rpy="1.5708 0 1.5708"/>
 </entity>
 
 <!-- Goal -->
