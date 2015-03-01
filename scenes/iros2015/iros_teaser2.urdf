@@ -1,8 +1,9 @@
-<!-- test_shelf -->
-<!-- Grasp a cup -->
+<!-- iros_teaser2 -->
+<!-- Put pringles inside a wooden box -->
 <!-- author: A. Huaman Quispe -->
-<!-- date: 2015/02/02 -->
-<world name="test_shelf">
+<!-- date: 2015/02/28 -->
+<world name="iros_teaser2">
+
 <!-- Crichton urdf -->
 <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys_quick.urdf" model_name="lwa4d_left"/>
 <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys_quick.urdf" model_name="lwa4d_right"/>
@@ -11,13 +12,18 @@
 <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/>
 <!-- Table -->
 <include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/>
-<!-- Shelf urdf -->
-<include filename="../../objects/shelves/urdf/shelf_unit1.urdf" model_name="shelf"/>
-<!-- Target object urdf -->
-<!--<include filename="rod.urdf" model_name="target"/>-->
+
 <!-- Goal /Start urdf -->
 <include filename="goal.urdf" model_name="goal"/>
 <include filename="start.urdf" model_name="start"/>
+
+<!-- Box urdf -->
+<include filename="../../objects/boxes/urdf/simpleBox_50_50_25.urdf" model_name="box"/>
+
+<!-- Pringles urdf -->
+<include filename="../../objects/pringles/urdf/pringles.urdf" model_name="target"/>
+
+
 <!-- Crichton -->
 <entity model="base" name="base">
 <origin xyz="-0.45 -0.45 0.01" rpy="+0 0 0"/>
@@ -37,24 +43,31 @@
 <entity model="sdh" name="crichtonRightHand">
 <origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/>
 </entity>
-<!-- Target Rod -->
-<!-- <entity model="target" name="target">
-<origin xyz="0.65 0.0 1.09" rpy="0 0 0"/>
-</entity>-->
+
 <!-- Goal -->
 <entity model="goal" name="goal">
 <origin xyz="0.5 0.5 0.77" rpy="0 0 0"/>
 </entity>
+
 <!-- Start -->
 <entity model="start" name="start">
 <origin xyz="0.5 -0.5 0.77" rpy="0 0 0"/>
 </entity>
-<!-- Shelf -->
-<entity model="shelf" name="shelf">
-<origin xyz="0.75 0.60 0.05" rpy="0 0 -1.57"/>
+
+<!-- Pringles -->
+<entity model="target" name="target">
+<origin xyz="0.50 0.70 0.77" rpy="0 0 0"/>
 </entity>
+
+<!-- Box -->
+<entity model="box" name="box">
+<origin xyz="0.19 -0.25 0.67" rpy="0 0 0"/>
+</entity>
+
 <!-- Table -->
 <entity model="table" name="table">
 <origin xyz="0.40 0.0 0.01" rpy="0 0 0"/>
 </entity>
 </world>
+
+

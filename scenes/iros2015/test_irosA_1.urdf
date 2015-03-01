@@ -11,10 +11,7 @@
 <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/>
 <!-- Table -->
 <include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/>
-<!-- Shelf urdf -->
-<include filename="../../objects/shelves/urdf/shelf_unit1.urdf" model_name="shelf"/>
-<!-- Target object urdf -->
-<!--<include filename="rod.urdf" model_name="target"/>-->
+
 <!-- Goal /Start urdf -->
 <include filename="goal.urdf" model_name="goal"/>
 <include filename="start.urdf" model_name="start"/>
@@ -37,10 +34,7 @@
 <entity model="sdh" name="crichtonRightHand">
 <origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/>
 </entity>
-<!-- Target Rod -->
-<!-- <entity model="target" name="target">
-<origin xyz="0.65 0.0 1.09" rpy="0 0 0"/>
-</entity>-->
+
 <!-- Goal -->
 <entity model="goal" name="goal">
 <origin xyz="0.5 0.5 0.77" rpy="0 0 0"/>
@@ -49,10 +43,7 @@
 <entity model="start" name="start">
 <origin xyz="0.5 -0.5 0.77" rpy="0 0 0"/>
 </entity>
-<!-- Shelf -->
-<entity model="shelf" name="shelf">
-<origin xyz="0.75 0.60 0.05" rpy="0 0 -1.57"/>
-</entity>
+
 <!-- Table -->
 <entity model="table" name="table">
 <origin xyz="0.40 0.0 0.01" rpy="0 0 0"/>
