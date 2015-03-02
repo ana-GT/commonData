@@ -1,0 +1,197 @@
+<!-- test_shelf -->
+<!-- Grasp a cup -->
+<!-- author: A. Huaman Quispe -->
+<!-- date: 2015/02/02 -->
+<world name="test_shelf">
+<!-- Crichton urdf -->
+<include filename="../../robots/lwa4d/urdf/lwa4d_left_phys_quick.urdf" model_name="lwa4d_left"/>
+<include filename="../../robots/lwa4d/urdf/lwa4d_right_phys_quick.urdf" model_name="lwa4d_right"/>
+<include filename="../../robots/sdh/urdf/sdh_quick.urdf" model_name="sdh"/>
+<include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>
+<include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/>
+
+<!-- Kinect -->
+<include filename="../../objects/kinect/urdf/kinect.urdf" model_name="kinect"/>
+
+<!-- Table -->
+<include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/>
+
+<!-- Goal /Start urdf -->
+<include filename="goal.urdf" model_name="goal"/>
+<include filename="start.urdf" model_name="start"/>
+<!-- Crichton -->
+<entity model="base" name="base">
+<origin xyz="-0.45 -0.45 0.01" rpy="+0 0 0"/>
+</entity>
+<entity model="mid" name="mid">
+<origin xyz="0.01 0.01 1.23" rpy="0 0 0"/>
+</entity>
+<entity model="lwa4d_left" name="crichtonLeftArm">
+<origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/>
+</entity>
+<entity model="lwa4d_right" name="crichtonRightArm">
+<origin xyz="0.0 0.0 +1.23" rpy="0 0 3.14157"/>
+</entity>
+<entity model="sdh" name="crichtonLeftHand">
+<origin xyz="0.6 0.6625 +3.0" rpy="0 0 0"/>
+</entity>
+<entity model="sdh" name="crichtonRightHand">
+<origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/>
+</entity>
+
+<entity model="kinect" name="kinect">
+<origin xyz="0.01 0.00 1.33" rpy="1.5708 0 1.5708"/>
+</entity>
+
+<!-- Goal -->
+<entity model="goal" name="goal">
+<origin xyz="0.4 0.0 0.68" rpy="0 0 0"/>
+</entity>
+<!-- Start -->
+<entity model="start" name="start1">
+<origin xyz="0.2 0.2 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start2">
+<origin xyz="0.2 0.3 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start3">
+<origin xyz="0.2 0.4 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start4">
+<origin xyz="0.2 0.5 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start5">
+<origin xyz="0.2 0.6 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start6">
+<origin xyz="0.2 0.7 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start7">
+<origin xyz="0.2 0.8 0.68" rpy="0 0 0"/>
+</entity>
+<!-------------------------------------------------->
+<entity model="start" name="start8">
+<origin xyz="0.3 0.2 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start9">
+<origin xyz="0.3 0.3 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start10">
+<origin xyz="0.3 0.4 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start11">
+<origin xyz="0.3 0.5 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start12">
+<origin xyz="0.3 0.6 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start13">
+<origin xyz="0.3 0.7 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start14">
+<origin xyz="0.3 0.8 0.68" rpy="0 0 0"/>
+</entity>
+<!-------------------------------------------------->
+<entity model="start" name="start15">
+<origin xyz="0.4 0.2 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start16">
+<origin xyz="0.4 0.3 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start17">
+<origin xyz="0.4 0.4 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start18">
+<origin xyz="0.4 0.5 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start19">
+<origin xyz="0.4 0.6 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start20">
+<origin xyz="0.4 0.7 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start21">
+<origin xyz="0.4 0.8 0.68" rpy="0 0 0"/>
+</entity>
+<!-------------------------------------------------->
+<entity model="start" name="start22">
+<origin xyz="0.5 0.2 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start23">
+<origin xyz="0.5 0.3 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start24">
+<origin xyz="0.5 0.4 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start25">
+<origin xyz="0.5 0.5 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start26">
+<origin xyz="0.5 0.6 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start27">
+<origin xyz="0.5 0.7 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start28">
+<origin xyz="0.5 0.8 0.68" rpy="0 0 0"/>
+</entity>
+
+<!-------------------------------------------------->
+<entity model="start" name="start29">
+<origin xyz="0.6 0.2 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start30">
+<origin xyz="0.6 0.3 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start31">
+<origin xyz="0.6 0.4 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start32">
+<origin xyz="0.6 0.5 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start33">
+<origin xyz="0.6 0.6 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start34">
+<origin xyz="0.6 0.7 0.68" rpy="0 0 0"/>
+</entity>
+
+<entity model="start" name="start35">
+<origin xyz="0.6 0.8 0.68" rpy="0 0 0"/>
+</entity>
+
+
+<!-- Table -->
+<entity model="table" name="table">
+<origin xyz="0.40 0.0 0.01" rpy="0 0 0"/>
+</entity>
+</world>
