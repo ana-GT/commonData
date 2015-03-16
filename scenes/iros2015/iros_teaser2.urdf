@@ -13,9 +13,6 @@
 <!-- Table -->
 <include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/>
 
-<!-- Goal /Start urdf -->
-<include filename="goal.urdf" model_name="goal"/>
-<include filename="start.urdf" model_name="start"/>
 
 <!-- Box urdf -->
 <include filename="../../objects/boxes/urdf/simpleBox_50_50_25.urdf" model_name="box"/>
@@ -44,15 +41,6 @@
 <origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/>
 </entity>
 
-<!-- Goal -->
-<entity model="goal" name="goal">
-<origin xyz="0.5 0.5 0.77" rpy="0 0 0"/>
-</entity>
-
-<!-- Start -->
-<entity model="start" name="start">
-<origin xyz="0.5 -0.5 0.77" rpy="0 0 0"/>
-</entity>
 
 <!-- Pringles -->
 <entity model="target" name="target">

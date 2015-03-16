@@ -1,23 +1,27 @@
-<!-- iros_teaser1 -->
-<!-- Put pringles on the cupboard -->
+<!-- iros115_expB -->
+<!-- Move object onto a box -->
 <!-- author: A. Huaman Quispe -->
-<!-- date: 2015/02/28 -->
-<world name="iros_teaser1">
-
+<!-- date: 2015/03/04 -->
+<world name="test_shelf">
 <!-- Crichton urdf -->
 <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys_quick.urdf" model_name="lwa4d_left"/>
 <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys_quick.urdf" model_name="lwa4d_right"/>
 <include filename="../../robots/sdh/urdf/sdh_quick.urdf" model_name="sdh"/>
 <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/>
 <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/>
+
+<!-- Kinect -->
+<include filename="../../objects/kinect/urdf/kinect.urdf" model_name="kinect"/>
+
 <!-- Table -->
-<include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/>
-<!-- Shelf urdf -->
-<include filename="../../objects/shelves/urdf/shelf_unit1.urdf" model_name="shelf"/>
+<include filename="../../objects/LWA4_table/urdf/LWA4_table_wall_MARKER.urdf" model_name="table"/>
 
+<!-- Goal /Start urdf -->
+<include filename="goal.urdf" model_name="goal"/>
+<include filename="start.urdf" model_name="start"/>
 
-<!-- Pringles urdf -->
-<include filename="../../objects/pringles/urdf/pringles.urdf" model_name="target"/>
+<!-- Box urdf -->
+<include filename="../../objects/thinkpadBox/urdf/thinkpadBox.urdf" model_name="thinkpadBox"/>
 
 
 <!-- Crichton -->
@@ -40,21 +44,27 @@
 <origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/>
 </entity>
 
-
-<!-- Pringles -->
-<entity model="target" name="target">
-<origin xyz="0.5 0.0 0.77" rpy="0 0 0"/>
+<entity model="kinect" name="kinect">
+<origin xyz="0.01 0.00 1.33" rpy="1.5708 0 1.5708"/>
 </entity>
 
-<!-- Shelf -->
-<entity model="shelf" name="shelf">
-<origin xyz="0.75 0.60 0.05" rpy="0 0 -1.57"/>
+<!-- Goal -->
+<entity model="goal" name="goal">
+<origin xyz="0.5 0.5 0.77" rpy="0 0 0"/>
 </entity>
+<!-- Start -->
+<entity model="start" name="start">
+<origin xyz="0.5 -0.5 0.77" rpy="0 0 0"/>
+</entity>
+
+<!-- thinkpadBox -->
+<entity model="thinkpadBox" name="thinkpadBox">
+<origin xyz="0.68 0.69 0.85" rpy="3.1416 0 0"/>
+</entity>
+
 
 <!-- Table -->
 <entity model="table" name="table">
-<origin xyz="0.40 0.0 0.01" rpy="0 0 0"/>
+<origin xyz="0.7874 0.1016 0.66" rpy="0 0 0"/>
 </entity>
 </world>
-
-
