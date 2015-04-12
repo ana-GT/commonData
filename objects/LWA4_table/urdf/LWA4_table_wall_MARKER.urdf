@@ -14,7 +14,8 @@
 
     <collision>
       <geometry>
-        <mesh filename="../meshes/LWA4_table_title_wall_MARKER.dae" scale="1 1 1" />
+       <mesh filename="../meshes/LWA4_table_title_wall_MARKER.dae" scale="1 1 1" /> 
+<!--        <mesh filename="../meshes/LWA4_table_title_MARKER.dae" scale="1 1 1" /> -->
       </geometry>
     </collision>
 

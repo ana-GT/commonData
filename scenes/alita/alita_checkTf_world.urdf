@@ -11,6 +11,7 @@
   <include filename="../../objects/utils/urdf/wall_alongY.urdf" model_name="wall_back"/> 
   <include filename="../../objects/utils/urdf/wall_alongX.urdf" model_name="wall_side"/> 
 
+  <include filename="../../objects/book/urdf/book.urdf" model_name="book"/> 
 
   <entity model="alita_left" name="alitaLeftArm">
     <origin xyz="0.0 0.135 0.77" rpy="1.5708 0 1.5708"/>
@@ -41,9 +42,13 @@
     <origin xyz="0.6 0.0 0.46" rpy="0 0 0"/>
   </entity>
 
-
   <entity model="wall_back" name="wall_Back">
     <origin xyz="-0.40 0 0" rpy="0 0 0"/>
   </entity>
+
+  <entity model="book" name="book">
+    <origin xyz="0.6 0.0 0.7" rpy="0 0 0"/>
+  </entity>
+
 
 </world>

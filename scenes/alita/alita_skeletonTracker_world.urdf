@@ -11,6 +11,10 @@
   <include filename="../../objects/utils/urdf/wall_alongY.urdf" model_name="wall_back"/> 
   <include filename="../../objects/utils/urdf/wall_alongX.urdf" model_name="wall_side"/> 
 
+  <include filename="ball_red.urdf" model_name="ball_red"/> 
+  <include filename="ball_yellow.urdf" model_name="ball_yellow"/> 
+  <include filename="ball_blue.urdf" model_name="ball_blue"/> 
+  <include filename="ball_green.urdf" model_name="ball_green"/> 
 
   <entity model="alita_left" name="alitaLeftArm">
     <origin xyz="0.0 0.135 0.77" rpy="1.5708 0 1.5708"/>
@@ -41,9 +45,46 @@
     <origin xyz="0.6 0.0 0.46" rpy="0 0 0"/>
   </entity>
 
-
   <entity model="wall_back" name="wall_Back">
     <origin xyz="-0.40 0 0" rpy="0 0 0"/>
   </entity>
+
+  <entity model="ball_yellow" name="HEAD">
+    <origin xyz="0.6 0.0 0.7" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="ball_yellow" name="NECK">
+    <origin xyz="0.6 0.0 0.7" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="ball_blue" name="LEFT_SHOULDER">
+    <origin xyz="0.6 0.0 0.7" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="ball_green" name="LEFT_ELBOW">
+    <origin xyz="0.6 0.0 0.7" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="ball_red" name="LEFT_HAND">
+    <origin xyz="0.6 0.0 0.7" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="ball_blue" name="RIGHT_SHOULDER">
+    <origin xyz="0.6 0.0 0.7" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="ball_green" name="RIGHT_ELBOW">
+    <origin xyz="0.6 0.0 0.7" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="ball_red" name="RIGHT_HAND">
+    <origin xyz="0.6 0.0 0.7" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="ball_yellow" name="TORSO">
+    <origin xyz="0.6 0.0 0.7" rpy="0 0 0"/>
+  </entity>
+
+
 
 </world>

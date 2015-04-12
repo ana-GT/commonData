@@ -9,13 +9,15 @@
 
     <visual>
       <geometry>
-        <mesh filename="../meshes/shelf_RIM.dae" scale="1 1 1" />
+      <!--  <mesh filename="../meshes/shelf_RIM.dae" scale="1 1 1" /> -->
+        <mesh filename="../meshes/lab_shelf.stl" scale="1 1 1" />
       </geometry>
      </visual>
 
     <collision>
       <geometry>
-        <mesh filename="../meshes/shelf_RIM.dae" scale="1 1 1" />
+      <!--  <mesh filename="../meshes/shelf_RIM.dae" scale="1 1 1" /> -->
+        <mesh filename="../meshes/paddedShelf.dae" scale="1 1 1" /> 
       </geometry>
     </collision>
 
