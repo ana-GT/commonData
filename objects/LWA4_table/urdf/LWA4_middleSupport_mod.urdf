@@ -15,7 +15,8 @@
 
     <collision>
       <geometry>
-        <mesh filename="../meshes/middleSupport_09.dae" scale="1 1 1" />
+        <!-- Make middle Support only visual April 24th, 2015--> 
+        <!--<mesh filename="../meshes/middleSupport_09.dae" scale="1 1 1" />-->
       </geometry>
     </collision>
 

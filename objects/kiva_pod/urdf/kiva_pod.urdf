@@ -10,14 +10,14 @@
     <visual>
       <pose>0 0 0 1.5707 0 0 </pose>
       <geometry>
-        <mesh filename="../meshes/pod_lowres.dae" scale="1 1 1" />
+        <mesh filename="../meshes/mesh_adapted_golems.dae" scale="1 1 1" />
       </geometry>
      </visual>
 
     <collision>
       <pose>0 0 0 1.5707 0 0 </pose>
       <geometry>
-        <mesh filename="../meshes/pod_lowres.dae" scale="1 1 1" />
+        <mesh filename="../meshes/mesh_adapted_golems.dae" scale="1 1 1" />
       </geometry>
     </collision>
 
