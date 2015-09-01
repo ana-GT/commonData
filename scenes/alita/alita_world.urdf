@@ -10,7 +10,7 @@
   <include filename="../../robots/alita/urdf/pedestal.urdf" model_name="pedestal"/> 
   <include filename="../../objects/utils/urdf/wall_alongY.urdf" model_name="wall_back"/> 
   <include filename="../../objects/utils/urdf/wall_alongX.urdf" model_name="wall_side"/> 
-
+  
 
   <entity model="alita_left" name="alitaLeftArm">
     <origin xyz="0.0 0.135 0.77" rpy="1.5708 0 1.5708"/>
@@ -45,5 +45,6 @@
   <entity model="wall_back" name="wall_Back">
     <origin xyz="-0.40 0 0" rpy="0 0 0"/>
   </entity>
+
 
 </world>

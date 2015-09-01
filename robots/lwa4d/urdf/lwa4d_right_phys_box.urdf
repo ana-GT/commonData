@@ -48,7 +48,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_1_link_box.dae" />
+					<mesh filename="../meshes/arm_1_link_box_12.dae" />
 				</geometry>
 			</collision>
 		</link>
@@ -73,7 +73,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_2_link_box.dae"/>
+					<mesh filename="../meshes/arm_2_link_box_12.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -123,7 +123,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_4_link_box.dae"/>
+					<mesh filename="../meshes/arm_4_link_box_12.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -148,7 +148,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_5_link_phys_box.dae"/>
+					<mesh filename="../meshes/arm_5_link_phys_box_12.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -175,7 +175,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_6_link_box.dae"/>
+					<mesh filename="../meshes/arm_6_link_box_12.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -200,7 +200,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_7_FT_tool_changers_link_box.dae"/>
+					<mesh filename="../meshes/arm_7_FT_tool_changers_link_box_12.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -220,7 +220,8 @@
 			<child link="L1_link"/>
 			<axis xyz="0 0 1"/>
 			<dynamics damping="10" />
-			<limit effort="370" velocity="2.0" lower="-3.14157" upper="3.14157"/>
+                        <!-- Min/max soft: 2.96, Min/max hard: 3.05 -->
+			<limit effort="370" velocity="2.0" lower="-2.91" upper="2.91"/>
 		</joint>
 
 
@@ -231,7 +232,8 @@
 			<child link="L2_link"/>
 			<axis xyz="0 0 -1"/>
 			<dynamics damping="10" />
-			<limit effort="370" velocity="2.0" lower="-1.97" upper="1.97"/>
+                        <!-- Min/max soft: 1.97, Min/max hard: 2.05 -->
+			<limit effort="370" velocity="2.0" lower="-1.92" upper="1.92"/>
 		</joint>
 
 
@@ -242,7 +244,8 @@
 			<child link="L3_link"/>
 			<axis xyz="0 0 1"/>
 			<dynamics damping="5" />
-			<limit effort="176" velocity="2.0" lower="-3.14157" upper="3.14157"/>
+                        <!-- Min/max soft: 2.96, Min/max hard: 3.05 -->
+			<limit effort="176" velocity="2.0" lower="-2.91" upper="2.91"/> 
 		</joint>
 
 
@@ -252,8 +255,8 @@
 			<parent link="L3_link"/>
 			<child link="L4_link"/>
 			<axis xyz="0 0 -1" />
-			<dynamics damping="5" />
-			<limit effort="176" velocity="2.0" lower="-2.08208" upper="2.08208"/>
+                        <!-- Min/max soft: 2.00, Min/max hard: 2.09 -->
+			<limit effort="176" velocity="2.0" lower="-1.95" upper="1.95"/>
 		</joint>
 
 
@@ -264,7 +267,8 @@
 			<child link="L5_link"/>
 			<axis xyz="0 0 1" />
 			<dynamics damping="5" />
-			<limit effort="41.6" velocity="2.0" lower="-3.14157" upper="3.14157" />
+                        <!-- Min/max soft: 2.96, Min/max hard: 3.05 -->
+			<limit effort="41.6" velocity="2.0" lower="-2.91" upper="2.91" />
 		</joint>
 
 
@@ -275,7 +279,8 @@
 			<child link="L6_link"/>
 			<axis xyz="0 0 -1" />
 			<dynamics damping="5" />
-			<limit effort="20.1" velocity="2.0" lower="-1.8" upper="1.8" /> <!-- Data sheet says +/-170. Why did we set lower values? -->
+                        <!-- Min/max soft: 1.83, Min/max hard: 1.91 -->
+			<limit effort="20.1" velocity="2.0" lower="-1.78" upper="1.78" /> 
 		</joint>
 
 		<!-- J7-->
@@ -286,7 +291,8 @@
 			<child link="L7_link"/>
 			<axis xyz="0 0 -1" />
 			<dynamics damping="5" />
-			<limit effort="9.6" velocity="2.0" lower="-3.14157" upper="3.14157" />
+                        <!-- Min/max soft: 2.79, Min/max hard: 2.87 -->
+			<limit effort="9.6" velocity="2.0" lower="-2.74" upper="2.74" /> 
 		</joint>
 
 </robot>

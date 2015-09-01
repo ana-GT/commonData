@@ -36,7 +36,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_1_link.dae" />
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_1_link.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey">
 					<color rgba="0.7 0.7 0.7 1.0"/>
@@ -46,7 +46,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_1_link_box_12.dae" />
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_1_link_box_12.dae" />
 				</geometry>
 			</collision>
 		</link>
@@ -63,7 +63,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_2_link.dae" />
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_2_link.dae" />
 				</geometry>
 				<material name="Schunk_Black" />
 			</visual>
@@ -71,7 +71,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_2_link_box_12.dae" />
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_2_link_box_12.dae" />
 				</geometry>
 			</collision>
 		</link>
@@ -88,7 +88,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_3_link.dae" />
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_3_link.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -96,7 +96,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_3_link_box.dae"/>
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_3_link_box.dae"/>
 				</geometry>
 			</collision>
 		</link>	
@@ -113,7 +113,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_4_link.dae" />
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_4_link.dae" />
 				</geometry>
 				<material name="Schunk_Black" />
 			</visual>
@@ -121,7 +121,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_4_link_box_12.dae"/>
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_4_link_box_12.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -138,7 +138,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_5_link_phys.dae" />
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_5_link_phys.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -146,7 +146,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_5_link_phys_box_12.dae"/>
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_5_link_phys_box_12.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -165,7 +165,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_6_link.dae" />
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_6_link.dae" />
 				</geometry>
 				<material name="Schunk_Black" />
 			</visual>
@@ -173,7 +173,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_6_link_box_12.dae"/>
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_6_link_box_12.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -190,7 +190,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_7_FT_tool_changers_link.dae" />
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_7_FT_tool_changers_link.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -198,7 +198,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/arm_7_FT_tool_changers_link_box_12.dae"/>
+					<mesh filename="/home/ana/Research/commonData/robots/lwa4d/meshes/arm_7_FT_tool_changers_link_box_12.dae"/>
 				</geometry>
 			</collision>
 		</link>
