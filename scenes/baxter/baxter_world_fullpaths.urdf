@@ -8,36 +8,26 @@
  <include filename="/home/ana/Research/commonData/robots/baxter/urdf/baxter_right_arm.urdf" model_name="right_arm"/> 
  <include filename="/home/ana/Research/commonData/robots/baxter/urdf/baxter_left_arm.urdf" model_name="left_arm"/> 
 
+ <include filename="/home/ana/Research/commonData/robots/baxter/urdf/baxter_gripper.urdf" model_name="gripper"/>
+
   <!-- Baxter -->
   <entity model="torso" name="torso">
     <origin xyz="0.0 0.0 0.93" rpy="0 0 0"/>
   </entity>
 
   <entity model="right_arm" name="right_arm">
-    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 0.93" rpy="0 0 0"/>
   </entity>
 
   <entity model="left_arm" name="left_arm">
-    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 0.93" rpy="0 0 0"/>
   </entity>
 
-<!--
-  <entity model="base" name="base">
-    <origin xyz="-0.45 -0.45 0.01" rpy="+0 0 0"/>
-  </entity>
-
-  <entity model="mid" name="mid">
-    <origin xyz="0.01 0.01 1.23" rpy="0 0 0"/>
-  </entity>
-
-
-
-
-  <entity model="sdh" name="crichtonLeftHand">
+  <entity model="gripper" name="left_gripper">
     <origin xyz="0.6 0.6625 +3.0" rpy="0 0 0"/>
   </entity>
 
-  <entity model="sdh" name="crichtonRightHand">
+  <entity model="gripper" name="right_gripper">
     <origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/>
   </entity>
 

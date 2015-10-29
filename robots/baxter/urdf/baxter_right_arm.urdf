@@ -3,10 +3,10 @@
 <robot name="baxter_right_arm">
 
   <link name="world" />
-  <link name="torso" />
+  <link name="right_arm_root" />
 
-  <!-- Right arm -->
 
+  <!-- Base link: Fixed -->
   <link name="right_arm_mount">
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -15,6 +15,7 @@
     </inertial>
   </link>
 
+  <!-- Link 0 (moved by S0) -->
   <link name="right_upper_shoulder">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -38,6 +39,7 @@
     </inertial>
   </link>
 
+  <!-- Link 1 (moved by S1) -->
   <link name="right_lower_shoulder">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -61,7 +63,7 @@
     </inertial>
   </link>
 
-
+  <!-- Link 2 (moved by E0) -->
   <link name="right_upper_elbow">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -72,12 +74,21 @@
         <color rgba=".5 .1 .1 1"/>
       </material>
     </visual>
+
+    <!-- Yes, 2 meshes for collision -->
     <collision>
       <origin rpy="0 0 0" xyz="0 0 -0.0535"/>
       <geometry>
         <cylinder length="0.107" radius="0.06"/>
       </geometry>
+    </collision> 
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.1365"/>
+      <geometry>
+        <cylinder length="0.273" radius="0.06"/>
+      </geometry>
     </collision>
+
     <inertial>
       <origin rpy="0 0 0" xyz="-0.00276 0.00132 0.18086"/>
       <mass value="4.31272"/>
@@ -86,7 +97,7 @@
   </link>
 
 
-
+  <!-- Link 3 (moved by E1) -->
   <link name="right_lower_elbow">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -110,6 +121,7 @@
     </inertial>
   </link>
 
+  <!-- Link 4 (moved by W0) -->
   <link name="right_upper_forearm">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -120,12 +132,21 @@
         <color rgba=".5 .1 .1 1"/>
       </material>
     </visual>
+
+    <!-- Yes, two meshes for collision -->
     <collision>
       <origin rpy="0 0 0" xyz="0 0 -0.044"/>
       <geometry>
         <cylinder length="0.088" radius="0.06"/>
       </geometry>
     </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.136"/>
+      <geometry>
+        <cylinder length="0.272" radius="0.06"/>
+      </geometry>
+    </collision>
+
     <inertial>
       <origin rpy="0 0 0" xyz="-0.00168 0.0046 0.13952"/>
       <mass value="2.24665"/>
@@ -133,6 +154,7 @@
     </inertial>
   </link>
 
+  <!-- Link 5 (moved by W1) -->
   <link name="right_lower_forearm">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -156,7 +178,7 @@
     </inertial>
   </link>
 
-
+  <!-- Link 6 (moved by W2) -->
   <link name="right_wrist">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -180,39 +202,6 @@
     </inertial>
   </link>
 
-  <!-- VISUAL START RIGHT -->
-
-  <link name="right_upper_elbow_visual">
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.1365"/>
-      <geometry>
-        <cylinder length="0.273" radius="0.06"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <mass value="0.0001"/>
-      <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
-    </inertial>
-  </link>
-
-  <link name="right_upper_forearm_visual">
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.136"/>
-      <geometry>
-        <cylinder length="0.272" radius="0.06"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <mass value="0.0001"/>
-      <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
-    </inertial>
-  </link>
-
-  <!-- VISUAL END RIGHT -->
-
-
   <link name="right_hand">
     <collision>
       <origin rpy="0 0 0" xyz="0 0 -0.0232"/>
@@ -228,19 +217,17 @@
   </link>
 
 
+  <!-- JOINTS -->
 
-  <!-- Right arm fixed to torso -->
-  <joint name="torso_t0" type="floating">
-    <origin rpy="0 0 0" xyz="0 0 0.93"/>
+  <joint name="right_arm_root_joint" type="floating">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="world"/>
-    <child link="torso"/>
-    <limit effort="50000" lower="-3.01" upper="3.01" velocity="10000"/>
+    <child link="right_arm_root"/>
   </joint>
-
 
   <joint name="right_torso_arm_mount" type="fixed">
     <origin rpy="0 0 -0.7854" xyz="0.024645 -0.219645 0.118588"/>
-    <parent link="torso"/>
+    <parent link="right_arm_root"/>
     <child link="right_arm_mount"/>
   </joint>
 
@@ -274,23 +261,6 @@
     <dynamics damping="0.7" friction="0.0"/>
   </joint>
 
-  <!-- VISUAL -->
-  <joint name="right_e0_fixed" type="fixed">
-    <origin rpy="1.57079632679 0 1.57079632679" xyz="0.107 0 0"/>
-    <axis xyz="0 0 1"/>
-    <parent link="right_lower_shoulder"/>
-    <child link="right_upper_elbow_visual"/>
-  </joint>
-
-  <joint name="right_w0_fixed" type="fixed">
-    <origin rpy="1.57079632679 0 1.57079632679" xyz="0.088 0 0"/>
-    <axis xyz="0 0 1"/>
-    <parent link="right_lower_elbow"/>
-    <child link="right_upper_forearm_visual"/>
-  </joint>
-
-  <!-- VISUAL -->
-
   <!-- Right E1 -->
   <joint name="right_e1" type="revolute">
     <origin rpy="-1.57079632679 -1.57079632679 0" xyz="0.069 0 0.26242"/>
@@ -310,6 +280,7 @@
     <limit effort="15.0" lower="-3.059" upper="3.059" velocity="4.0"/>
     <dynamics damping="0.7" friction="0.0"/>
   </joint>
+
 
   <!-- Right W1 -->
   <joint name="right_w1" type="revolute">

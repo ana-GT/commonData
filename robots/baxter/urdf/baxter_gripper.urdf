@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<robot name="baxter_gripper">
+
+  <link name="world" />
+
+  <link name="gripper_base">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/ana/Research/commonData/robots/baxter/meshes/electric_gripper/electric_gripper_base.DAE"/>
+      </geometry>
+      <material name="darkred">
+        <color rgba=".1 .1 .1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/ana/Research/commonData/robots/baxter/meshes/electric_gripper/electric_gripper_base.DAE"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
+    </inertial>
+
+  </link>
+
+  <!-- Finger A -->
+  <link name="finger_A">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/ana/Research/commonData/robots/baxter/meshes/electric_gripper/fingers/standard_wide.DAE"/>
+      </geometry>
+      <material name="darkred">
+        <color rgba=".1 .1 .1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/ana/Research/commonData/robots/baxter/meshes/electric_gripper/fingers/standard_wide.DAE"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
+    </inertial>
+  </link>
+
+  <!-- Finger B -->
+  <link name="finger_B">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/ana/Research/commonData/robots/baxter/meshes/electric_gripper/fingers/standard_wide.DAE"/>
+      </geometry>
+      <material name="darkred">
+        <color rgba=".1 .1 .1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="/home/ana/Research/commonData/robots/baxter/meshes/electric_gripper/fingers/standard_wide.DAE"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
+      <mass value="0.0001"/>
+      <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
+    </inertial>
+  </link>
+
+		
+  <!-- joint between arm_7_link and sdh_palm_link -->
+  <joint name="palm_joint" type="floating" >
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="world" />
+    <child link="gripper_base" />
+  </joint>
+
+
+  <joint name="finger_A_joint" type="prismatic">
+    <origin rpy="0 0.0 0.0" xyz="0 0.03 0.05"/>
+    <parent link="gripper_base"/>
+    <child link="finger_A"/>
+    <limit effort="50.0" lower="-0.03" upper="0.03" velocity="1.5"/>
+  </joint>
+
+  <joint name="finger_B_joint" type="prismatic">
+    <origin rpy="0 0.0 0.0" xyz="0.0 0.03 -0.05"/>
+    <parent link="gripper_base"/>
+    <child link="finger_B"/>
+    <limit effort="50.0" lower="-0.03" upper="0.03" velocity="1.5"/>
+  </joint>
+
+</robot>

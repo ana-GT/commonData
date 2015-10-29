@@ -29,20 +29,6 @@
   </link>
 
 
-  <link name="left_torso_itb">
-    <inertial>
-      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
-      <mass value="0.0001"/>
-      <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
-    </inertial>
-  </link>
-  <link name="right_torso_itb">
-    <inertial>
-      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
-      <mass value="0.0001"/>
-      <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
-    </inertial>
-  </link>
   <link name="pedestal">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -94,7 +80,7 @@
     <visual>
       <origin rpy="0 -1.57079632679 0" xyz="0 -.00953 -.0347"/>
       <geometry>
-        <mesh filename="/home/ana/Research/commonData/robots/baxter/meshes/head/H1.DAE"/>
+        <mesh filename="/home/ana/Research/commonData/robots/baxter/meshes/head/H1_rotY90.dae"/>
       </geometry>
       <material name="darkred">
         <color rgba=".5 .1 .1 1"/>
@@ -154,7 +140,6 @@
   </link>
 
 
-
   <joint name="root_joint" type="floating">
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="world"/>
@@ -169,16 +154,6 @@
     <limit effort="50000" lower="-3.01" upper="3.01" velocity="10000"/>
   </joint>
 
-  <joint name="left_torso_itb_fixed" type="fixed">
-    <origin rpy="-1.57079632679 3.1415 0" xyz="-0.08897 0.15593 0.389125"/>
-    <parent link="torso"/>
-    <child link="left_torso_itb"/>
-  </joint>
-  <joint name="right_torso_itb_fixed" type="fixed">
-    <origin rpy="1.57079632679 0 0" xyz="-0.08897 -0.15593 0.389125"/>
-    <parent link="torso"/>
-    <child link="right_torso_itb"/>
-  </joint>
   <joint name="pedestal_fixed" type="fixed">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="torso"/>
