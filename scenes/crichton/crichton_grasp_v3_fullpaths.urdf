@@ -1,0 +1,46 @@
+<!-- test_shelf -->
+<!-- Grasp a cup -->
+<!-- author: A. Huaman Quispe -->
+<!-- date: 2015/02/02 -->
+<world name="test_shelf">
+<!-- Crichton urdf -->
+<include filename="/home/ana/Research/commonData/robots/lwa4d/urdf/lwa4d_left_phys_box_fullpath.urdf" model_name="lwa4d_left"/>
+<include filename="/home/ana/Research/commonData/robots/lwa4d/urdf/lwa4d_right_phys_box_fullpath.urdf" model_name="lwa4d_right"/>
+<include filename="/home/ana/Research/commonData/robots/sdh/urdf/sdh_scaled_1_6_fullpath.urdf" model_name="sdh"/>
+<include filename="/home/ana/Research/commonData/objects/LWA4_table/urdf/LWA4_verticalSupport_fullpath.urdf" model_name="base"/>
+<include filename="/home/ana/Research/commonData/objects/LWA4_table/urdf/LWA4_middleSupport_mod_fullpath.urdf" model_name="mid"/>
+
+<!-- Goal /Start urdf -->
+<include filename="/home/ana/Research/commonData/objects/coin_markers/goal_fullpath.urdf" model_name="goal"/>
+<include filename="/home/ana/Research/commonData/objects/coin_markers/start_fullpath.urdf" model_name="start"/>
+<!-- Crichton -->
+<entity model="base" name="base">
+<origin xyz="-0.45 -0.45 0.01" rpy="+0 0 0"/>
+</entity>
+<entity model="mid" name="mid">
+<origin xyz="0.01 0.01 1.23" rpy="0 0 0"/>
+</entity>
+<entity model="lwa4d_left" name="crichtonLeftArm">
+<origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/>
+</entity>
+<entity model="lwa4d_right" name="crichtonRightArm">
+<origin xyz="0.0 0.0 +1.23" rpy="0 0 3.14157"/>
+</entity>
+<entity model="sdh" name="crichtonLeftHand">
+<origin xyz="0.6 0.6625 +3.0" rpy="0 0 0"/>
+</entity>
+<entity model="sdh" name="crichtonRightHand">
+<origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/>
+</entity>
+
+
+<!-- Goal -->
+<entity model="goal" name="goal">
+<origin xyz="0.5 0.5 0.77" rpy="0 0 0"/>
+</entity>
+<!-- Start -->
+<entity model="start" name="start">
+<origin xyz="0.5 -0.5 0.77" rpy="0 0 0"/>
+</entity>
+
+</world>
