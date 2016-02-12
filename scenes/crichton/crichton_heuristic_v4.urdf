@@ -1,0 +1,22 @@
+<!-- Benchmarks: golems_grasp_v0 -->
+<!-- author: A. Huaman Quispe -->
+<!-- date: 2015/01/02 -->
+<world name="golems_grasp_v0">
+
+  <!-- Crichton urdf -->
+  <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
+
+  <!-- Objecs --> 
+     <include filename="../../objects/utils/urdf/yellow_cylinder.urdf" model_name="cylinder"/> 
+
+  <entity model="sdh" name="crichtonLeftHand">
+    <origin xyz="0.35 0.3 0.8" rpy="0 -1.5708 0"/>
+  </entity>
+
+
+  <entity model="cylinder" name="cylinder">
+    <origin xyz="0.5 0.3 0.80" rpy="0 0 0"/>
+  </entity>
+
+
+</world>

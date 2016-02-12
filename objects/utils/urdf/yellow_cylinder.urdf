@@ -9,14 +9,14 @@
 
     <visual>
       <geometry>
-        <mesh filename="../meshes/yellow_cylinder_010_024.dae" scale="1 1 1" />
+        <mesh filename="../meshes/yellow_cylinder_010_024_s8.dae" scale="1 1 1" />
       </geometry>
      </visual>
 
 
     <collision>
       <geometry>
-        <mesh filename="../meshes/yellow_cylinder_010_024.dae" scale="1 1 1" />
+        <mesh filename="../meshes/yellow_cylinder_010_024_s8.dae" scale="1 1 1" />
       </geometry>
     </collision>
 

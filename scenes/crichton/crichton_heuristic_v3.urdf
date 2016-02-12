@@ -54,12 +54,12 @@
   </entity>
 
   <entity model="cylinder" name="cylinder">
-    <origin xyz="0.5 0.5 0.80" rpy="0 0 0"/>
+    <origin xyz="0.5 0.3 0.80" rpy="0 0 0"/>
   </entity>
 
-<!--  <entity model="box" name="box">
-    <origin xyz="0.5 0.3 0.8" rpy="0 0 0"/>
-  </entity> -->
+  <entity model="box" name="box">
+    <origin xyz="0.5 0.5 0.8" rpy="0 0 0"/>
+  </entity> 
 
   <entity model="cup" name="cup">
     <origin xyz="0.5 0.3 0.8" rpy="0 0 0"/>
