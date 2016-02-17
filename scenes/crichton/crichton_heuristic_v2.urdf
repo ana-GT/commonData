@@ -101,6 +101,7 @@
     <origin xyz="0.7 0.2 0.9" rpy="0 0 0"/>
   </entity>
 
+
   <!-- Table -->
  <entity model="table" name="table">
     <origin xyz="0.5 0.1016 0.0" rpy="0 0 0"/>

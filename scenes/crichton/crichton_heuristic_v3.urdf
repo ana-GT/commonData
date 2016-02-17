@@ -14,8 +14,10 @@
 
   <!-- Objecs -->
      <include filename="../../objects/utils/urdf/yellow_ball.urdf" model_name="ball"/> 
-     <include filename="../../objects/utils/urdf/yellow_cylinder.urdf" model_name="cylinder"/> 
-     <include filename="../../objects/utils/urdf/yellow_box.urdf" model_name="box"/> 
+<!--     <include filename="../../objects/utils/urdf/yellow_cylinder.urdf" model_name="cylinder"/> -->
+<!--     <include filename="../../objects/utils/urdf/yellow_box.urdf" model_name="box"/> -->
+     <include filename="../../objects/ch3_shapes/urdf/cubic.urdf" model_name="cubic"/>
+     <include filename="../../objects/ch3_shapes/urdf/cylinder.urdf" model_name="cylinder"/>
 
      <include filename="../../objects/cups/urdf/blueCup.urdf" model_name="cup"/> 
 
@@ -57,9 +59,13 @@
     <origin xyz="0.5 0.5 0.80" rpy="0 0 0"/>
   </entity>
 
-  <entity model="box" name="box">
+<!--  <entity model="box" name="box">
     <origin xyz="0.5 0.3 0.8" rpy="0 0 0"/>
-  </entity> 
+  </entity> -->
+
+  <entity model="cubic" name="box">
+    <origin xyz="0.5 0.3 0.8" rpy="0 0 0"/>
+  </entity>
 
 <!--  <entity model="cup" name="cup">
     <origin xyz="0.5 0.3 0.8" rpy="0 0 0"/>
