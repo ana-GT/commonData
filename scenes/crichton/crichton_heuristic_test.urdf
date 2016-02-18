@@ -1,0 +1,21 @@
+<!-- Benchmarks: golems_grasp_v0 -->
+<!-- author: A. Huaman Quispe -->
+<!-- date: 2015/01/02 -->
+<world name="golems_grasp_v0">
+
+  <!-- Crichton urdf -->
+  <include filename="/home/ana/Research/commonData/robots/lwa4d/urdf/lwa4d_left_phys_box_fullpath.urdf" model_name="lwa4d_left"/> 
+  <include filename="/home/ana/Research/commonData/robots/lwa4d/urdf/lwa4d_right_phys_box_fullpath.urdf" model_name="lwa4d_right"/> 
+
+
+
+  <entity model="lwa4d_left" name="crichtonLeftArm">
+    <origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/>
+  </entity>
+
+  <entity model="lwa4d_right" name="crichtonRightArm">
+    <origin xyz="0.0 0.0 +1.23" rpy="0 0 3.14157"/>
+  </entity>
+
+
+</world>

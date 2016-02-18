@@ -107,7 +107,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/finger.dae" />
+					<mesh filename="../meshes/finger_niceMesh.dae" />
 				</geometry>
 			<material name="Schunk_LightGrey" />
 			</visual>
@@ -115,7 +115,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/finger.dae"/>
+					<mesh filename="../meshes/finger_niceMesh.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -209,7 +209,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/finger.dae" />
+					<mesh filename="../meshes/finger_niceMesh.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -217,7 +217,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/finger.dae"/>
+					<mesh filename="../meshes/finger_niceMesh.dae"/>
 				</geometry>
 			</collision>
 		</link>
@@ -306,7 +306,7 @@
 			<visual>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/finger.dae" />
+					<mesh filename="../meshes/finger_niceMesh.dae" />
 				</geometry>
 				<material name="Schunk_LightGrey" />
 			</visual>
@@ -314,7 +314,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0" />
 				<geometry>
-					<mesh filename="../meshes/finger.dae"/>
+					<mesh filename="../meshes/finger_niceMesh.dae"/>
 				</geometry>
 			</collision>
 		</link>
