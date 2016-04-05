@@ -9,6 +9,11 @@
   <include filename="../../objects/ch3_9/urdf/soft_scrub_mirrored.urdf" model_name="soft_scrub_mirrored"/> 
   <!-- Table urdf --> 
   <include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/> 
+
+  <!-- Marker -->
+  <include filename="../../objects/utils/urdf/marker_green.urdf" model_name="marker_green"/> 
+  <include filename="../../objects/utils/urdf/marker_red.urdf" model_name="marker_red"/> 
+
   <!-- Crichton --> 
   <entity model="base" name="base"> 
 	 <origin xyz="-0.45 -0.45 0.01" rpy="+0 0 0"/> 
@@ -36,4 +41,14 @@
  <entity model="table" name="table"> 
 	    <origin xyz="0.5 0.1016 0.0" rpy="0 0 0"/> 
   </entity> 
+
+  <!-- Markers --> 
+ <entity model="marker_green" name="marker_green"> 
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
+ </entity> 
+
+ <entity model="marker_red" name="marker_red"> 
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
+ </entity> 
+
 </world> 
