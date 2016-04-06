@@ -1,0 +1,63 @@
+  <world name="golems_ch3_world">
+  <!-- Crichton urdf --> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_left_phys_box.urdf" model_name="lwa4d_left"/> 
+  <include filename="../../robots/lwa4d/urdf/lwa4d_right_phys_box.urdf" model_name="lwa4d_right"/> 
+  <include filename="../../robots/sdh/urdf/sdh.urdf" model_name="sdh"/> 
+  <include filename="../../objects/LWA4_table/urdf/LWA4_verticalSupport.urdf" model_name="base"/> 
+  <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/> 
+  <!-- Objects --> 
+  <include filename="../../objects/ch3_9/urdf/sun_maid_raisins_mirrored.urdf" model_name="sun_maid_raisins_mirrored"/> 
+  <include filename="../../objects/utils/urdf/sq_cylinder_10_20.urdf" model_name="container"/> 
+
+  <!-- Table urdf --> 
+  <include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/> 
+
+  <!-- Marker -->
+  <include filename="../../objects/utils/urdf/marker_green.urdf" model_name="marker_green"/> 
+  <include filename="../../objects/utils/urdf/marker_red.urdf" model_name="marker_red"/> 
+
+  <!-- Crichton --> 
+  <entity model="base" name="base"> 
+	 <origin xyz="-0.45 -0.45 0.01" rpy="+0 0 0"/> 
+  </entity> 
+  <entity model="mid" name="mid"> 
+	 <origin xyz="0.01 0.01 1.23" rpy="0 0 0"/> 
+  </entity> 
+  <entity model="lwa4d_left" name="crichtonLeftArm"> 
+	 <origin xyz="0.0 0.0 +1.23" rpy="0 0 0"/> 
+  </entity> 
+  <entity model="lwa4d_right" name="crichtonRightArm"> 
+	 <origin xyz="0.0 0.0 +1.23" rpy="0 0 3.14157"/> 
+  </entity> 
+  <entity model="sdh" name="crichtonLeftHand"> 
+	    <origin xyz="0.6 0.6625 +3.0" rpy="0 0 0"/> 
+  </entity> 
+  <entity model="sdh" name="crichtonRightHand"> 
+	    <origin xyz="0.6 -0.6625 +3.0" rpy="0 0 0"/> 
+  </entity> 
+  <!-- Balls --> 
+  <entity model="sun_maid_raisins_mirrored" name="sun_maid_raisins_mirrored"> 
+	    <origin xyz="0.5 0.5 0.72" rpy="0 0 0"/> 
+  </entity> 
+
+
+  <!-- Container --> 
+  <entity model="container" name="container"> 
+	    <origin xyz="0.5 0.5 0.72" rpy="0 0 0"/> 
+  </entity>
+
+  <!-- Table --> 
+ <entity model="table" name="table"> 
+	    <origin xyz="0.5 0.1016 0.0" rpy="0 0 0"/> 
+  </entity>
+
+  <!-- Markers --> 
+ <entity model="marker_green" name="marker_green"> 
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
+ </entity> 
+
+ <entity model="marker_red" name="marker_red"> 
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
+ </entity> 
+ 
+</world> 
