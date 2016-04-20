@@ -7,7 +7,7 @@
   <include filename="../../objects/LWA4_table/urdf/LWA4_middleSupport_mod.urdf" model_name="mid"/> 
   <!-- Objects --> 
   <include filename="../../objects/ch3_9/urdf/cheezit_mirrored.urdf" model_name="cheezit_mirrored"/> 
-  <include filename="../../objects/utils/urdf/sq_cylinder_10_20.urdf" model_name="container"/> 
+  <include filename="../../objects/utils/urdf/red_bowl_approx_8_8_6.urdf" model_name="container"/> 
 
   <!-- Table urdf --> 
   <include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/> 
@@ -38,13 +38,13 @@
   <!-- Balls --> 
   <entity model="cheezit_mirrored" name="cheezit_mirrored"> 
 	    <origin xyz="0.5 0.5 0.72" rpy="0 0 0"/> 
+  </entity> 
 
   <!-- Container --> 
   <entity model="container" name="container"> 
 	    <origin xyz="0.5 0.5 0.72" rpy="0 0 0"/> 
   </entity>
 
-  </entity> 
   <!-- Table --> 
  <entity model="table" name="table"> 
 	    <origin xyz="0.5 0.1016 0.0" rpy="0 0 0"/> 
