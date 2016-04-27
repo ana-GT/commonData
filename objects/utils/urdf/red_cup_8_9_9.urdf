@@ -1,6 +1,6 @@
 <robot
-  name="sq_cylinder_10_20">
-  <link name="sq_cylinder_10_20">
+  name="red_cup_8_9_9">
+  <link name="red_cup_8_9_(">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <mass value="0.5"/>
@@ -9,7 +9,6 @@
 
     <visual>
       <geometry>
-<!--        <mesh filename="../meshes/sq_cylinder_10_20.dae" scale="1 1 1" /> -->
         <mesh filename="../meshes/red_cup_8_9_9.dae" scale="1 1 1" />
       </geometry>
      </visual>
@@ -17,7 +16,6 @@
 
     <collision>
       <geometry>
-<!--        <mesh filename="../meshes/sq_cylinder_10_20.dae" scale="1 1 1" /> -->
         <mesh filename="../meshes/red_cup_8_9_9.dae" scale="1 1 1" />
       </geometry>
     </collision>
