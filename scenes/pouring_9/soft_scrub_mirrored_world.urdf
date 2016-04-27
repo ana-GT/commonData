@@ -10,6 +10,8 @@
 <!--  <include filename="../../objects/utils/urdf/red_bowl_approx_8_8_6.urdf" model_name="container"/> -->
   <include filename="../../objects/utils/urdf/red_cup_8_9_9.urdf" model_name="container"/> 
 
+
+
   <!-- Table urdf --> 
   <include filename="../../objects/LWA4_table/urdf/table_alone.urdf" model_name="table"/> 
 

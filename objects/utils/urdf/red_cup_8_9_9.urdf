@@ -1,6 +1,6 @@
 <robot
   name="red_cup_8_9_9">
-  <link name="red_cup_8_9_(">
+  <link name="red_cup_8_9_9">
     <inertial>
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
       <mass value="0.5"/>
